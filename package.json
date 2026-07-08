@@ -1,0 +1,21 @@
+{
+  "name": "ohohama",
+  "displayName": "ohohama",
+  "description": "Ohohama blue color theme",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.125.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Ohohama",
+        "uiTheme": "hc-black",
+        "path": "./themes/Ohohama-color-theme.json"
+      }
+    ]
+  }
+}
