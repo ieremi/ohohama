@@ -131,12 +131,12 @@
 		"terminal.foreground": "#ffffff80",
 		"editor.selectionForeground": "#ffffff",
 		"statusBarItem.hoverBackground": "#ffffff00",
-		"editorBracketHighlight.foreground1": "#dbe9f5",
-		"editorBracketHighlight.foreground2": "#afc6d9",
-		"editorBracketHighlight.foreground3": "#83a3be",
-		"editorBracketHighlight.foreground4": "#5880a2",
-		"editorBracketHighlight.foreground5": "#2c5d87",
-		"editorBracketHighlight.foreground6": "#003a6b"
+		"editorBracketHighlight.foreground1": "#0b8bee",
+		"editorBracketHighlight.foreground2": "#42A5F5",
+		"editorBracketHighlight.foreground3": "#64B5F6",
+		"editorBracketHighlight.foreground4": "#90CAF9",
+		"editorBracketHighlight.foreground5": "#BBDEFB",
+		"editorBracketHighlight.foreground6": "#E3F2FD"
 
 
 	},
