@@ -1,0 +1,76 @@
+{
+	// Place your ohohama workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	//
+	// You can also restrict snippets to specific files using include/exclude patterns:
+	// "Test snippet": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "test",
+	// 	"body": "test('$1', () => {\n\t$0\n});",
+	// 	"include": ["**/*.test.ts", "*.spec.ts"],
+	// 	"exclude": ["**/temp/*.ts"],
+	// 	"description": "Insert test block"
+	// }
+	"color 0": {
+		"prefix": "color_0",
+		"body": "#33a7e4"
+	},
+	"color 1": {
+		"prefix": "color_1",
+		"body": "#0d47a1"
+	},
+	"color 2": {
+		"prefix": "color_2",
+		"body": "#1976d2"
+	},
+	"color 3": {
+		"prefix": "color_3",
+		"body": "#2196f3"
+	},
+	"color 4": {
+		"prefix": "color_4",
+		"body": "#1565c0"
+	},
+	"color 5": {
+		"prefix": "color_5",
+		"body": "#1e88e5"
+	},
+	"color 6": {
+		"prefix": "color_6",
+		"body": "#42a5f5"
+	},
+	"color 7": {
+		"prefix": "color_7",
+		"body": "#90caf9"
+	},
+	"color 8": {
+		"prefix": "color_8",
+		"body": "#64b5f6"
+	},
+	"color 9": {
+		"prefix": "color_9",
+		"body": "#bbdefb"
+	},
+	"color k": {
+		"prefix": "color_k",
+		"body": "#00205b"
+	},
+	"color t": {
+		"prefix": "color_t",
+		"body": "#0b8bee"
+	}
+}
