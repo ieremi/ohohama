@@ -6,7 +6,8 @@
         {
             "label": "pack",
             "type": "shell",
-            "command": "vsce package"
+            "command": "vsce package",
+            "problemMatcher": []
         },
         {
             "label": "install",
