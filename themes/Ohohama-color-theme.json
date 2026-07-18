@@ -323,7 +323,7 @@
 		"editorLineNumber.activeForeground": "#33a7e4",
 		"editorLineNumber.dimmedForeground": "#ffffff40",
 		"editorLineNumber.foreground": "#a5a7a8",
-		"editorLink.activeForeground": "#00ffff",
+		"editorLink.activeForeground": "#33a7e4",
 		"editorMarkerNavigation.background": "#a5a7a8",
 		"editorMarkerNavigationError.background": "#080d10",
 		"editorMarkerNavigationError.headerBackground": "#ffffff40",
@@ -656,7 +656,7 @@
 		"notificationCenter.border": "#080d10",
 		"notificationCenterHeader.background": "#080d10",
 		"notificationCenterHeader.foreground": "#ffffff40",
-		"notificationLink.foreground": "#21a6ff",
+		"notificationLink.foreground": "#33a7e4",
 		"notifications.background": "#080d10",
 		"notifications.border": "#080d10",
 		"notifications.foreground": "#555353",
@@ -902,7 +902,7 @@
 		"terminal.ansiRed": "#1565c0",
 		"terminal.ansiWhite": "#e6edf9",
 		"terminal.ansiYellow": "#1E88E5",
-		"terminal.background": "#080d10",
+		"terminal.background": "#3f3f3f",
 		"terminal.border": "#080d1060",
 		"terminal.dropBackground": "#ffffff40",
 		"terminal.findMatchBackground": "#ffffff40",
@@ -917,14 +917,14 @@
 		"terminal.selectionForeground": "#000000",
 		"terminal.tab.activeBorder": "#080d10",
 		"terminalCommandDecoration.defaultBackground": "#ffffff80",
-		"terminalCommandDecoration.errorBackground": "#f14c4c",
+		"terminalCommandDecoration.errorBackground": "#64b5f6",
 		"terminalCommandDecoration.successBackground": "#1b81a8",
 		"terminalCommandGuide.foreground": "#080d1060",
 		"terminalCursor.background": "#ffffff40",
 		"terminalCursor.foreground": "#ffffff40",
 		"terminalOverviewRuler.border": "#7f7f7f4d",
 		"terminalOverviewRuler.cursorForeground": "#a0a0a0cc",
-		"terminalOverviewRuler.findMatchForeground": "#f38518",
+		"terminalOverviewRuler.findMatchForeground": "#1e88e5",
 		"terminalStickyScroll.background": "#ffffff20",
 		"terminalStickyScroll.border": "#6fc3df",
 		"terminalStickyScrollHover.background": "#ffffff20",
@@ -984,8 +984,8 @@
 		"textBlockQuote.background": "#ffffff40",
 		"textBlockQuote.border": "#ffffff40",
 		"textCodeBlock.background": "#000000",
-		"textLink.activeForeground": "#21a6ff",
-		"textLink.foreground": "#21a6ff",
+		"textLink.activeForeground": "#33a7e4",
+		"textLink.foreground": "#33a7e4",
 		"textPreformat.background": "#ffffff40",
 		"textPreformat.border": "#080d10",
 		"textPreformat.foreground": "#ffffff40",
@@ -1109,7 +1109,7 @@
 				"variable",
 			],
 			"settings": {
-				"foreground": "#00b4d8",
+				"foreground": "#1565c0",
 			}
 		},
 		{
@@ -1118,7 +1118,7 @@
 				"entity"
 			],
 			"settings": {
-				"foreground": "#023e7d",
+				"foreground": "#2196f3",
 			}
 		},
 		{
