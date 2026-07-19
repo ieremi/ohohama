@@ -1,5 +1,6 @@
 // src/theme/debug.ts
 
+import { backup } from "node:sqlite";
 import type { ThemeColors } from "../generated/theme-colors.js";
 import { semantic } from "../semantic.js";
 
@@ -17,7 +18,7 @@ export const mapColors = {
 		"minimapGutter.deletedBackground": semantic.deleted,
 		"minimapGutter.modifiedBackground": semantic.modified,
 		"minimapSlider.activeBackground": semantic.active,
-		"minimapSlider.background": semantic.background,
+		"minimapSlider.background": semantic.slider,
 		"minimapSlider.hoverBackground": semantic.hover,
         "editorGutter.addedBackground": semantic.added,
 		"editorGutter.addedSecondaryBackground": semantic.added,
@@ -33,4 +34,32 @@ export const mapColors = {
 		"editorGutter.itemGlyphForeground": semantic.info,
 		"editorGutter.modifiedBackground": semantic.modified,
 		"editorGutter.modifiedSecondaryBackground": semantic.modified,
+        "scrollbar.background": semantic.background,
+        "scrollbarSlider.background": semantic.slider,
+        "scrollbarSlider.hoverBackground": semantic.hover,
+        "gauge.errorForeground": semantic.error,
+        "gauge.background": semantic.background,
+        "editorOverviewRuler.addedForeground": semantic.added,
+		"editorOverviewRuler.background": semantic.background,
+		"editorOverviewRuler.border": semantic.zero,
+		"editorOverviewRuler.bracketMatchForeground": semantic.match,
+		"editorOverviewRuler.commentDraftForeground": semantic.syntax.comment,
+		"editorOverviewRuler.commentForeground": semantic.syntax.comment,
+		"editorOverviewRuler.commentUnresolvedForeground": semantic.syntax.comment,
+		"editorOverviewRuler.commonContentForeground": semantic.foreground,
+		"editorOverviewRuler.currentContentForeground": semantic.foreground,
+		"editorOverviewRuler.deletedForeground": semantic.deleted,
+		"editorOverviewRuler.errorForeground": semantic.error,
+		"editorOverviewRuler.findMatchForeground": semantic.match,
+		"editorOverviewRuler.incomingContentForeground": semantic.new,
+		"editorOverviewRuler.infoForeground": semantic.info,
+		"editorOverviewRuler.inlineChatInserted": semantic.added,
+		"editorOverviewRuler.inlineChatRemoved": semantic.deleted,
+		"editorOverviewRuler.modifiedForeground": semantic.modified,
+		"editorOverviewRuler.rangeHighlightForeground": semantic.highlight,
+		"editorOverviewRuler.selectionHighlightForeground": semantic.focus,
+		"editorOverviewRuler.warningForeground": semantic.warning,
+		"editorOverviewRuler.wordHighlightForeground": semantic.highlight,
+		"editorOverviewRuler.wordHighlightStrongForeground": semantic.accent,
+		"editorOverviewRuler.wordHighlightTextForeground": semantic.accent,
 } satisfies ThemeColors;

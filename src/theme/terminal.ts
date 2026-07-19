@@ -19,5 +19,5 @@ export const terminalColors = {
     "terminal.ansiBrightGreen": semantic.ansi.brightGreen,
     "terminal.ansiBrightMagenta": semantic.ansi.brightMagenta,
     "terminal.ansiBrightRed": semantic.ansi.brightRed,
-    "terminal.ansiBrightYellow": semantic.ansi.brightYellow
-} satisfies ThemeColors;
+    "terminal.ansiBrightYellow": semantic.ansi.brightYellow,
+ } satisfies ThemeColors;

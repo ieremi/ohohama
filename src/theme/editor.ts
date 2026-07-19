@@ -12,4 +12,5 @@ export const editorColors = {
     "editorLineNumber.activeForeground": semantic.accent,
     "editor.selectionForeground": semantic.accent,
     "editor.selectionBackground": semantic.accent,
+    "editorStickyScroll.background": semantic.sticky,
     } satisfies ThemeColors;
