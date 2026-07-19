@@ -26,9 +26,9 @@ export const colors = {
   ...gitColors,
   ...listColors,
   ...mapColors,
-  panelColors,
+  ...panelColors,
   ...sideBarColors,
-    tabColors,
+  ...tabColors,
   ...terminalColors,
   ...workbenchColors,
 } as const;
