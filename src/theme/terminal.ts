@@ -4,7 +4,7 @@ import type { ThemeColors } from "../generated/theme-colors.js";
 import { semantic } from "../semantic.js";
 
 export const terminalColors = {
-    "terminal.background": semantic.background,
+    "terminal.background": semantic.terminal.background,
     "terminal.foreground": semantic.foreground,
     "terminal.ansiYellow": semantic.ansi.yellow,
     "terminal.ansiBlue": semantic.ansi.blue,
