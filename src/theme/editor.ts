@@ -7,4 +7,6 @@ export const editorColors = {
     "editor.background": semantic.background,
     "editor.foreground": semantic.foreground,
     "editorLineNumber.foreground": semantic.foreground,
+    "editor.lineHighlightBorder": semantic.border,
+    "editor.lineHighlightBackground": semantic.focus
 } satisfies ThemeColors;
