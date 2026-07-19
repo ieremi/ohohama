@@ -61,4 +61,6 @@ export const mapColors = {
 		"editorOverviewRuler.wordHighlightForeground": semantic.highlight,
 		"editorOverviewRuler.wordHighlightStrongForeground": semantic.accent,
 		"editorOverviewRuler.wordHighlightTextForeground": semantic.accent,
+        "diffEditorOverview.insertedForeground": semantic.added,
+        "diffEditorOverview.removedForeground": semantic.deleted,
 } satisfies ThemeColors;
