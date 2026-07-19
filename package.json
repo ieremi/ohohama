@@ -6,8 +6,9 @@
   "publisher": "ieremius",
   "type": "module",
   "scripts": {
-    "build": "tsx src/build.ts",
-    "watch": "tsx watch src/build.ts"
+    "watch": "tsx watch src/build.ts",
+    "generate:theme-colors": "tsx scripts/generate-theme-colors.ts",
+    "build": "npm run generate:theme-colors && tsx src/build.ts"
   },
   "repository": {
     "type": "git",
@@ -29,7 +30,7 @@
       {
         "label": "Ohohama New",
         "uiTheme": "hc-black",
-        "path": "./themes/ohohama-new-color-theme.json"
+        "path": "./themes/ohohama-color-theme.json"
       }
     ]
   },
