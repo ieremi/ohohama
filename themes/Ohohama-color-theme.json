@@ -218,6 +218,8 @@
     "terminal.ansiBrightRed": "#64B5F6",
     "terminal.ansiBrightYellow": "#BBDEFB",
     "statusBar.background": "#2196F3",
+    "statusBar.debuggingBackground": "#00205B",
+    "statusBar.noFolderBackground": "#707070",
     "statusBar.border": "#00000000",
     "statusBar.debuggingBorder": "#00000000",
     "statusBar.noFolderBorder": "#00000000",

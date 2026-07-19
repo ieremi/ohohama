@@ -5,6 +5,8 @@ import type { ThemeColors } from "../generated/theme-colors.js";
 
 export const workbenchColors = {
     "statusBar.background": semantic.accent,
+    "statusBar.debuggingBackground": semantic.old,
+    "statusBar.noFolderBackground": semantic.disabled,
     "statusBar.border": semantic.zero,
     "statusBar.debuggingBorder": semantic.zero,
     "statusBar.noFolderBorder": semantic.zero,
