@@ -11,12 +11,12 @@ const currentDirectory = dirname(currentFile);
 
 const outputPath = resolve(
   currentDirectory,
-  "../themes/ohohama-new-color-theme.json",
+  "../themes/Ohohama-color-theme.json",
 );
 
 const theme = {
-  name: "Ohohama New",
-  type: "dark",
+  name: "Ohohama",
+  type: "vs-dark",
   colors,
   tokenColors,
   semanticHighlighting: true,
