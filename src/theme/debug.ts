@@ -20,5 +20,9 @@ export const debugColors = {
     "activityErrorBadge.background": semantic.error,
     "activityWarningBadge.foreground": semantic.foreground,
     "activityErrorBadge.foreground": semantic.foreground,
+    "debugIcon.breakpointForeground": semantic.breakpoint,
+    "editorLightBulb.foreground": semantic.info,
+    "editorLightBulbAi.foreground": semantic.info,
+    "editorLightBulbAutoFix.foreground": semantic.info,
     
 } satisfies ThemeColors;

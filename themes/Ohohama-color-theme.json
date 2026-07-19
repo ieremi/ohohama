@@ -56,6 +56,7 @@
     "activityErrorBadge.background": "#1565C0",
     "activityWarningBadge.foreground": "#E6EDF9",
     "activityErrorBadge.foreground": "#E6EDF9",
+    "debugIcon.breakpointForeground": "#B1D5FB",
     "diffEditor.border": "#00000000",
     "diffEditor.diagonalFill": "#00205B4D",
     "diffEditor.insertedLineBackground": "#0B8BEE80",

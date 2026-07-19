@@ -13,4 +13,12 @@ export const editorColors = {
     "editor.selectionForeground": semantic.accent,
     "editor.selectionBackground": semantic.accent,
     "editorStickyScroll.background": semantic.sticky,
-    } satisfies ThemeColors;
+    "editor.findMatchBackground": semantic.highlight,
+    "editor.findMatchBorder": semantic.border,
+    "editor.findMatchForeground": semantic.accent,
+    "editor.findMatchHighlightBackground": semantic.highlight,
+    "editor.findMatchHighlightBorder": semantic.border,
+    "editor.findMatchHighlightForeground": semantic.accent,
+    "editor.findRangeHighlightBackground": semantic.highlight,
+    "editor.findRangeHighlightBorder": semantic.border,
+} satisfies ThemeColors;
