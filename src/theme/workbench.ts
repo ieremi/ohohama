@@ -28,4 +28,12 @@ export const workbenchColors = {
     "toolbar.activeBackground": semantic.active,
     "toolbar.hoverBackground": semantic.hover,
     "toolbar.hoverOutline": semantic.zero,
+    "menu.background": semantic.background,
+    "menu.foreground": semantic.inactive,
+    "menu.selectionBackground": semantic.focus,
+    "menu.selectionForeground": semantic.active,
+    "menu.separatorBackground": semantic.border,
+    "menubar.selectionBackground": semantic.focus,
+    "menubar.selectionBorder": semantic.border,
+    "menubar.selectionForeground": semantic.foreground,
 } satisfies ThemeColors;
