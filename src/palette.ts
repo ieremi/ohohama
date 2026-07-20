@@ -1,20 +1,35 @@
 // src/palette.ts
 
 import {
-    formatHex,
-    interpolate,
-} from "culori";
+    argbFromHex,
+    hexFromArgb,
+    Hct,
+    TonalPalette,
+} from "@material/material-color-utilities";
 
-const gradient = interpolate(
-    [
-        "#F8FCFF",
-        "#051b3c",
-    ],
-    "oklch",
+const source = [
+    Hct.fromInt(argbFromHex("#0db4e2")),
+    Hct.fromInt(argbFromHex("#021b3a")),
+    Hct.fromInt(argbFromHex("#041155")),
+];
+
+const mt = source.map((v, k) => TonalPalette.fromHueAndChroma(
+    v.hue,
+    v.chroma
+));
+
+const lights = Array.from({ length: 20 }, (_, i) =>
+    hexFromArgb(mt[0].tone(i * 5))
 );
+
 const blues = Array.from({ length: 20 }, (_, i) =>
-    formatHex(gradient(i / 19))
+    hexFromArgb(mt[1].tone(i * 5))
 );
+
+const darks = Array.from({ length: 20 }, (_, i) =>
+    hexFromArgb(mt[2].tone(i * 5))
+);
+
 export const palette = {
     fund: {
         zero: "#00000000",
