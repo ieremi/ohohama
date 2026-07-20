@@ -1,5 +1,20 @@
 // src/palette.ts
 
+import {
+    formatHex,
+    interpolate,
+} from "culori";
+
+const gradient = interpolate(
+    [
+        "#F8FCFF",
+        "#051b3c",
+    ],
+    "oklch",
+);
+const blues = Array.from({ length: 20 }, (_, i) =>
+    formatHex(gradient(i / 19))
+);
 export const palette = {
     fund: {
         zero: "#00000000",
@@ -34,30 +49,7 @@ export const palette = {
         t: "#0B8BEE",
         k: "#00205B",
     },
-    blue: [
-        "#F8FCFF",
-        "#F1F8FE",
-        "#EAF4FE",
-        "#E2F0FD",
-        "#D8EAFD",
-        "#CDE4FC",
-        "#C0DDFC",
-        "#B1D5FB",
-        "#A0CDF9",
-        "#8BC3F7",
-        "#2196F3",
-        "#1F90EC",
-        "#1D89E3",
-        "#1B82DA",
-        "#197BD0",
-        "#1773C6",
-        "#156CBC",
-        "#1262AF",
-        "#1058A7",
-        "#0D47A1",
-    ],
     gray: [
-        "#E6E6E6",
         "#D0D0D0",
         "#B8B8B8",
         "#A0A0A0",
@@ -67,7 +59,7 @@ export const palette = {
         "#505050",
         "#454545",
         "#3F3F3F",
-    ]
+    ],
+    blue: blues,
 } as const;
-
 export type Palette = typeof palette;
