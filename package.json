@@ -2,7 +2,7 @@
   "name": "ohohama",
   "displayName": "ohohama",
   "description": "Ohohama blue color theme",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "publisher": "ieremius",
   "type": "module",
   "scripts": {
@@ -30,7 +30,7 @@
         "uiTheme": "vs-dark",
         "path": "./themes/Ohohama-color-theme.json"
       }
-   ]
+    ]
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
