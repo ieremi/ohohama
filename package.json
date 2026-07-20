@@ -11,7 +11,8 @@
     "build": "npm run generate:theme-colors && tsx src/build.ts",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "check": "tsx src/check.ts"
   },
   "repository": {
     "type": "git",

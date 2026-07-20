@@ -7,28 +7,21 @@ import {
     TonalPalette,
 } from "@material/material-color-utilities";
 
-const source = [
-    Hct.fromInt(argbFromHex("#0db4e2")),
-    Hct.fromInt(argbFromHex("#021b3a")),
-    Hct.fromInt(argbFromHex("#041155")),
+const tonal = [
+    TonalPalette.fromHueAndChroma(220, 100),
+    TonalPalette.fromHueAndChroma(245, 100),
+    TonalPalette.fromHueAndChroma(275, 100),
+    TonalPalette.fromHueAndChroma(250, 0),
 ];
 
-const mt = source.map((v, k) => TonalPalette.fromHueAndChroma(
-    v.hue,
-    v.chroma
-));
-
-const lights = Array.from({ length: 20 }, (_, i) =>
-    hexFromArgb(mt[0].tone(i * 5))
+export const ramps = tonal.map(p =>
+    Array.from({ length: 20 }, (_, i) =>
+        hexFromArgb(p.tone(i * 5))
+    )
 );
 
-const blues = Array.from({ length: 20 }, (_, i) =>
-    hexFromArgb(mt[1].tone(i * 5))
-);
+const [lights, blues, darks, grays] = ramps;
 
-const darks = Array.from({ length: 20 }, (_, i) =>
-    hexFromArgb(mt[2].tone(i * 5))
-);
 
 export const palette = {
     fund: {
@@ -45,17 +38,9 @@ export const palette = {
         t: "#0B8BEE",
         k: "#00205B",
     },
-    gray: [
-        "#D0D0D0",
-        "#B8B8B8",
-        "#A0A0A0",
-        "#888888",
-        "#707070",
-        "#606060",
-        "#505050",
-        "#454545",
-        "#3F3F3F",
-    ],
+    light: lights,
     blue: blues,
+    dark: darks,
+    gray: grays,
 } as const;
 export type Palette = typeof palette;

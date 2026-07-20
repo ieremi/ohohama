@@ -60,7 +60,7 @@ export const semantic = {
     syntax: {
         comment: palette.blue[9],
         keyword: palette.blue[10],
-        string: palette.blue[12],
+        string: palette.blue[17],
         function: palette.blue[13],
         variable: palette.primary.foreground,
         type: palette.blue[5],
