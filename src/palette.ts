@@ -11,7 +11,7 @@ const tonal = [
     TonalPalette.fromHueAndChroma(220, 100),
     TonalPalette.fromHueAndChroma(245, 100),
     TonalPalette.fromHueAndChroma(270, 50),
-    TonalPalette.fromHueAndChroma(250, 0),
+    TonalPalette.fromHueAndChroma(250, 10),
 ];
 
 export const ramps = tonal.map(p =>

@@ -8,7 +8,7 @@ export const diffColors = {
     "diffEditor.insertedTextBackground": semantic.added,
     "diffEditor.insertedTextBorder": semantic.zero,
     "diffEditor.move.border": semantic.hover,
-    "diffEditor.moveActive.border": semantic.info,
+    "diffEditor.moveActive.border": semantic.zero,
     "diffEditor.removedLineBackground": semantic.deleted,
     "diffEditor.removedTextBackground": semantic.deleted,
     "diffEditor.removedTextBorder": semantic.zero,

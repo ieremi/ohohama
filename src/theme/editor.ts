@@ -7,7 +7,7 @@ export const editorColors = {
     "editor.background": semantic.background,
     "editor.foreground": semantic.foreground,
     "editorLineNumber.foreground": semantic.foreground,
-    "editor.lineHighlightBorder": semantic.border,
+    "editor.lineHighlightBorder": semantic.zero,
     "editor.lineHighlightBackground": semantic.focus,
     "editorLineNumber.activeForeground": semantic.accent,
     "editor.selectionForeground": semantic.accent,
