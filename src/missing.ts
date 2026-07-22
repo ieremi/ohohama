@@ -1,13 +1,21 @@
-import { themeColorKeys } from "./generated/theme-colors.js";
+// src/missing.ts
+
+import { themeColors } from "./generated/theme-colors.js";
 import { colors } from "./theme/index.js";
 
-const assigned = new Set(Object.keys(colors));
+const assignedKeys = new Set(Object.keys(colors));
 
-const missing = themeColorKeys.filter((key) => !assigned.has(key));
+const missingColors = themeColors.filter(
+    ({ key }) => !assignedKeys.has(key),
+);
 
-console.log(`Missing: ${missing.length}/${themeColorKeys.length}`);
+console.log(
+    `Missing: ${missingColors.length}/${themeColors.length}`,
+);
 console.log();
 
-for (const key of missing) {
+for (const { key, description } of missingColors) {
     console.log(key);
+    console.log(`  ${description}`);
+    console.log();
 }
