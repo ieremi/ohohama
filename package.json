@@ -12,7 +12,9 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "typecheck": "tsc --noEmit",
-    "check": "tsx src/check.ts"
+    "check": "tsx src/check.ts",
+    "coverage": "tsx src/coverage.ts",
+    "missing": "tsx src/missing.ts"
   },
   "repository": {
     "type": "git",
