@@ -1,5 +1,11 @@
 # Ohohama Theme
 
+[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/ieremi.ohohama)](https://marketplace.visualstudio.com/items?itemName=ieremi.ohohama)
+
+[![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/ieremi.ohohama)](https://marketplace.visualstudio.com/items?itemName=ieremi.ohohama)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 A carefully crafted blue theme for Visual Studio Code, inspired by the calm sea and sky of **Ohohama Beach** in **Shizuoka, Japan**.
 
 Ohohama intentionally uses a restrained color palette consisting primarily of blue and gray.
