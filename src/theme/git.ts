@@ -8,6 +8,13 @@ export const gitColors = {
     "gitDecoration.deletedResourceForeground": semantic.deleted,
     "gitDecoration.modifiedResourceForeground": semantic.modified,
     "gitDecoration.untrackedResourceForeground": semantic.deleted,
+    "git.blame.editorDecorationForeground": semantic.foreground, // Color for the blame editor decoration.
+    "gitDecoration.conflictingResourceForeground": semantic.accent, // Color for conflicting Git resources. Used for file labels and the SCM viewlet.
+    "gitDecoration.ignoredResourceForeground": semantic.inactive, // Color for ignored Git resources. Used for file labels and the SCM viewlet.
+    "gitDecoration.renamedResourceForeground": semantic.modified, // Color for renamed or copied Git resources. Used for file labels and the SCM viewlet.
+    "gitDecoration.stageDeletedResourceForeground": semantic.deleted, // Color for staged deletions git decorations.  Used for file labels and the SCM viewlet.
+    "gitDecoration.stageModifiedResourceForeground": semantic.modified, // Color for staged modifications git decorations.  Used for file labels and the SCM viewlet.
+    "gitDecoration.submoduleResourceForeground": semantic.inactive, // Color for submodule resources.
     "scmGraph.foreground1": semantic.order[1],
     "scmGraph.foreground2": semantic.order[2],
     "scmGraph.foreground3": semantic.order[3],
