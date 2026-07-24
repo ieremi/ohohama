@@ -11,7 +11,7 @@ export const semantic = {
     background: palette.gray[2],
     breakpoint: palette.blue[7],
     border: palette.dark[15],
-    deleted: alpha(palette.gray[7], 0.5),
+    deleted: alpha(palette.gray[7]!, 0.5),
     disabled: palette.gray[5],
     drop: palette.primary.background,
     error: palette.blue[5],
