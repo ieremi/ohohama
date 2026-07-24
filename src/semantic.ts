@@ -5,7 +5,7 @@ import { alpha } from "./color.js"
 
 export const semantic = {
     zero: palette.fund.zero,
-    accent: palette.light[14],
+    accent: palette.light[14]!,
     active: palette.gray[19],
     added: alpha(palette.city.t, 0.5),
     background: palette.gray[2],
@@ -67,5 +67,5 @@ export const semantic = {
         constant: palette.blue[7],
         number: palette.blue[9],
     },
-    order: palette.blue?.slice(-10)
+    order: palette.blue.slice(-10)
 } as const;
