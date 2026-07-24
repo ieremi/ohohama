@@ -1,9 +1,7 @@
 // src/palette.ts
 
 import {
-    argbFromHex,
     hexFromArgb,
-    Hct,
     TonalPalette,
 } from "@material/material-color-utilities";
 
