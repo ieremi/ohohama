@@ -4,6 +4,7 @@ import { semantic } from "../semantic.js";
 import type { ThemeColors } from "../generated/theme-colors.js";
 
 export const workbenchColors = {
+    "actionBar.toggledBackground": semantic.background, // Background color for toggled action items in action bar.
     "statusBar.background": semantic.accent,
     "statusBar.debuggingBackground": semantic.old,
     "statusBar.noFolderBackground": semantic.disabled,
