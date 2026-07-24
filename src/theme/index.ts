@@ -9,6 +9,7 @@ import { editorColors } from "./editor.js";
 import { gitColors } from "./git.js";
 import { listColors } from "./list.js";
 import { mapColors } from "./map.js";
+import { mergeColors } from "./merge.js";
 import { panelColors } from "./panel.js";
 import { sideBarColors } from "./side-bar.js";
 import { tabColors } from "./tab.js";
@@ -26,6 +27,7 @@ export const colors = {
   ...gitColors,
   ...listColors,
   ...mapColors,
+  ...mergeColors,
   ...panelColors,
   ...sideBarColors,
   ...tabColors,
