@@ -67,5 +67,5 @@ export const semantic = {
         constant: palette.blue[7],
         number: palette.blue[9],
     },
-    order: palette.blue
+    order: palette.gray
 } as const;
