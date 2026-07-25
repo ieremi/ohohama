@@ -21,6 +21,7 @@ import { peekViewColors } from "./peek-view.js";
 import { settingsColors } from "./settings.js";
 import { sideBarColors } from "./side-bar.js";
 import { statusBarColors } from "./status-bar.js";
+import { symbolIconColors } from "./symbol-icon.js";
 import { tabColors } from "./tab.js";
 import { terminalColors } from "./terminal.js";
 import { testingColors } from "./testing.js";
@@ -51,6 +52,7 @@ export const colors = {
   ...settingsColors,
   ...sideBarColors,
   ...statusBarColors,
+  ...symbolIconColors,
   ...tabColors,
   ...terminalColors,
   ...testingColors,
