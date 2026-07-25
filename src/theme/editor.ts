@@ -19,7 +19,9 @@ export const editorColors = {
     "editor.selectionBackground": semantic.accent,
     "editor.selectionForeground": semantic.accent,
     "editorLineNumber.activeForeground": semantic.accent,
+    "editorLineNumber.dimmedForeground": semantic.inactive, // Color of the final editor line when editor.renderFinalNewline is set to dimmed.
     "editorLineNumber.foreground": semantic.foreground,
+    "editorLink.activeForeground": semantic.link, // Color of active links.
     "editorStickyScroll.background": semantic.sticky,
     "walkThrough.embeddedEditorBackground": semantic.background, // Background color for the embedded editors on the Interactive Playground.
     "walkthrough.stepTitle.foreground": semantic.foreground, // Foreground color of the heading of each walkthrough step.
