@@ -4,39 +4,28 @@ import { semantic } from "../semantic.js";
 import type { ThemeColors } from "../generated/theme-colors.js";
 
 export const workbenchColors = {
+    "sash.hoverBorder": semantic.hover, // The hover border color for draggable sashes.
+    "scrollbar.shadow": semantic.zero, // Scrollbar slider shadow to indicate that the view is scrolled.
+    "scrollbarSlider.activeBackground": semantic.background, // Scrollbar slider background color when clicked on.
+    "menu.border": semantic.zero, // Border color of menus.
+    "menu.selectionBorder": semantic.zero, // Border color of the selected menu item in menus.
     "actionBar.toggledBackground": semantic.background, // Background color for toggled action items in action bar.
-    "statusBar.background": semantic.accent,
-    "statusBar.debuggingBackground": semantic.old,
-    "statusBar.noFolderBackground": semantic.disabled,
-    "statusBar.border": semantic.zero,
-    "statusBar.debuggingBorder": semantic.zero,
-    "statusBar.noFolderBorder": semantic.zero,
-    "statusBar.focusBorder": semantic.zero,
-    "titleBar.activeBackground": semantic.background,
-    "titleBar.activeForeground": semantic.active,
-    "titleBar.inactiveBackground": semantic.background,
-    "titleBar.inactiveForeground": semantic.inactive,
     "button.background": semantic.accent,
-    "button.secondaryBackground": semantic.info,
-    "button.hoverBackground": semantic.hover,
     "button.border": semantic.zero,
     "button.foreground": semantic.foreground,
+    "button.hoverBackground": semantic.hover,
+    "button.secondaryBackground": semantic.info,
     "button.secondaryBorder": semantic.zero,
     "button.secondaryForeground": semantic.foreground,
     "button.secondaryHoverBackground": semantic.hover,
     "button.separator": semantic.foreground,
-    "icon.foreground": semantic.foreground,
-    "toolbar.activeBackground": semantic.active,
-    "toolbar.hoverBackground": semantic.hover,
-    "toolbar.hoverOutline": semantic.zero,
-    "menu.background": semantic.background,
-    "menu.foreground": semantic.inactive,
-    "menu.selectionBackground": semantic.focus,
-    "menu.selectionForeground": semantic.active,
-    "menu.separatorBackground": semantic.border,
-    "menubar.selectionBackground": semantic.focus,
-    "menubar.selectionBorder": semantic.border,
-    "menubar.selectionForeground": semantic.foreground,
+    "contrastActiveBorder": semantic.zero,
+    "descriptionForeground": semantic.foreground, // Foreground color for description text providing additional information, for example for a label.
+    "disabledForeground": semantic.disabled, // Overall foreground for disabled elements. This color is only used if not overridden by a component.
+    "dropdown.background": semantic.accent, // Dropdown background.
+    "dropdown.border": semantic.zero, // Dropdown border.
+    "dropdown.foreground": semantic.accent, // Dropdown foreground.
+    "dropdown.listBackground": semantic.background, // Dropdown list background.
     "extensionBadge.remoteBackground": semantic.background,
     "extensionBadge.remoteForeground": semantic.info,
     "extensionButton.background": semantic.background,
@@ -52,10 +41,30 @@ export const workbenchColors = {
     "extensionIcon.sponsorForeground": semantic.info,
     "extensionIcon.starForeground": semantic.info,
     "extensionIcon.verifiedForeground": semantic.info,
-    "dropdown.background": semantic.accent, // Dropdown background.
-    "dropdown.border": semantic.zero, // Dropdown border.
-    "dropdown.foreground": semantic.accent, // Dropdown foreground.
-    "dropdown.listBackground": semantic.background, // Dropdown list background.
+    "icon.foreground": semantic.foreground,
+    "menu.background": semantic.background,
+    "menu.foreground": semantic.inactive,
+    "menu.selectionBackground": semantic.focus,
+    "menu.selectionForeground": semantic.active,
+    "menu.separatorBackground": semantic.border,
+    "menubar.selectionBackground": semantic.focus,
+    "menubar.selectionBorder": semantic.border,
+    "menubar.selectionForeground": semantic.foreground,
+    "statusBar.background": semantic.accent,
+    "statusBar.border": semantic.zero,
+    "statusBar.debuggingBackground": semantic.old,
+    "statusBar.debuggingBorder": semantic.zero,
+    "statusBar.focusBorder": semantic.zero,
+    "statusBar.noFolderBackground": semantic.disabled,
+    "statusBar.noFolderBorder": semantic.zero,
+    "titleBar.activeBackground": semantic.background,
+    "titleBar.activeForeground": semantic.active,
+    "titleBar.border": semantic.zero,
+    "titleBar.inactiveBackground": semantic.background,
+    "titleBar.inactiveForeground": semantic.inactive,
+    "toolbar.activeBackground": semantic.active,
+    "toolbar.hoverBackground": semantic.hover,
+    "toolbar.hoverOutline": semantic.zero,
     "window.activeBorder": semantic.zero, // Border color for the active (focused) window.
     "window.inactiveBorder": semantic.zero, // Border color for the inactive (unfocused) windows.
 } satisfies ThemeColors;

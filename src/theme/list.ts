@@ -34,6 +34,7 @@ export const listColors = {
     "keybindingLabel.border": semantic.inactive,
     "keybindingLabel.bottomBorder": semantic.inactive,
     "keybindingLabel.foreground": semantic.inactive,
+    "keybindingLabel.background": semantic.zero,
     "input.background": semantic.input,
     "input.border": semantic.zero,
     "input.foreground": semantic.foreground,
