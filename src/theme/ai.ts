@@ -2,4 +2,30 @@ import type { ThemeColors } from "../generated/theme-colors.js";
 import { semantic } from "../semantic.js";
 
 export const aiColors = {
+    "agentSessionReadIndicator.foreground": semantic.foreground, // Foreground color for the read indicator in an agent session.
+    "agentSessionSelectedBadge.border": semantic.zero, // Border color for the badges in selected agent session items.
+    "agentSessionSelectedUnfocusedBadge.border": semantic.zero, // Border color for the badges in selected agent session items when the view is unfocused.
+    "agentStatusIndicator.background": semantic.background, // Background color of the agent status indicator in the titlebar.
+    "aiCustomizationManagement.sashBorder": semantic.zero, // The color of the Chat Customization Management editor splitview sash border.
+    "chat.avatarBackground": semantic.background, // The background color of a chat avatar.
+    "chat.avatarForeground": semantic.foreground, // The foreground color of a chat avatar.
+    "chat.checkpointSeparator": semantic.border, // Chat checkpoint separator color.
+    "chat.editedFileForeground": semantic.modified, // The foreground color of a chat edited file in the edited file list.
+    "chat.linesAddedForeground": semantic.added, // Foreground color of lines added in chat code block pill.
+    "chat.linesRemovedForeground": semantic.deleted, // Foreground color of lines removed in chat code block pill.
+    "chat.requestBackground": semantic.background, // The background color of a chat request.
+    "chat.requestBorder": semantic.zero, // The border color of a chat request.
+    "chat.requestBubbleBackground": semantic.background, // Background color of the chat request bubble.
+    "chat.requestBubbleHoverBackground": semantic.hover, // Background color of the chat request bubble on hover.
+    "chat.requestCodeBorder": semantic.zero, // Border color of code blocks within the chat request bubble.
+    "chat.slashCommandBackground": semantic.background, // The background color of a chat slash command.
+    "chat.slashCommandForeground": semantic.foreground, // The foreground color of a chat slash command.
+    "chat.thinkingShimmer": semantic.highlight, // Shimmer highlight for thinking/working labels.
+    "chatManagement.sashBorder": semantic.zero, // The color of the Chat Management editor splitview sash border.
+    "gauge.border": semantic.border, // Gauge border color.
+    "gauge.errorBackground": semantic.background, // Gauge error background color.
+    "gauge.foreground": semantic.foreground, // Gauge foreground color.
+    "gauge.warningBackground": semantic.background, // Gauge warning background color.
+    "gauge.warningForeground": semantic.warning, // Gauge warning foreground color.
 } satisfies ThemeColors;
+

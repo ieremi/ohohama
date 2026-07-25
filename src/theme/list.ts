@@ -16,12 +16,12 @@ export const listColors = {
     "list.deemphasizedForeground": semantic.foreground, // List/Tree foreground color for items that are deemphasized.
     "list.dropBackground": semantic.accent, // List/Tree drag and drop background when moving items around using the mouse.
     "list.dropBetweenBackground": semantic.accent, // List/Tree drag and drop border color when moving items between items when using the mouse.
-    "list.filterMatchBackground": semantic.match, // Background color of the filtered matches in lists and trees.
+    "list.filterMatchBackground": semantic.accent, // Background color of the filtered matches in lists and trees.
     "list.filterMatchBorder": semantic.zero, // Border color of the filtered matches in lists and trees.
     "list.focusAndSelectionOutline": semantic.foreground, // List/Tree outline color for the focused item when the list/tree is active and selected. An active list/tree has keyboard focus, an inactive does not.
     "list.focusBackground": semantic.focus, // List/Tree background color for the focused item when the list/tree is active.
     "list.focusForeground": semantic.foreground, // List/Tree foreground color for the focused item when the list/tree is active. An active list/tree has keyboard focus, an inactive does not.
-    "list.focusHighlightForeground": semantic.focus, // List/Tree foreground color of the match highlights on actively focused items when searching inside the list/tree.
+    "list.focusHighlightForeground": semantic.accent, // List/Tree foreground color of the match highlights on actively focused items when searching inside the list/tree.
     "list.focusOutline": semantic.zero, // List/Tree outline color for the focused item when the list/tree is active. An active list/tree has keyboard focus, an inactive does not.
     "list.inactiveFocusBackground": semantic.background, // List background color for the focused item when the list is inactive. An active list has keyboard focus, an inactive does not. Currently only supported in lists.
     "list.inactiveFocusOutline": semantic.foreground, // List/Tree outline color for the focused item when the list/tree is inactive. An active list/tree has keyboard focus, an inactive does not.
@@ -38,4 +38,13 @@ export const listColors = {
     "input.border": semantic.zero,
     "input.foreground": semantic.foreground,
     "input.placeholderForeground": semantic.placeholder,
+    "editorSuggestWidget.background": semantic.background, // Background color of the suggestion widget.
+    "editorSuggestWidget.border": semantic.zero, // Border color of the suggestion widget.
+    "editorSuggestWidget.focusHighlightForeground": semantic.accent, // Color of the match highlights in the suggest widget when an item is focused.
+    "editorSuggestWidget.foreground": semantic.foreground, // Foreground color of the suggestion widget.
+    "editorSuggestWidget.highlightForeground": semantic.accent, // Color of the match highlights in the suggestion widget.
+    "editorSuggestWidget.selectedBackground": semantic.background, // Background color of the selected entry in the suggestion widget.
+    "editorSuggestWidget.selectedForeground": semantic.foreground, // Foreground color of the selected entry in the suggest widget.
+    "editorSuggestWidget.selectedIconForeground": semantic.foreground, // Icon foreground color of the selected entry in the suggest widget.
+    "editorSuggestWidgetStatus.foreground": semantic.foreground, // Foreground color of the suggest widget status.
 } satisfies ThemeColors;

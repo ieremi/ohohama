@@ -56,4 +56,6 @@ export const workbenchColors = {
     "dropdown.border": semantic.zero, // Dropdown border.
     "dropdown.foreground": semantic.accent, // Dropdown foreground.
     "dropdown.listBackground": semantic.background, // Dropdown list background.
+    "window.activeBorder": semantic.zero, // Border color for the active (focused) window.
+    "window.inactiveBorder": semantic.zero, // Border color for the inactive (unfocused) windows.
 } satisfies ThemeColors;
