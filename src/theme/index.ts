@@ -3,6 +3,7 @@
 import { activityBarColors } from "./activity-bar.js";
 import { aiColors } from "./ai.js";
 import { borderColors } from "./border.js";
+import { bracketColors } from "./bracket.js";
 import { breadcrumbColors } from "./breadcrumb.js";
 import { chartColors } from "./chart.js";
 import { commandCenterColors } from "./command-center.js";
@@ -32,6 +33,7 @@ export const colors = {
   ...activityBarColors,
   ...aiColors,
   ...borderColors,
+  ...bracketColors,
   ...breadcrumbColors,
   ...chartColors,
   ...commandCenterColors,
