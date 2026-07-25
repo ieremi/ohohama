@@ -55,13 +55,6 @@ export const workbenchColors = {
     "sash.hoverBorder": semantic.hover, // The hover border color for draggable sashes.
     "scrollbar.shadow": semantic.zero, // Scrollbar slider shadow to indicate that the view is scrolled.
     "scrollbarSlider.activeBackground": semantic.background, // Scrollbar slider background color when clicked on.
-    "statusBar.background": semantic.accent,
-    "statusBar.border": semantic.zero,
-    "statusBar.debuggingBackground": semantic.old,
-    "statusBar.debuggingBorder": semantic.zero,
-    "statusBar.focusBorder": semantic.zero,
-    "statusBar.noFolderBackground": semantic.disabled,
-    "statusBar.noFolderBorder": semantic.zero,
     "titleBar.activeBackground": semantic.background,
     "titleBar.activeForeground": semantic.active,
     "titleBar.border": semantic.zero,

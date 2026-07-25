@@ -2,8 +2,15 @@ import type { ThemeColors } from "../generated/theme-colors.js";
 import { semantic } from "../semantic.js";
 
 export const statusBarColors = {
+    "statusBar.background": semantic.accent,
+    "statusBar.border": semantic.zero,
+    "statusBar.debuggingBackground": semantic.old,
+    "statusBar.debuggingBorder": semantic.zero,
     "statusBar.debuggingForeground": semantic.foreground, // Status Bar foreground color when a program is being debugged.
+    "statusBar.focusBorder": semantic.zero,
     "statusBar.foreground": semantic.foreground, // Status Bar foreground color.
+    "statusBar.noFolderBackground": semantic.disabled,
+    "statusBar.noFolderBorder": semantic.zero,
     "statusBar.noFolderForeground": semantic.foreground, // Status Bar foreground color when no folder is opened.
     "statusBarItem.activeBackground": semantic.accent, // Status Bar item background color when clicking.
     "statusBarItem.compactHoverBackground": semantic.hover, // Status bar item background color when hovering an item that contains two hovers. The status bar is shown in the bottom of the window.
