@@ -5,14 +5,6 @@ import type { ThemeColors } from "../generated/theme-colors.js";
 
 export const editorColors = {
     "editor.background": semantic.background,
-    "editor.foreground": semantic.foreground,
-    "editorLineNumber.foreground": semantic.foreground,
-    "editor.lineHighlightBorder": semantic.zero,
-    "editor.lineHighlightBackground": semantic.focus,
-    "editorLineNumber.activeForeground": semantic.accent,
-    "editor.selectionForeground": semantic.accent,
-    "editor.selectionBackground": semantic.accent,
-    "editorStickyScroll.background": semantic.sticky,
     "editor.findMatchBackground": semantic.highlight,
     "editor.findMatchBorder": semantic.border,
     "editor.findMatchForeground": semantic.accent,
@@ -21,4 +13,14 @@ export const editorColors = {
     "editor.findMatchHighlightForeground": semantic.accent,
     "editor.findRangeHighlightBackground": semantic.highlight,
     "editor.findRangeHighlightBorder": semantic.border,
+    "editor.foreground": semantic.foreground,
+    "editor.lineHighlightBackground": semantic.focus,
+    "editor.lineHighlightBorder": semantic.zero,
+    "editor.selectionBackground": semantic.accent,
+    "editor.selectionForeground": semantic.accent,
+    "editorLineNumber.activeForeground": semantic.accent,
+    "editorLineNumber.foreground": semantic.foreground,
+    "editorStickyScroll.background": semantic.sticky,
+    "walkThrough.embeddedEditorBackground": semantic.background, // Background color for the embedded editors on the Interactive Playground.
+    "walkthrough.stepTitle.foreground": semantic.foreground, // Foreground color of the heading of each walkthrough step.
 } satisfies ThemeColors;

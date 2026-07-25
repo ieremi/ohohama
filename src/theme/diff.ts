@@ -20,4 +20,7 @@ export const diffColors = {
     "diffEditorGutter.removedLineBackground": semantic.deleted,
     "diffEditorOverview.insertedForeground": semantic.added,
     "diffEditorOverview.removedForeground": semantic.deleted,
+    "multiDiffEditor.background": semantic.background, // The background color of the multi file diff editor
+    "multiDiffEditor.border": semantic.zero, // The border color of the multi file diff editor
+    "multiDiffEditor.headerBackground": semantic.background, // The background color of the diff editor's header
 } satisfies ThemeColors;

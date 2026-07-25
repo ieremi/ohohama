@@ -10,22 +10,6 @@ export const debugColors = {
     "activityWarningBadge.foreground": semantic.foreground,
     "commentsView.resolvedIcon": semantic.info, // Icon color for resolved comments.
     "commentsView.unresolvedIcon": semantic.info, // Icon color for unresolved comments.
-    "debugIcon.breakpointForeground": semantic.breakpoint,
-    "editorError.background": semantic.background,
-    "editorError.border": semantic.zero,
-    "editorError.foreground": semantic.error,
-    "editorInfo.background": semantic.zero,
-    "editorInfo.border": semantic.zero,
-    "editorInfo.foreground": semantic.info,
-    "editorLightBulb.foreground": semantic.info,
-    "editorLightBulbAi.foreground": semantic.info,
-    "editorLightBulbAutoFix.foreground": semantic.info,
-    "editorWarning.background": semantic.background,
-    "editorWarning.border": semantic.zero,
-    "editorWarning.foreground": semantic.warning,
-    "errorForeground": semantic.error,
-    "list.errorForeground": semantic.error,
-    "list.warningForeground": semantic.warning,
     "debugConsole.errorForeground": semantic.error, // Foreground color for error messages in debug REPL console.
     "debugConsole.infoForeground": semantic.info, // Foreground color for info messages in debug REPL console.
     "debugConsole.sourceForeground": semantic.info, // Foreground color for source filenames in debug REPL console.
@@ -35,6 +19,7 @@ export const debugColors = {
     "debugExceptionWidget.border": semantic.zero, // Exception widget border color.
     "debugIcon.breakpointCurrentStackframeForeground": semantic.foreground, // Icon color for the current breakpoint stack frame.
     "debugIcon.breakpointDisabledForeground": semantic.disabled, // Icon color for disabled breakpoints.
+    "debugIcon.breakpointForeground": semantic.breakpoint,
     "debugIcon.breakpointStackframeForeground": semantic.foreground, // Icon color for all breakpoint stack frames.
     "debugIcon.breakpointUnverifiedForeground": semantic.foreground, // Icon color for unverified breakpoints.
     "debugIcon.continueForeground": semantic.foreground, // Debug toolbar icon for continue.
@@ -61,4 +46,22 @@ export const debugColors = {
     "debugView.stateLabelBackground": semantic.background, // Background color for a label in the CALL STACK view showing the current session's or thread's state.
     "debugView.stateLabelForeground": semantic.foreground, // Foreground color for a label in the CALL STACK view showing the current session's or thread's state.
     "debugView.valueChangedHighlight": semantic.modified, // Color used to highlight value changes in the debug views (such as in the Variables view).
+    "editorError.background": semantic.background,
+    "editorError.border": semantic.zero,
+    "editorError.foreground": semantic.error,
+    "editorInfo.background": semantic.zero,
+    "editorInfo.border": semantic.zero,
+    "editorInfo.foreground": semantic.info,
+    "editorLightBulb.foreground": semantic.info,
+    "editorLightBulbAi.foreground": semantic.info,
+    "editorLightBulbAutoFix.foreground": semantic.info,
+    "editorWarning.background": semantic.background,
+    "editorWarning.border": semantic.zero,
+    "editorWarning.foreground": semantic.warning,
+    "errorForeground": semantic.error,
+    "list.errorForeground": semantic.error,
+    "list.warningForeground": semantic.warning,
+    "problemsErrorIcon.foreground": semantic.foreground, // The color used for the problems error icon.
+    "problemsInfoIcon.foreground": semantic.foreground, // The color used for the problems info icon.
+    "problemsWarningIcon.foreground": semantic.foreground, // The color used for the problems warning icon.
 } satisfies ThemeColors;

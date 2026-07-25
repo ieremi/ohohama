@@ -4,11 +4,6 @@ import { semantic } from "../semantic.js";
 import type { ThemeColors } from "../generated/theme-colors.js";
 
 export const workbenchColors = {
-    "sash.hoverBorder": semantic.hover, // The hover border color for draggable sashes.
-    "scrollbar.shadow": semantic.zero, // Scrollbar slider shadow to indicate that the view is scrolled.
-    "scrollbarSlider.activeBackground": semantic.background, // Scrollbar slider background color when clicked on.
-    "menu.border": semantic.zero, // Border color of menus.
-    "menu.selectionBorder": semantic.zero, // Border color of the selected menu item in menus.
     "actionBar.toggledBackground": semantic.background, // Background color for toggled action items in action bar.
     "button.background": semantic.accent,
     "button.border": semantic.zero,
@@ -41,15 +36,25 @@ export const workbenchColors = {
     "extensionIcon.sponsorForeground": semantic.info,
     "extensionIcon.starForeground": semantic.info,
     "extensionIcon.verifiedForeground": semantic.info,
+    "foreground": semantic.foreground, // Overall foreground color. This color is only used if not overridden by a component.
     "icon.foreground": semantic.foreground,
     "menu.background": semantic.background,
+    "menu.border": semantic.zero, // Border color of menus.
     "menu.foreground": semantic.inactive,
     "menu.selectionBackground": semantic.focus,
+    "menu.selectionBorder": semantic.zero, // Border color of the selected menu item in menus.
     "menu.selectionForeground": semantic.active,
     "menu.separatorBackground": semantic.border,
     "menubar.selectionBackground": semantic.focus,
     "menubar.selectionBorder": semantic.border,
     "menubar.selectionForeground": semantic.foreground,
+    "profileBadge.background": semantic.info, // Profile badge background color. The profile badge shows on top of the settings gear icon in the activity bar.
+    "profileBadge.foreground": semantic.foreground, // Profile badge foreground color. The profile badge shows on top of the settings gear icon in the activity bar.
+    "profiles.sashBorder": semantic.zero, // The color of the Profiles editor splitview sash border.
+    "progressBar.background": semantic.inactive, // Background color of the progress bar shown for long running operations.
+    "sash.hoverBorder": semantic.hover, // The hover border color for draggable sashes.
+    "scrollbar.shadow": semantic.zero, // Scrollbar slider shadow to indicate that the view is scrolled.
+    "scrollbarSlider.activeBackground": semantic.background, // Scrollbar slider background color when clicked on.
     "statusBar.background": semantic.accent,
     "statusBar.border": semantic.zero,
     "statusBar.debuggingBackground": semantic.old,

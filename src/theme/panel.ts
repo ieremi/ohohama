@@ -2,6 +2,8 @@ import type { ThemeColors } from "../generated/theme-colors.js";
 import { semantic } from "../semantic.js";
 
 export const panelColors = {
+   "outputView.background": semantic.background, // Output view background color.
+   "outputViewStickyScroll.background": semantic.sticky, // Output view sticky scroll background color.
    "panel.background": semantic.background, // Panel background color.
    "panel.border": semantic.zero, // Panel border color to separate the panel from the editor.
    "panel.dropBorder": semantic.zero, // Drag and drop feedback color for the panel titles. Panels are shown below the editor area and contain views like output and integrated terminal.
