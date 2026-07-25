@@ -52,4 +52,8 @@ export const workbenchColors = {
     "extensionIcon.sponsorForeground": semantic.info,
     "extensionIcon.starForeground": semantic.info,
     "extensionIcon.verifiedForeground": semantic.info,
+    "dropdown.background": semantic.accent, // Dropdown background.
+    "dropdown.border": semantic.zero, // Dropdown border.
+    "dropdown.foreground": semantic.accent, // Dropdown foreground.
+    "dropdown.listBackground": semantic.background, // Dropdown list background.
 } satisfies ThemeColors;

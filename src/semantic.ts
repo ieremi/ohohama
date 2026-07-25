@@ -13,7 +13,7 @@ export const semantic = {
     border: palette.dark[15],
     deleted: alpha(palette.gray[7]!, 0.5),
     disabled: palette.gray[5],
-    drop: palette.primary.background,
+    drop: palette.primary.accent,
     error: palette.blue[5],
     focus: alpha(palette.gray[19], 0.1),
     foreground: palette.gray[18],

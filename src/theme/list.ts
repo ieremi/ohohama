@@ -14,8 +14,8 @@ export const listColors = {
     "list.inactiveSelectionForeground": semantic.inactive,
     "list.activeSelectionIconForeground": semantic.active, // List/Tree icon foreground color for the selected item when the list/tree is active. An active list/tree has keyboard focus, an inactive does not.
     "list.deemphasizedForeground": semantic.foreground, // List/Tree foreground color for items that are deemphasized.
-    "list.dropBackground": semantic.background, // List/Tree drag and drop background when moving items around using the mouse.
-    "list.dropBetweenBackground": semantic.background, // List/Tree drag and drop border color when moving items between items when using the mouse.
+    "list.dropBackground": semantic.accent, // List/Tree drag and drop background when moving items around using the mouse.
+    "list.dropBetweenBackground": semantic.accent, // List/Tree drag and drop border color when moving items between items when using the mouse.
     "list.filterMatchBackground": semantic.match, // Background color of the filtered matches in lists and trees.
     "list.filterMatchBorder": semantic.zero, // Border color of the filtered matches in lists and trees.
     "list.focusAndSelectionOutline": semantic.foreground, // List/Tree outline color for the focused item when the list/tree is active and selected. An active list/tree has keyboard focus, an inactive does not.
