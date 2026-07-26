@@ -28,5 +28,4 @@ export const gitColors = {
     "scmGraph.historyItemHoverLabelForeground": semantic.foreground,
     "scmGraph.historyItemRefColor": semantic.local,
     "scmGraph.historyItemRemoteRefColor": semantic.remote,
-    "editorHoverWidget.background": semantic.widget,
 } satisfies ThemeColors;

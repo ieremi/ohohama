@@ -32,6 +32,7 @@ import { textColors } from "./text.js";
 import { tokenColors } from "./token-colors.js";
 import { uiColors } from "./ui.js";
 import { welcomePageColors } from "./welcome-page.js";
+import { widgetColors } from "./widget.js";
 import { workbenchColors } from "./workbench.js";
 
 export const colors = {
@@ -66,6 +67,7 @@ export const colors = {
   ...textColors,
   ...uiColors,
   ...welcomePageColors,
+  ...widgetColors,
   ...workbenchColors,
 } as const;
 
