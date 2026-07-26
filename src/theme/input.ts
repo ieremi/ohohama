@@ -6,7 +6,7 @@ export const inputColors = {
     "inputOption.activeBorder": semantic.zero, // Border color of activated options in input fields.
     "inputOption.activeForeground": semantic.active, // Foreground color of activated options in input fields.
     "inputOption.hoverBackground": semantic.background, // Background color of activated options in input fields.
-    "inputValidation.errorBackground": semantic.error // Input validation background color for error severity.
+    "inputValidation.errorBackground": semantic.error, // Input validation background color for error severity.
     "inputValidation.errorBorder": semantic.zero, // Input validation border color for error severity.
     "inputValidation.errorForeground": semantic.foreground, // Input validation foreground color for error severity.
     "inputValidation.infoBackground": semantic.info, // Input validation background color for information severity.
