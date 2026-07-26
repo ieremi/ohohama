@@ -8,6 +8,7 @@ import { breadcrumbColors } from "./breadcrumb.js";
 import { chartColors } from "./chart.js";
 import { commandCenterColors } from "./command-center.js";
 import { copilotColors } from "./copilot.js";
+import { cursorColors } from "./cursor.js";
 import { debugColors } from "./debug.js";
 import { diffColors } from "./diff.js";
 import { editorColors } from "./editor.js";
@@ -44,6 +45,7 @@ export const colors = {
   ...chartColors,
   ...commandCenterColors,
   ...copilotColors,
+  ...cursorColors,
   ...debugColors,
   ...diffColors,
   ...editorColors,

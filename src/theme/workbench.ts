@@ -2,6 +2,7 @@
 
 import { semantic } from "../semantic.js";
 import type { ThemeColors } from "../generated/theme-colors.js";
+import { access } from "node:fs";
 
 export const workbenchColors = {
     "actionBar.toggledBackground": semantic.background, // Background color for toggled action items in action bar.
@@ -65,4 +66,5 @@ export const workbenchColors = {
     "toolbar.hoverOutline": semantic.zero,
     "window.activeBorder": semantic.zero, // Border color for the active (focused) window.
     "window.inactiveBorder": semantic.zero, // Border color for the inactive (unfocused) windows.
+    "selection.background": semantic.accent, // Background color of text selections in the workbench (for input fields or text areas, does not apply to selections within the editor and the terminal).
 } satisfies ThemeColors;
