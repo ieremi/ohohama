@@ -25,6 +25,7 @@ import { notebookColors } from "./notebook.js";
 import { notificationColors } from "./workbench.js";
 import { panelColors } from "./panel.js";
 import { peekViewColors } from "./peek-view.js";
+import { searchColors } from "./workbench.js";
 import { settingsColors } from "./settings.js";
 import { sideBarColors } from "./side-bar.js";
 import { statusBarColors } from "./status-bar.js";
@@ -65,6 +66,7 @@ export const colors = {
   ...notificationColors,
   ...panelColors,
   ...peekViewColors,
+  ...searchColors,
   ...settingsColors,
   ...sideBarColors,
   ...statusBarColors,
