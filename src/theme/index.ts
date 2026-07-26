@@ -17,6 +17,7 @@ import { editorGroupColors } from "./editorGroup.js";
 import { gitColors } from "./git.js";
 import { hintColors } from "./hint.js";
 import { indentColors } from "./indent.js";
+import { inputColors } from "./actionList.js";
 import { listColors } from "./list.js";
 import { mapColors } from "./map.js";
 import { mergeColors } from "./merge.js";
@@ -55,6 +56,7 @@ export const colors = {
   ...gitColors,
   ...hintColors,
   ...indentColors,
+  ...inputColors
   ...listColors,
   ...mapColors,
   ...mergeColors,
