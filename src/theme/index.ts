@@ -28,6 +28,7 @@ import { symbolIconColors } from "./symbol-icon.js";
 import { tabColors } from "./tab.js";
 import { terminalColors } from "./terminal.js";
 import { testingColors } from "./testing.js";
+import { textColors } from "./text.js";
 import { tokenColors } from "./token-colors.js";
 import { uiColors } from "./ui.js";
 import { welcomePageColors } from "./welcome-page.js";
@@ -62,6 +63,7 @@ export const colors = {
   ...tabColors,
   ...terminalColors,
   ...testingColors,
+  ...textColors,
   ...uiColors,
   ...welcomePageColors,
   ...workbenchColors,
