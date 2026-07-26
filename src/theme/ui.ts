@@ -14,6 +14,8 @@ export const uiColors = {
     "checkbox.foreground": semantic.foreground, // Foreground color of checkbox widget.
     "checkbox.selectBackground": semantic.highlight, // Background color of checkbox widget when the element it's in is selected.
     "checkbox.selectBorder": semantic.border, // Border color of checkbox widget when the element it's in is selected.
+    "pickerGroup.border": semantic.zero, // Quick picker (Quick Open) color for grouping borders.
+    "pickerGroup.foreground": semantic.foreground, // Quick picker (Quick Open) color for grouping labels.
     "radio.activeBackground": semantic.background, // Background color of active radio option.
     "radio.activeBorder": semantic.border, // Border color of the active radio option.
     "radio.activeForeground": semantic.active, // Foreground color of active radio option.
