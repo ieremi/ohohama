@@ -69,4 +69,6 @@ export const workbenchColors = {
     "toolbar.hoverOutline": semantic.zero,
     "window.activeBorder": semantic.zero, // Border color for the active (focused) window.
     "window.inactiveBorder": semantic.zero, // Border color for the inactive (unfocused) windows.
+    "keybindingTable.headerBackground": semantic.background, // Background color for the keyboard shortcuts table header.
+    "keybindingTable.rowsBackground": semantic.background, // Background color for the keyboard shortcuts table alternating rows.
 } satisfies ThemeColors;
