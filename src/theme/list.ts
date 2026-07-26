@@ -44,7 +44,7 @@ export const listColors = {
     "editorSuggestWidget.focusHighlightForeground": semantic.accent, // Color of the match highlights in the suggest widget when an item is focused.
     "editorSuggestWidget.foreground": semantic.foreground, // Foreground color of the suggestion widget.
     "editorSuggestWidget.highlightForeground": semantic.accent, // Color of the match highlights in the suggestion widget.
-    "editorSuggestWidget.selectedBackground": semantic.background, // Background color of the selected entry in the suggestion widget.
+    "editorSuggestWidget.selectedBackground": semantic.focus, // Background color of the selected entry in the suggestion widget.
     "editorSuggestWidget.selectedForeground": semantic.foreground, // Foreground color of the selected entry in the suggest widget.
     "editorSuggestWidget.selectedIconForeground": semantic.foreground, // Icon foreground color of the selected entry in the suggest widget.
     "editorSuggestWidgetStatus.foreground": semantic.foreground, // Foreground color of the suggest widget status.
