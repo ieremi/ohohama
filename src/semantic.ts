@@ -24,7 +24,7 @@ export const semantic = {
     input: alpha(palette.gray[8], 0.4),
     link: palette.blue[17],
     local: palette.city.t,
-    match: alpha(palette.blue[5], 0.3),
+    match: alpha(palette.light[15], 0.6),
     modified: alpha(palette.light[16], 0.8),
     new: palette.city.t,
     old: palette.city.k,
