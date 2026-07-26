@@ -22,6 +22,7 @@ import { listColors } from "./list.js";
 import { mapColors } from "./map.js";
 import { mergeColors } from "./merge.js";
 import { notebookColors } from "./notebook.js";
+import { notificationColors } from "./workbench.js";
 import { panelColors } from "./panel.js";
 import { peekViewColors } from "./peek-view.js";
 import { settingsColors } from "./settings.js";
@@ -61,6 +62,7 @@ export const colors = {
   ...mapColors,
   ...mergeColors,
   ...notebookColors,
+  ...notificationColors,
   ...panelColors,
   ...peekViewColors,
   ...settingsColors,
