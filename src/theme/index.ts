@@ -12,6 +12,7 @@ import { debugColors } from "./debug.js";
 import { diffColors } from "./diff.js";
 import { editorColors } from "./editor.js";
 import { gitColors } from "./git.js";
+import { hintColors } from "./hint.js";
 import { indentColors } from "./indent.js";
 import { listColors } from "./list.js";
 import { mapColors } from "./map.js";
@@ -44,6 +45,7 @@ export const colors = {
   ...diffColors,
   ...editorColors,
   ...gitColors,
+  ...hintColors,
   ...indentColors,
   ...listColors,
   ...mapColors,
