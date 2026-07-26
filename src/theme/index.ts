@@ -11,6 +11,7 @@ import { copilotColors } from "./copilot.js";
 import { debugColors } from "./debug.js";
 import { diffColors } from "./diff.js";
 import { editorColors } from "./editor.js";
+import { editorGroupColors } from "./editorGroup.js";
 import { gitColors } from "./git.js";
 import { hintColors } from "./hint.js";
 import { indentColors } from "./indent.js";
@@ -44,6 +45,7 @@ export const colors = {
   ...debugColors,
   ...diffColors,
   ...editorColors,
+  ...editorGroupColors,
   ...gitColors,
   ...hintColors,
   ...indentColors,
