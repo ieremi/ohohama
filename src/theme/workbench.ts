@@ -39,6 +39,7 @@ export const workbenchColors = {
     "extensionIcon.verifiedForeground": semantic.info,
     "foreground": semantic.foreground, // Overall foreground color. This color is only used if not overridden by a component.
     "icon.foreground": semantic.foreground,
+    "mcpIcon.starForeground": semantic.foreground, // The icon color for mcp starred.
     "menu.background": semantic.background,
     "menu.border": semantic.zero, // Border color of menus.
     "menu.foreground": semantic.inactive,
@@ -49,6 +50,7 @@ export const workbenchColors = {
     "menubar.selectionBackground": semantic.focus,
     "menubar.selectionBorder": semantic.border,
     "menubar.selectionForeground": semantic.foreground,
+    "ports.iconRunningProcessForeground": semantic.foreground, // The color of the icon for a port that has an associated running process.
     "profileBadge.background": semantic.info, // Profile badge background color. The profile badge shows on top of the settings gear icon in the activity bar.
     "profileBadge.foreground": semantic.foreground, // Profile badge foreground color. The profile badge shows on top of the settings gear icon in the activity bar.
     "profiles.sashBorder": semantic.zero, // The color of the Profiles editor splitview sash border.
@@ -56,6 +58,7 @@ export const workbenchColors = {
     "sash.hoverBorder": semantic.hover, // The hover border color for draggable sashes.
     "scrollbar.shadow": semantic.zero, // Scrollbar slider shadow to indicate that the view is scrolled.
     "scrollbarSlider.activeBackground": semantic.background, // Scrollbar slider background color when clicked on.
+    "selection.background": semantic.accent, // Background color of text selections in the workbench (for input fields or text areas, does not apply to selections within the editor and the terminal).
     "titleBar.activeBackground": semantic.background,
     "titleBar.activeForeground": semantic.active,
     "titleBar.border": semantic.zero,
@@ -66,5 +69,4 @@ export const workbenchColors = {
     "toolbar.hoverOutline": semantic.zero,
     "window.activeBorder": semantic.zero, // Border color for the active (focused) window.
     "window.inactiveBorder": semantic.zero, // Border color for the inactive (unfocused) windows.
-    "selection.background": semantic.accent, // Background color of text selections in the workbench (for input fields or text areas, does not apply to selections within the editor and the terminal).
 } satisfies ThemeColors;
