@@ -1,5 +1,6 @@
 // src/theme/index.ts
 
+import { actionListColors } from "./actionList.js";
 import { activityBarColors } from "./activity-bar.js";
 import { aiColors } from "./ai.js";
 import { borderColors } from "./border.js";
@@ -37,6 +38,7 @@ import { widgetColors } from "./widget.js";
 import { workbenchColors } from "./workbench.js";
 
 export const colors = {
+  ...actionListColors,
   ...activityBarColors,
   ...aiColors,
   ...borderColors,
