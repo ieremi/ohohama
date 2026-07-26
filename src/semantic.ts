@@ -35,7 +35,7 @@ export const semantic = {
     sticky: alpha(palette.gray[10], 0.8),
     success: palette.blue[13],
     symbolIcon: palette.gray[16],
-    warning: palette.blue[8],
+    warning: palette.blue[17],
     widget: palette.blue[4],
     terminal: {
         background: palette.gray[2],
