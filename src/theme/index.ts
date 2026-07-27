@@ -15,12 +15,13 @@ import { diffColors } from "./diff.js";
 import { editorColors } from "./editor.js";
 import { editorGroupColors } from "./editorGroup.js";
 import { gitColors } from "./git.js";
-import { hintColors } from "./hint.js";
 import { highlightColors } from "./highlight.js";
+import { hintColors } from "./hint.js";
 import { indentColors } from "./indent.js";
 import { inputColors } from "./input.js";
 import { listColors } from "./list.js";
 import { mapColors } from "./map.js";
+import { markerColors } from "./marker.js";
 import { mergeColors } from "./merge.js";
 import { notebookColors } from "./notebook.js";
 import { notificationColors } from "./notification.js";
@@ -57,12 +58,13 @@ export const colors = {
   ...editorColors,
   ...editorGroupColors,
   ...gitColors,
-  ...hintColors,
   ...highlightColors,
+  ...hintColors,
   ...indentColors,
   ...inputColors,
   ...listColors,
   ...mapColors,
+  ...markerColors,
   ...mergeColors,
   ...notebookColors,
   ...notificationColors,

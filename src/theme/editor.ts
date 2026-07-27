@@ -26,7 +26,7 @@ export const editorColors = {
     "editorRuler.foreground": semantic.foreground, // Color of the editor rulers.
     "editorStickyScroll.background": semantic.sticky,
     "editorUnnecessaryCode.border": semantic.zero, // Border color of unnecessary (unused) source code in the editor.
-    "editorUnnecessaryCode.opacity": semantic.zero, // Opacity of unnecessary (unused) source code in the editor. For example, `"#000000c0"` will render the code with 75% opacity. For high contrast themes, use the `"editorUnnecessaryCode.border"` theme color to underline unnecessary code instead of fading it out.
+    "editorUnnecessaryCode.opacity": semantic.foreground, // Opacity of unnecessary (unused) source code in the editor. For example, `"#000000c0"` will render the code with 75% opacity. For high contrast themes, use the `"editorUnnecessaryCode.border"` theme color to underline unnecessary code instead of fading it out.
     "editorWhitespace.foreground": semantic.foreground, // Color of whitespace characters in the editor.
     "sideBySideEditor.horizontalBorder": semantic.zero, // Color to separate two editors from each other when shown side by side in an editor group from top to bottom.
     "sideBySideEditor.verticalBorder": semantic.zero, // Color to separate two editors from each other when shown side by side in an editor group from left to right.
