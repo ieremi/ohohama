@@ -36,4 +36,23 @@ export const editorColors = {
     "editor.foldPlaceholderForeground": semantic.foreground, // Color of the collapsed text after the first line of a folded range.
     "interactive.activeCodeBorder": semantic.zero, // The border color for the current interactive code cell when the editor has focus.
     "interactive.inactiveCodeBorder": semantic.zero, // The border color for the current interactive code cell when the editor does not have focus.
+    "editor.compositionBorder": semantic.zero, // The border color for an IME composition.
+    "editor.inactiveSelectionBackground": semantic.accent, // Color of the selection in an inactive editor. The color must not be opaque so as not to hide underlying decorations.
+    "editor.inlineValuesBackground": semantic.background, // Color for the debug inline value background.
+    "editor.inlineValuesForeground": semantic.background, // Color for the debug inline value text.
+    "editor.linkedEditingBackground": semantic.background, // Background color when the editor is in linked editing mode.
+    "editor.placeholder.foreground": semantic.inactive, // Foreground color of the placeholder text in the editor.
+    "editorCodeLens.foreground": semantic.foreground, // Foreground color of an editor CodeLens.
+    "editorGhostText.background": semantic.background, // Background color of the ghost text in the editor.
+    "editorGhostText.border": semantic.zero, // Border color of the ghost text shown by inline completion providers and the suggest preview.
+    "editorGhostText.foreground": semantic.inactive, // Foreground color of the ghost text shown by inline completion providers and the suggest preview.
+    "editorStickyScroll.border": semantic.zero, // Border color of sticky scroll in the editor.
+    "editorStickyScroll.shadow": semantic.zero, // Shadow color of sticky scroll in the editor.
+    "editorStickyScrollGutter.background": semantic.background, // Background color of the gutter part of sticky scroll in the editor.
+    "editorStickyScrollHover.background": semantic.background, // Editor sticky scroll on hover background color.
+    "markdownAlert.caution.foreground": semantic.info, // Foreground color for caution alerts in markdown.
+    "markdownAlert.important.foreground": semantic.info, // Foreground color for important alerts in markdown.
+    "markdownAlert.note.foreground": semantic.info, // Foreground color for note alerts in markdown.
+    "markdownAlert.tip.foreground": semantic.info, // Foreground color for tip alerts in markdown.
+    "markdownAlert.warning.foreground": semantic.warning, // Foreground color for warning alerts in markdown.
 } satisfies ThemeColors;
