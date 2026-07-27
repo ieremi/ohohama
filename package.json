@@ -14,7 +14,7 @@
     "typecheck": "tsc --noEmit",
     "check": "tsx src/check.ts",
     "coverage": "tsx src/coverage.ts",
-    "missing": "tsx src/missing.ts"
+    "missing": "tsx scripts/missing.ts"
   },
   "repository": {
     "type": "git",
