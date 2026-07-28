@@ -12,8 +12,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "typecheck": "tsc --noEmit",
-    "check": "tsx src/check.ts",
-    "coverage": "tsx src/coverage.ts",
+    "check": "tsx scripts/check.ts",
+    "coverage": "tsx scripts/coverage.ts",
     "missing": "tsx scripts/missing.ts"
   },
   "repository": {
