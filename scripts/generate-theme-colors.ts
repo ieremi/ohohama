@@ -1,5 +1,3 @@
-// scripts/generate-theme-colors.ts
-
 import { mkdir, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 

@@ -1,5 +1,3 @@
-// src/color.ts
-
 export type HexColor = `#${string}`;
 
 /**

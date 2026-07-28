@@ -1,5 +1,3 @@
-// semantic.ts
-
 import { palette } from "./palette.js";
 import { alpha } from "./color.js"
 

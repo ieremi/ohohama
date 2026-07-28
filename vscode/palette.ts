@@ -1,5 +1,3 @@
-// src/palette.ts
-
 import {
     hexFromArgb,
     TonalPalette,
