@@ -1,6 +1,5 @@
 // src/theme/debug.ts
 
-import { backup } from "node:sqlite";
 import type { ThemeColors } from "../generated/theme-colors.js";
 import { semantic } from "../semantic.js";
 
