@@ -1,5 +1,3 @@
-// src/theme/token-colors.ts
-
 import { semantic } from "../semantic.js";
 
 export const tokenColors = [
@@ -14,7 +12,6 @@ export const tokenColors = [
       fontStyle: "italic",
     },
   },
-
   {
     name: "Strings",
     scope: [
@@ -26,7 +23,6 @@ export const tokenColors = [
       foreground: semantic.syntax.string,
     },
   },
-
   {
     name: "Numbers",
     scope: [
@@ -36,7 +32,6 @@ export const tokenColors = [
       foreground: semantic.syntax.number,
     },
   },
-
   {
     name: "Keywords",
     scope: [
@@ -48,7 +43,6 @@ export const tokenColors = [
       foreground: semantic.syntax.keyword,
     },
   },
-
   {
     name: "Functions",
     scope: [
@@ -59,7 +53,6 @@ export const tokenColors = [
       foreground: semantic.syntax.function,
     },
   },
-
   {
     name: "Types",
     scope: [
@@ -71,7 +64,6 @@ export const tokenColors = [
       foreground: semantic.syntax.type,
     },
   },
-
   {
     name: "Variables",
     scope: [
