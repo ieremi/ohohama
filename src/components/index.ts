@@ -1,6 +1,6 @@
 // src/theme/index.ts
 
-import { actionListColors } from "./actionList.js";
+import { actionListColors } from "./action-list.js";
 import { activityBarColors } from "./activity-bar.js";
 import { aiColors } from "./ai.js";
 import { borderColors } from "./border.js";
@@ -13,7 +13,7 @@ import { cursorColors } from "./cursor.js";
 import { debugColors } from "./debug.js";
 import { diffColors } from "./diff.js";
 import { editorColors } from "./editor.js";
-import { editorGroupColors } from "./editorGroup.js";
+import { editorGroupColors } from "./editor-group.js";
 import { gitColors } from "./git.js";
 import { highlightColors } from "./highlight.js";
 import { hintColors } from "./hint.js";
