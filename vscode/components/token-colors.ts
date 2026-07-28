@@ -74,4 +74,98 @@ export const tokenColors = [
       foreground: semantic.syntax.variable,
     },
   },
+  {
+    name: "Constants",
+    scope: [
+      "constant",
+      "constant.language",
+    ],
+    settings: {
+      foreground: semantic.syntax.constant,
+    },
+  },
+  {
+    name: "Parameters",
+    scope: [
+      "variable.parameter",
+    ],
+    settings: {
+      foreground: semantic.syntax.parameter,
+    },
+  },
+  {
+    name: "Properties",
+    scope: [
+      "variable.other.property",
+      "meta.property-name",
+    ],
+    settings: {
+      foreground: semantic.syntax.property,
+    },
+  },
+  {
+    name: "Enum Members",
+    scope: [
+      "variable.other.enummember",
+    ],
+    settings: {
+      foreground: semantic.syntax.enumMember,
+    },
+  },
+  {
+    name: "Decorators",
+    scope: [
+      "meta.decorator",
+      "entity.name.decorator",
+    ],
+    settings: {
+      foreground: semantic.syntax.decorator,
+    },
+  },
+  {
+    name: "Tags",
+    scope: [
+      "entity.name.tag",
+    ],
+    settings: {
+      foreground: semantic.syntax.tag,
+    },
+  },
+  {
+    name: "Attributes",
+    scope: [
+      "entity.other.attribute-name",
+    ],
+    settings: {
+      foreground: semantic.syntax.attribute,
+    },
+  },
+  {
+    name: "Regex",
+    scope: [
+      "string.regexp",
+    ],
+    settings: {
+      foreground: semantic.syntax.regexp,
+    },
+  },
+  {
+    name: "Escape",
+    scope: [
+      "constant.character.escape",
+    ],
+    settings: {
+      foreground: semantic.syntax.escape,
+    },
+  },
+  {
+    name: "Invalid",
+    scope: [
+      "invalid",
+      "invalid.illegal",
+    ],
+    settings: {
+      foreground: semantic.syntax.invalid,
+    },
+  },
 ] as const;

@@ -30,7 +30,7 @@ export const semantic = {
     remote: palette.city.k,
     shadow: alpha(palette.gray[4], 0.3),
     slider: alpha(palette.light[14], 0.3),
-    sticky: alpha(palette.gray[10], 0.8),
+    sticky: alpha(palette.gray[18], 0.9),
     success: palette.blue[13],
     symbolIcon: palette.gray[16],
     warning: palette.blue[17],

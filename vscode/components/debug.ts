@@ -60,7 +60,7 @@ export const debugColors = {
     "editorWarning.foreground": semantic.warning,
     "errorForeground": semantic.error,
     "list.errorForeground": semantic.error,
-    "list.warningForeground": semantic.warning,
+    "list.warningForeground": semantic.foreground,
     "problemsErrorIcon.foreground": semantic.foreground, // The color used for the problems error icon.
     "problemsInfoIcon.foreground": semantic.foreground, // The color used for the problems info icon.
     "problemsWarningIcon.foreground": semantic.foreground, // The color used for the problems warning icon.
