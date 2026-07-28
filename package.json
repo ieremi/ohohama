@@ -6,9 +6,9 @@
   "publisher": "ieremius",
   "type": "module",
   "scripts": {
-    "watch": "tsx watch src/build.ts",
+    "watch": "tsx watch scripts/build.ts",
     "generate:theme-colors": "tsx scripts/generate-theme-colors.ts",
-    "build": "npm run generate:theme-colors && tsx src/build.ts",
+    "build": "npm run generate:theme-colors && tsx scripts/build.ts",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "typecheck": "tsc --noEmit",

@@ -16,6 +16,7 @@
     "src/**/*.ts",
     "scripts/missing.ts",
     "scripts/check.ts",
-    "scripts/coverage.ts"
+    "scripts/coverage.ts",
+    "scripts/build.ts"
   ]
 }
