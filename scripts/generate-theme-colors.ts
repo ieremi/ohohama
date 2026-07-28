@@ -8,7 +8,7 @@ const SOURCE_URL =
 
 const OUTPUT_PATH = resolve(
   process.cwd(),
-  "src/generated/theme-colors.ts",
+  "vscode/generated/theme-colors.ts",
 );
 
 type ThemeColor = {

@@ -13,7 +13,7 @@
     "skipLibCheck": true
   },
   "include": [
-    "src/**/*.ts",
+    "vscode/**/*.ts",
     "scripts/missing.ts",
     "scripts/check.ts",
     "scripts/coverage.ts",
