@@ -1,5 +1,5 @@
 import { themeColors } from "../src/generated/theme-colors.js";
-import { colors } from "../src/theme/index.js";
+import { colors } from "../src/components/index.js";
 
 const themeColorKeys = themeColors.map(i => i.key);
 const assigned = new Set(Object.keys(colors));
