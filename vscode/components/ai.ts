@@ -20,5 +20,5 @@ export const aiColors = {
     "chat.slashCommandBackground": semantic.background, // The background color of a chat slash command.
     "chat.slashCommandForeground": semantic.foreground, // The foreground color of a chat slash command.
     "chat.thinkingShimmer": semantic.highlight, // Shimmer highlight for thinking/working labels.
-    satisfies ThemeColors;
+} satisfies ThemeColors;
 
