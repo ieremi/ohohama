@@ -17,6 +17,11 @@
                 "--install-extension",
                 "${workspaceFolder}/ohohama-0.0.1.vsix"
             ]
+        },
+        {
+            "label": "Clean VSIX",
+            "type": "shell",
+            "command": "rm ./*.vsix"
         }
     ]
 }
