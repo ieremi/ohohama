@@ -19,13 +19,13 @@ export const workbenchColors = {
     "disabledForeground": semantic.disabled, // Overall foreground for disabled elements. This color is only used if not overridden by a component.
     "dropdown.background": semantic.accent, // Dropdown background.
     "dropdown.border": semantic.zero, // Dropdown border.
-    "dropdown.foreground": semantic.accent, // Dropdown foreground.
+    "dropdown.foreground": semantic.foreground, // Dropdown foreground.
     "dropdown.listBackground": semantic.background, // Dropdown list background.
     "extensionBadge.remoteBackground": semantic.background,
     "extensionBadge.remoteForeground": semantic.info,
     "extensionButton.background": semantic.background,
     "extensionButton.border": semantic.zero,
-    "extensionButton.foreground": semantic.info,
+    "extensionButton.foreground": semantic.foreground,
     "extensionButton.hoverBackground": semantic.background,
     "extensionButton.prominentBackground": semantic.background,
     "extensionButton.prominentForeground": semantic.info,

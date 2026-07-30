@@ -31,7 +31,7 @@ export const debugColors = {
     "debugIcon.stepIntoForeground": semantic.foreground, // Debug toolbar icon for step into.
     "debugIcon.stepOutForeground": semantic.foreground, // Debug toolbar icon for step over.
     "debugIcon.stepOverForeground": semantic.foreground, // Debug toolbar icon for step over.
-    "debugIcon.stopForeground": semantic.foreground, // Debug toolbar icon for stop.
+    "debugIcon.stopForeground": semantic.accent, // Debug toolbar icon for stop.
     "debugTokenExpression.boolean": semantic.foreground, // Foreground color for booleans in debug views.
     "debugTokenExpression.error": semantic.error, // Foreground color for expression errors in debug views.
     "debugTokenExpression.name": semantic.foreground, // Foreground color for the token names shown in debug views (such as in the Variables or Watch view).

@@ -6,15 +6,15 @@
   "publisher": "ieremius",
   "type": "module",
   "scripts": {
-    "watch": "tsx watch scripts/build.ts",
-    "generate:theme-colors": "tsx scripts/generate-theme-colors.ts",
     "build": "npm run generate:theme-colors && tsx scripts/build.ts",
+    "check-palette": "tsx scripts/check.ts",
+    "coverage": "tsx scripts/coverage.ts",
+    "generate:theme-colors": "tsx scripts/generate-theme-colors.ts",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "missing": "tsx scripts/missing.ts",
     "typecheck": "tsc --noEmit",
-    "check": "tsx scripts/check.ts",
-    "coverage": "tsx scripts/coverage.ts",
-    "missing": "tsx scripts/missing.ts"
+    "watch": "tsx watch scripts/build.ts"
   },
   "repository": {
     "type": "git",
