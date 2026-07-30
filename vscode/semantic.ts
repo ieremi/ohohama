@@ -12,7 +12,7 @@ export const semantic = {
     deleted: alpha(palette.gray[7]!, 0.5),
     disabled: palette.gray[5],
     drop: palette.primary.accent,
-    error: palette.blue[12],
+    error: palette.blue[15],
     focus: alpha(palette.gray[19], 0.1),
     foreground: palette.gray[18],
     highlight: palette.gray[5],
@@ -33,6 +33,7 @@ export const semantic = {
     sticky: alpha(palette.gray[18], 0.9),
     success: palette.blue[13],
     symbolIcon: palette.gray[16],
+    untracked: palette.gray[19],
     warning: palette.blue[17],
     widget: palette.blue[4],
     terminal: {

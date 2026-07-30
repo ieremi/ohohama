@@ -15,7 +15,7 @@
   "include": [
     "vscode/**/*.ts",
     "scripts/missing.ts",
-    "scripts/check.ts",
+    "scripts/check-palette.ts",
     "scripts/coverage.ts",
     "scripts/build.ts"
   ]
