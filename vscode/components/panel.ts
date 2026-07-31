@@ -16,7 +16,7 @@ export const panelColors = {
    "panelStickyScroll.background": semantic.zero,
    "panelStickyScroll.border": semantic.accent,
    "panelStickyScroll.shadow": semantic.zero,
-   "panelTitle.activeBorder": semantic.active, // Border color for the active panel title.
+   "panelTitle.activeBorder": semantic.accent, // Border color for the active panel title.
    "panelTitle.activeForeground": semantic.active,
    "panelTitle.border": semantic.zero, // Panel title border color on the bottom, separating the title from the views. Panels are shown below the editor area and contain views like output and integrated terminal.
    "panelTitle.inactiveForeground": semantic.inactive,

@@ -13,7 +13,7 @@ export const sideBarColors = {
     "sideBarSectionHeader.border": semantic.zero, // Side bar section header border color.
     "sideBarSectionHeader.foreground": semantic.foreground,
     "sideBarStickyScroll.background": semantic.sticky,
-    "sideBarStickyScroll.border": semantic.border,
+    "sideBarStickyScroll.border": semantic.zero,
     "sideBarStickyScroll.shadow": semantic.shadow,
     "sideBarTitle.background": semantic.background,
     "sideBarTitle.border": semantic.zero, // Side bar title border color on the bottom, separating the title from the views. The side bar is the container for views like explorer and search.

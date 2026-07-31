@@ -32,7 +32,7 @@ export const semantic = {
     separator: palette.gray[15],
     shadow: alpha(palette.gray[4], 0.3),
     slider: alpha(palette.light[14], 0.3),
-    sticky: alpha(palette.gray[10], 0.3),
+    sticky: palette.gray[2],
     success: palette.blue[13],
     symbolIcon: palette.gray[16],
     untracked: palette.gray[19],
