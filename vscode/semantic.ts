@@ -9,7 +9,7 @@ export const semantic = {
     background: palette.gray[2],
     breakpoint: palette.blue[7],
     border: palette.light[13],
-    candidate: palette.gray[5],
+    candidate: palette.gray[14],
     deleted: alpha(palette.gray[7]!, 0.5),
     disabled: palette.gray[5],
     drop: palette.primary.accent,
