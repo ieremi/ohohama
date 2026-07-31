@@ -3,4 +3,5 @@ node_modules
 .env
 .DS_Store
 themes/*
+vscode/themes/*
 missing-colors.ts
