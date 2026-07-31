@@ -5,11 +5,11 @@ import type { ThemeColors } from "../generated/theme-colors.js";
 
 export const workbenchColors = {
     "actionBar.toggledBackground": semantic.background, // Background color for toggled action items in action bar.
-    "button.background": semantic.accent,
+    "button.background": semantic.background,
     "button.border": semantic.zero,
     "button.foreground": semantic.foreground,
     "button.hoverBackground": semantic.hover,
-    "button.secondaryBackground": semantic.info,
+    "button.secondaryBackground": semantic.background,
     "button.secondaryBorder": semantic.zero,
     "button.secondaryForeground": semantic.foreground,
     "button.secondaryHoverBackground": semantic.hover,
@@ -17,7 +17,7 @@ export const workbenchColors = {
     "contrastActiveBorder": semantic.zero,
     "descriptionForeground": semantic.foreground, // Foreground color for description text providing additional information, for example for a label.
     "disabledForeground": semantic.disabled, // Overall foreground for disabled elements. This color is only used if not overridden by a component.
-    "dropdown.background": semantic.accent, // Dropdown background.
+    "dropdown.background": semantic.background, // Dropdown background.
     "dropdown.border": semantic.zero, // Dropdown border.
     "dropdown.foreground": semantic.foreground, // Dropdown foreground.
     "dropdown.listBackground": semantic.background, // Dropdown list background.
@@ -41,13 +41,13 @@ export const workbenchColors = {
     "mcpIcon.starForeground": semantic.foreground, // The icon color for mcp starred.
     "menu.background": semantic.background,
     "menu.border": semantic.zero, // Border color of menus.
-    "menu.foreground": semantic.inactive,
+    "menu.foreground": semantic.foreground,
     "menu.selectionBackground": semantic.focus,
     "menu.selectionBorder": semantic.zero, // Border color of the selected menu item in menus.
     "menu.selectionForeground": semantic.active,
     "menu.separatorBackground": semantic.border,
     "menubar.selectionBackground": semantic.focus,
-    "menubar.selectionBorder": semantic.border,
+    "menubar.selectionBorder": semantic.zero,
     "menubar.selectionForeground": semantic.foreground,
     "ports.iconRunningProcessForeground": semantic.foreground, // The color of the icon for a port that has an associated running process.
     "profileBadge.background": semantic.info, // Profile badge background color. The profile badge shows on top of the settings gear icon in the activity bar.
