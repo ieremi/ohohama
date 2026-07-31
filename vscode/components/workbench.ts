@@ -41,11 +41,11 @@ export const workbenchColors = {
     "mcpIcon.starForeground": semantic.foreground, // The icon color for mcp starred.
     "menu.background": semantic.background,
     "menu.border": semantic.zero, // Border color of menus.
-    "menu.foreground": semantic.foreground,
+    "menu.foreground": semantic.candidate,
     "menu.selectionBackground": semantic.focus,
     "menu.selectionBorder": semantic.zero, // Border color of the selected menu item in menus.
     "menu.selectionForeground": semantic.active,
-    "menu.separatorBackground": semantic.border,
+    "menu.separatorBackground": semantic.separator,
     "menubar.selectionBackground": semantic.focus,
     "menubar.selectionBorder": semantic.zero,
     "menubar.selectionForeground": semantic.foreground,
