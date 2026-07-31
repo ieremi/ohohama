@@ -9,7 +9,7 @@ const currentDirectory = dirname(currentFile);
 
 const outputPath = resolve(
   currentDirectory,
-  "../themes/Ohohama-color-theme.json",
+  "../vscode/themes/Ohohama-color-theme.json",
 );
 
 const theme = {
