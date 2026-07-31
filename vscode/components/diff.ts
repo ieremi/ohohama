@@ -4,8 +4,8 @@ import { semantic } from "../semantic.js";
 export const diffColors = {
     "diffEditor.border": semantic.zero,
     "diffEditor.diagonalFill": semantic.accent,
-    "diffEditor.insertedLineBackground": semantic.addedTransparent,
-    "diffEditor.insertedTextBackground": semantic.addedTransparent,
+    "diffEditor.insertedLineBackground": semantic.added,
+    "diffEditor.insertedTextBackground": semantic.hover,
     "diffEditor.insertedTextBorder": semantic.zero,
     "diffEditor.move.border": semantic.hover,
     "diffEditor.moveActive.border": semantic.zero,
