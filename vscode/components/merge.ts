@@ -3,12 +3,12 @@ import { semantic } from "../semantic.js";
 
 export const mergeColors = {
     "merge.border": semantic.zero, // Border color on headers and the splitter in inline merge conflicts.
-    "merge.commonContentBackground": semantic.background, // Common ancestor content background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.
-    "merge.commonHeaderBackground": semantic.background, // Common ancestor header background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.
-    "merge.currentContentBackground": semantic.background, // Current content background in inline merge conflicts. The color must not be opaque so as not to hide underlying decorations.
-    "merge.currentHeaderBackground": semantic.background, // Current header background in inline merge conflicts. The color must not be opaque so as not to hide underlying decorations.
-    "merge.incomingContentBackground": semantic.new, // Incoming content background in inline merge conflicts. The color must not be opaque so as not to hide underlying decorations.
-    "merge.incomingHeaderBackground": semantic.new, // Incoming header background in inline merge conflicts. The color must not be opaque so as not to hide underlying decorations.
+    "merge.commonContentBackground": semantic.backgroundTransparent, // Common ancestor content background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.
+    "merge.commonHeaderBackground": semantic.backgroundTransparent, // Common ancestor header background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.
+    "merge.currentContentBackground": semantic.backgroundTransparent, // Current content background in inline merge conflicts. The color must not be opaque so as not to hide underlying decorations.
+    "merge.currentHeaderBackground": semantic.backgroundTransparent, // Current header background in inline merge conflicts. The color must not be opaque so as not to hide underlying decorations.
+    "merge.incomingContentBackground": semantic.added, // Incoming content background in inline merge conflicts. The color must not be opaque so as not to hide underlying decorations.
+    "merge.incomingHeaderBackground": semantic.added, // Incoming header background in inline merge conflicts. The color must not be opaque so as not to hide underlying decorations.
     "mergeEditor.change.background": semantic.modified, // The background color for changes.
     "mergeEditor.change.word.background": semantic.modified, // The background color for word changes.
     "mergeEditor.changeBase.background": semantic.modified, // The background color for changes in base.

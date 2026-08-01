@@ -14,11 +14,11 @@ export const aiColors = {
     "chat.linesRemovedForeground": semantic.deleted, // Foreground color of lines removed in chat code block pill.
     "chat.requestBackground": semantic.background, // The background color of a chat request.
     "chat.requestBorder": semantic.zero, // The border color of a chat request.
-    "chat.requestBubbleBackground": semantic.background, // Background color of the chat request bubble.
+    "chat.requestBubbleBackground": semantic.backgroundTransparent, // Background color of the chat request bubble.
     "chat.requestBubbleHoverBackground": semantic.hover, // Background color of the chat request bubble on hover.
     "chat.requestCodeBorder": semantic.zero, // Border color of code blocks within the chat request bubble.
     "chat.slashCommandBackground": semantic.background, // The background color of a chat slash command.
     "chat.slashCommandForeground": semantic.foreground, // The foreground color of a chat slash command.
-    "chat.thinkingShimmer": semantic.highlight, // Shimmer highlight for thinking/working labels.
+    "chat.thinkingShimmer": semantic.backgroundTransparent, // Shimmer highlight for thinking/working labels.
 } satisfies ThemeColors;
 

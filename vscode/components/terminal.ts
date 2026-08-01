@@ -23,7 +23,7 @@ export const terminalColors = {
     "terminal.ansiBrightRed": semantic.ansi.brightRed,
     "terminal.ansiBrightYellow": semantic.ansi.brightYellow,
     "terminal.border": semantic.zero, // The color of the border that separates split panes within the terminal. This defaults to panel.border.
-    "terminal.dropBackground": semantic.background, // The background color when dragging on top of terminals. The color should have transparency so that the terminal contents can still shine through.
+    "terminal.dropBackground": semantic.backgroundTransparent, // The background color when dragging on top of terminals. The color should have transparency so that the terminal contents can still shine through.
     "terminal.findMatchBackground": semantic.match, // Color of the current search match in the terminal. The color must not be opaque so as not to hide underlying terminal content.
     "terminal.findMatchBorder": semantic.zero, // Border color of the current search match in the terminal.
     "terminal.findMatchHighlightBackground": semantic.highlight, // Color of the other search matches in the terminal. The color must not be opaque so as not to hide underlying terminal content.

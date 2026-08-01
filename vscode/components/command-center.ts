@@ -7,7 +7,7 @@ export const commandCenterColors = {
     "commandCenter.activeForeground": semantic.foreground, // Active foreground color of the Command Center.
     "commandCenter.background": semantic.background, // Background color of the Command Center.
     "commandCenter.border": semantic.zero, // Border color of the Command Center.
-    "commandCenter.debuggingBackground": semantic.background, // Command Center background color when a program is being debugged.
+    "commandCenter.debuggingBackground": semantic.backgroundTransparent, // Command Center background color when a program is being debugged.
     "commandCenter.foreground": semantic.foreground, // Foreground color of the Command Center.
     "commandCenter.inactiveBorder": semantic.zero, // Border color of the Command Center when the window is inactive.
     "commandCenter.inactiveForeground": semantic.inactive, // Foreground color of the Command Center when the window is inactive.

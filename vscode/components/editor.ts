@@ -7,10 +7,10 @@ export const editorColors = {
     "editor.background": semantic.background,
     "editor.findMatchBackground": semantic.match,
     "editor.findMatchBorder": semantic.zero,
-    "editor.findMatchForeground": semantic.foreground,
+    "editor.findMatchForeground": semantic.foregroundTransparent,
     "editor.findMatchHighlightBackground": semantic.match,
     "editor.findMatchHighlightBorder": semantic.match,
-    "editor.findMatchHighlightForeground": semantic.foreground,
+    "editor.findMatchHighlightForeground": semantic.foregroundTransparent,
     "editor.findRangeHighlightBackground": semantic.match,
     "editor.findRangeHighlightBorder": semantic.zero,
     "editor.foreground": semantic.foreground,
@@ -32,12 +32,12 @@ export const editorColors = {
     "sideBySideEditor.verticalBorder": semantic.zero, // Color to separate two editors from each other when shown side by side in an editor group from left to right.
     "walkThrough.embeddedEditorBackground": semantic.background, // Background color for the embedded editors on the Interactive Playground.
     "walkthrough.stepTitle.foreground": semantic.foreground, // Foreground color of the heading of each walkthrough step.  "editor.compositionBorder": "", // The border color for an IME composition.
-    "editor.foldBackground": semantic.background, // Background color for folded ranges. The color must not be opaque so as not to hide underlying decorations.
+    "editor.foldBackground": semantic.backgroundTransparent, // Background color for folded ranges. The color must not be opaque so as not to hide underlying decorations.
     "editor.foldPlaceholderForeground": semantic.foreground, // Color of the collapsed text after the first line of a folded range.
     "interactive.activeCodeBorder": semantic.zero, // The border color for the current interactive code cell when the editor has focus.
     "interactive.inactiveCodeBorder": semantic.zero, // The border color for the current interactive code cell when the editor does not have focus.
     "editor.compositionBorder": semantic.zero, // The border color for an IME composition.
-    "editor.inactiveSelectionBackground": semantic.accent, // Color of the selection in an inactive editor. The color must not be opaque so as not to hide underlying decorations.
+    "editor.inactiveSelectionBackground": semantic.backgroundTransparent, // Color of the selection in an inactive editor. The color must not be opaque so as not to hide underlying decorations.
     "editor.inlineValuesBackground": semantic.background, // Color for the debug inline value background.
     "editor.inlineValuesForeground": semantic.background, // Color for the debug inline value text.
     "editor.linkedEditingBackground": semantic.background, // Background color when the editor is in linked editing mode.

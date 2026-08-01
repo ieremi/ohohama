@@ -26,7 +26,7 @@ export const copilotColors = {
     "inlineEdit.modifiedBorder": semantic.zero,
     "inlineEdit.modifiedChangedLineBackground": semantic.modified,
     "inlineEdit.modifiedChangedTextBackground": semantic.modified,
-    "inlineEdit.originalBackground": semantic.background,
+    "inlineEdit.originalBackground": semantic.backgroundTransparent,
     "inlineEdit.originalBorder": semantic.zero,
     "inlineEdit.originalChangedLineBackground": semantic.modified,
     "inlineEdit.originalChangedTextBackground": semantic.modified,

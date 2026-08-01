@@ -46,7 +46,7 @@ export const debugColors = {
     "debugView.stateLabelBackground": semantic.background, // Background color for a label in the CALL STACK view showing the current session's or thread's state.
     "debugView.stateLabelForeground": semantic.foreground, // Foreground color for a label in the CALL STACK view showing the current session's or thread's state.
     "debugView.valueChangedHighlight": semantic.modified, // Color used to highlight value changes in the debug views (such as in the Variables view).
-    "editorError.background": semantic.background,
+    "editorError.background": semantic.backgroundTransparent,
     "editorError.border": semantic.zero,
     "editorError.foreground": semantic.error,
     "editorInfo.background": semantic.zero,
@@ -55,7 +55,7 @@ export const debugColors = {
     "editorLightBulb.foreground": semantic.info,
     "editorLightBulbAi.foreground": semantic.info,
     "editorLightBulbAutoFix.foreground": semantic.info,
-    "editorWarning.background": semantic.background,
+    "editorWarning.background": semantic.backgroundTransparent,
     "editorWarning.border": semantic.zero,
     "editorWarning.foreground": semantic.warning,
     "errorForeground": semantic.foreground,
