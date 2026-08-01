@@ -8,7 +8,7 @@ export const workbenchColors = {
     "contrastActiveBorder": semantic.zero,
     "descriptionForeground": semantic.foreground, // Foreground color for description text providing additional information, for example for a label.
     "disabledForeground": semantic.disabled, // Overall foreground for disabled elements. This color is only used if not overridden by a component.
-    "dropdown.background": semantic.background, // Dropdown background.
+    "dropdown.background": semantic.dropdown, // Dropdown background.
     "dropdown.border": semantic.zero, // Dropdown border.
     "dropdown.foreground": semantic.foreground, // Dropdown foreground.
     "dropdown.listBackground": semantic.background, // Dropdown list background.
