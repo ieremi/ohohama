@@ -4,7 +4,7 @@ import { semantic } from "../semantic.js";
 export const uiColors = {
     "badge.background": semantic.info, // Badge background color.
     "badge.foreground": semantic.foreground, // Badge foreground color.
-    "banner.background": semantic.info, // Banner background color.
+    "banner.background": semantic.background, // Banner background color.
     "banner.foreground": semantic.foreground, // Banner foreground color.
     "banner.iconForeground": semantic.foreground, // Color for the icon in front of the banner text.
     "button.background": semantic.button,

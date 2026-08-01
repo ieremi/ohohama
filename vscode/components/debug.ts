@@ -8,8 +8,8 @@ export const debugColors = {
     "activityErrorBadge.foreground": semantic.foreground,
     "activityWarningBadge.background": semantic.warning,
     "activityWarningBadge.foreground": semantic.foreground,
-    "commentsView.resolvedIcon": semantic.info, // Icon color for resolved comments.
-    "commentsView.unresolvedIcon": semantic.info, // Icon color for unresolved comments.
+    "commentsView.resolvedIcon": semantic.background, // Icon color for resolved comments.
+    "commentsView.unresolvedIcon": semantic.background, // Icon color for unresolved comments.
     "debugConsole.errorForeground": semantic.foreground, // Foreground color for error messages in debug REPL console.
     "debugConsole.infoForeground": semantic.foreground, // Foreground color for info messages in debug REPL console.
     "debugConsole.sourceForeground": semantic.foreground, // Foreground color for source filenames in debug REPL console.
