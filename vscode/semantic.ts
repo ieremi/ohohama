@@ -41,7 +41,7 @@ export const semantic = {
     symbolIcon: palette.gray[16]!,
     untracked: palette.gray[19]!,
     warning: palette.light[7]!,
-    widget: palette.gray[5]!,
+    widget: palette.gray[1]!,
     terminal: {
         background: palette.gray[2]!,
     },
@@ -70,8 +70,8 @@ export const semantic = {
     syntax: {
         attribute: palette.white,
         class: palette.light[5]!,
-        comment: palette.light[2]!,
-        constant: palette.light[2]!,
+        comment: palette.blue[9]!,
+        constant: palette.blue[2]!,
         decorator: palette.light[2]!,
         enumMember: palette.light[5]!,
         escape: palette.light[1]!,
@@ -80,7 +80,7 @@ export const semantic = {
         heading: palette.light[5]!,
         interface: palette.light[5]!,
         invalid: palette.light[5]!,
-        keyword: palette.light[5]!,
+        keyword: palette.blue[5]!,
         number: palette.light[2]!,
         operator: palette.light[5]!,
         parameter: palette.primary.foreground,
