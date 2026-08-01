@@ -17,20 +17,20 @@ export const debugColors = {
     "debugConsoleInputIcon.foreground": semantic.foreground, // Foreground color for debug console input marker icon.
     "debugExceptionWidget.background": semantic.background, // Exception widget background color.
     "debugExceptionWidget.border": semantic.zero, // Exception widget border color.
-    "debugIcon.breakpointCurrentStackframeForeground": semantic.foreground, // Icon color for the current breakpoint stack frame.
+    "debugIcon.breakpointCurrentStackframeForeground": semantic.accent, // Icon color for the current breakpoint stack frame.
     "debugIcon.breakpointDisabledForeground": semantic.disabled, // Icon color for disabled breakpoints.
     "debugIcon.breakpointForeground": semantic.breakpoint,
-    "debugIcon.breakpointStackframeForeground": semantic.foreground, // Icon color for all breakpoint stack frames.
-    "debugIcon.breakpointUnverifiedForeground": semantic.foreground, // Icon color for unverified breakpoints.
-    "debugIcon.continueForeground": semantic.foreground, // Debug toolbar icon for continue.
-    "debugIcon.disconnectForeground": semantic.foreground, // Debug toolbar icon for disconnect.
-    "debugIcon.pauseForeground": semantic.foreground, // Debug toolbar icon for pause.
-    "debugIcon.restartForeground": semantic.foreground, // Debug toolbar icon for restart.
-    "debugIcon.startForeground": semantic.foreground, // Debug toolbar icon for start debugging.
-    "debugIcon.stepBackForeground": semantic.foreground, // Debug toolbar icon for step back.
-    "debugIcon.stepIntoForeground": semantic.foreground, // Debug toolbar icon for step into.
-    "debugIcon.stepOutForeground": semantic.foreground, // Debug toolbar icon for step over.
-    "debugIcon.stepOverForeground": semantic.foreground, // Debug toolbar icon for step over.
+    "debugIcon.breakpointStackframeForeground": semantic.accent, // Icon color for all breakpoint stack frames.
+    "debugIcon.breakpointUnverifiedForeground": semantic.accent, // Icon color for unverified breakpoints.
+    "debugIcon.continueForeground": semantic.accent, // Debug toolbar icon for continue.
+    "debugIcon.disconnectForeground": semantic.accent, // Debug toolbar icon for disconnect.
+    "debugIcon.pauseForeground": semantic.accent, // Debug toolbar icon for pause.
+    "debugIcon.restartForeground": semantic.accent, // Debug toolbar icon for restart.
+    "debugIcon.startForeground": semantic.accent, // Debug toolbar icon for start debugging.
+    "debugIcon.stepBackForeground": semantic.accent, // Debug toolbar icon for step back.
+    "debugIcon.stepIntoForeground": semantic.accent, // Debug toolbar icon for step into.
+    "debugIcon.stepOutForeground": semantic.accent, // Debug toolbar icon for step over.
+    "debugIcon.stepOverForeground": semantic.accent, // Debug toolbar icon for step over.
     "debugIcon.stopForeground": semantic.accent, // Debug toolbar icon for stop.
     "debugTokenExpression.boolean": semantic.foreground, // Foreground color for booleans in debug views.
     "debugTokenExpression.error": semantic.error, // Foreground color for expression errors in debug views.
