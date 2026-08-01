@@ -5,15 +5,6 @@ import type { ThemeColors } from "../generated/theme-colors.js";
 
 export const workbenchColors = {
     "actionBar.toggledBackground": semantic.background, // Background color for toggled action items in action bar.
-    "button.background": semantic.background,
-    "button.border": semantic.zero,
-    "button.foreground": semantic.foreground,
-    "button.hoverBackground": semantic.hover,
-    "button.secondaryBackground": semantic.background,
-    "button.secondaryBorder": semantic.zero,
-    "button.secondaryForeground": semantic.foreground,
-    "button.secondaryHoverBackground": semantic.hover,
-    "button.separator": semantic.foreground,
     "contrastActiveBorder": semantic.zero,
     "descriptionForeground": semantic.foreground, // Foreground color for description text providing additional information, for example for a label.
     "disabledForeground": semantic.disabled, // Overall foreground for disabled elements. This color is only used if not overridden by a component.

@@ -7,6 +7,15 @@ export const uiColors = {
     "banner.background": semantic.info, // Banner background color.
     "banner.foreground": semantic.foreground, // Banner foreground color.
     "banner.iconForeground": semantic.foreground, // Color for the icon in front of the banner text.
+    "button.background": semantic.background,
+    "button.border": semantic.zero,
+    "button.foreground": semantic.foreground,
+    "button.hoverBackground": semantic.hover,
+    "button.secondaryBackground": semantic.background,
+    "button.secondaryBorder": semantic.zero,
+    "button.secondaryForeground": semantic.foreground,
+    "button.secondaryHoverBackground": semantic.hover,
+    "button.separator": semantic.foreground,
     "checkbox.background": semantic.background, // Background color of checkbox widget.
     "checkbox.border": semantic.border, // Border color of checkbox widget.
     "checkbox.disabled.background": semantic.disabled, // Background of a disabled checkbox.
