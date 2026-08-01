@@ -16,8 +16,8 @@ export const diffColors = {
     "diffEditor.unchangedRegionBackground": semantic.hover,
     "diffEditor.unchangedRegionForeground": semantic.foreground,
     "diffEditor.unchangedRegionShadow": semantic.zero,
-    "diffEditorGutter.insertedLineBackground": semantic.added,
-    "diffEditorGutter.removedLineBackground": semantic.deleted,
+    "diffEditorGutter.insertedLineBackground": semantic.background,
+    "diffEditorGutter.removedLineBackground": semantic.background,
     "diffEditorOverview.insertedForeground": semantic.added,
     "diffEditorOverview.removedForeground": semantic.deleted,
     "multiDiffEditor.background": semantic.background, // The background color of the multi file diff editor
