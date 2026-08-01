@@ -13,6 +13,25 @@ export const tokenColors = [
     },
   },
   {
+    name: "Fenced",
+    scope: [
+      "markup.fenced_code.block.markdown"
+    ],
+    settings: {
+      foreground: semantic.syntax.fenced,
+    }
+  },
+  {
+    name: "Headings",
+    scope: [
+      "markup.heading.markdown",
+    ],
+    settings: {
+      foreground: semantic.syntax.heading,
+      fontStyle: "bold",
+    }
+  },
+  {
     name: "Strings",
     scope: [
       "string",
