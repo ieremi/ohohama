@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "build": "npm run generate:theme-colors && tsx scripts/build.ts",
-    "check-palette": "tsx scripts/check.ts",
+    "check-palette": "tsx scripts/check-palette.ts",
     "coverage": "tsx scripts/coverage.ts",
     "generate:theme-colors": "tsx scripts/generate-theme-colors.ts",
     "lint": "eslint .",
