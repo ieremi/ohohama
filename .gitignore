@@ -3,6 +3,7 @@ node_modules
 .env
 .DS_Store
 themes/*
+generated/*
 vscode/themes/*
 vscode/generated/palette.json
 missing-colors.ts

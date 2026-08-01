@@ -1,8 +1,8 @@
 import { writeFileSync } from "node:fs";
-import { ramps } from "../palette.js"
+import { palette } from "../palette.js"
 
 writeFileSync(
-    "./vscode/generated/palette.json",
-    JSON.stringify(ramps, null, 2),
+    "./generated/palette.json",
+    JSON.stringify(palette, null, 2),
     "utf8"
 );
