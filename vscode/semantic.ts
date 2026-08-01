@@ -14,7 +14,7 @@ export const semantic = {
     disabled: palette.gray[5]!,
     drop: palette.light[14]!,
     error: palette.blue[15]!,
-    focus: alpha(palette.gray[19], 0.1),
+    focus: alpha(palette.gray[19]!, 0.1),
     foreground: palette.gray[18]!,
     highlight: palette.gray[5]!,
     hover: alpha(palette.gray[8]!, 0.3),
