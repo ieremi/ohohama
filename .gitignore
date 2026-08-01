@@ -4,4 +4,5 @@ node_modules
 .DS_Store
 themes/*
 vscode/themes/*
+vscode/generated/palette.json
 missing-colors.ts
