@@ -10,6 +10,7 @@ export const semantic = {
     backgroundTransparent: alpha(palette.gray[6]!, 0.5),
     breakpoint: palette.blue[7]!,
     border: palette.light[13]!,
+    button: palette.dark[5]!,
     candidate: palette.gray[14]!,
     deleted: alpha(palette.gray[7]!, 0.5),
     disabled: palette.gray[5]!,

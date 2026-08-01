@@ -7,11 +7,11 @@ export const uiColors = {
     "banner.background": semantic.info, // Banner background color.
     "banner.foreground": semantic.foreground, // Banner foreground color.
     "banner.iconForeground": semantic.foreground, // Color for the icon in front of the banner text.
-    "button.background": semantic.background,
+    "button.background": semantic.button,
     "button.border": semantic.zero,
     "button.foreground": semantic.foreground,
     "button.hoverBackground": semantic.hover,
-    "button.secondaryBackground": semantic.background,
+    "button.secondaryBackground": semantic.button,
     "button.secondaryBorder": semantic.zero,
     "button.secondaryForeground": semantic.foreground,
     "button.secondaryHoverBackground": semantic.hover,
