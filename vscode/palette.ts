@@ -3,29 +3,23 @@ import {
     TonalPalette,
 } from "@material/material-color-utilities";
 
-const tonal = [
-    TonalPalette.fromHueAndChroma(220, 100),
-    TonalPalette.fromHueAndChroma(245, 100),
-    TonalPalette.fromHueAndChroma(270, 50),
-    TonalPalette.fromHueAndChroma(250, 10),
-];
+const lights = Array.from({ length: 20 }, (_, i) =>
+    hexFromArgb(TonalPalette.fromHueAndChroma(220, 100).tone(i * 5))
+);
 
-export const ramps = tonal.map(p =>
-    Array.from({ length: 20 }, (_, i) =>
-        hexFromArgb(p.tone(i * 5))
-    )
-) as const;
-let var_lights: string[] = Array(20).fill("");
-let var_blues: string[] = Array(20).fill("");
-let var_darks: string[] = Array(20).fill("");
-let var_grays: string[] = Array(20).fill("");
-[var_lights, var_blues, var_darks, var_grays] = ramps;
+const blues = Array.from({ length: 20 }, (_, i) =>
+    hexFromArgb(TonalPalette.fromHueAndChroma(245, 100).tone(i * 5))
+);
 
-const lights: readonly string[] = var_lights;
-const blues: readonly string[] = var_blues;
-const darks: readonly string[] = var_darks;
-const grays: readonly string[] = var_grays;
+const darks = Array.from({ length: 20 }, (_, i) =>
+    hexFromArgb(TonalPalette.fromHueAndChroma(270, 50).tone(i * 5))
+);
 
+const grays = Array.from({ length: 20 }, (_, i) =>
+    hexFromArgb(TonalPalette.fromHueAndChroma(250, 10).tone(i * 5))
+);
+
+export const ramps = [lights, blues, darks, grays];
 
 export const palette = {
     fund: {
