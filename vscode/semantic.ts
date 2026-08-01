@@ -6,7 +6,7 @@ export const semantic = {
     accent: palette.blue[4]!,
     active: palette.gray[19]!,
     added: palette.city.t,
-    addedTransparent: alpha(palette.city.t, 0.05),
+    addedTransparent: alpha(palette.light[9], 0.3),
     background: palette.gray[2]!,
     backgroundTransparent: alpha(palette.gray[6]!, 0.5),
     breakpoint: palette.blue[8]!,
