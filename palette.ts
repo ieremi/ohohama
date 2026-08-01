@@ -4,19 +4,19 @@ import {
 } from "@material/material-color-utilities";
 
 const lights = Array.from({ length: 20 }, (_, i) =>
-    hexFromArgb(TonalPalette.fromHueAndChroma(225, 180).tone(i * 5))
+    hexFromArgb(TonalPalette.fromHueAndChroma(215, 120).tone(i * 5))
 ).slice(9, 19);
 
 const blues = Array.from({ length: 20 }, (_, i) =>
-    hexFromArgb(TonalPalette.fromHueAndChroma(245, 200).tone(i * 5))
-).slice(9, 19);
+    hexFromArgb(TonalPalette.fromHueAndChroma(245, 180).tone(i * 5))
+).slice(7, 17);
 
 const darks = Array.from({ length: 20 }, (_, i) =>
-    hexFromArgb(TonalPalette.fromHueAndChroma(270, 50).tone(i * 5))
-).slice(3, 13);
+    hexFromArgb(TonalPalette.fromHueAndChroma(280, 60).tone(i * 5))
+).slice(1, 11);
 
 const grays = Array.from({ length: 20 }, (_, i) =>
-    hexFromArgb(TonalPalette.fromHueAndChroma(250, 10).tone(i * 5))
+    hexFromArgb(TonalPalette.fromHueAndChroma(245, 8).tone(i * 5))
 );
 
 export const palette = {
