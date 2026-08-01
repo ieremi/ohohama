@@ -56,8 +56,6 @@ export const mapColors = {
 	"diffEditorOverview.removedForeground": semantic.deleted,
 	"editorGutter.addedBackground": semantic.added,
 	"editorOverviewRuler.addedForeground": semantic.added,
-	"gauge.background": semantic.background,
-	"gauge.errorForeground": semantic.error,
 	"minimap.errorHighlight": semantic.error,
 	"minimap.findMatchHighlight": semantic.highlight,
 	"minimap.foregroundOpacity": semantic.hover,
