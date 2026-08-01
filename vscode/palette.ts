@@ -15,8 +15,16 @@ export const ramps = tonal.map(p =>
         hexFromArgb(p.tone(i * 5))
     )
 ) as const;
+let var_lights: string[] = Array(20).fill("");
+let var_blues: string[] = Array(20).fill("");
+let var_darks: string[] = Array(20).fill("");
+let var_grays: string[] = Array(20).fill("");
+[var_lights, var_blues, var_darks, var_grays] = ramps;
 
-const [lights, blues, darks, grays] = ramps;
+const lights: readonly string[] = var_lights;
+const blues: readonly string[] = var_blues;
+const darks: readonly string[] = var_darks;
+const grays: readonly string[] = var_grays;
 
 
 export const palette = {
