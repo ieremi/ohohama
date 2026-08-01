@@ -20,7 +20,7 @@ export const semantic = {
     hover: alpha(palette.gray[8]!, 0.3),
     inactive: palette.gray[10]!,
     info: palette.light[14]!,
-    input: alpha(palette.gray[8], 0.4),
+    input: alpha(palette.gray[8]!, 0.4),
     link: palette.blue[17]!,
     local: palette.city.t,
     match: alpha(palette.light[15]!, 0.6),

@@ -15,11 +15,11 @@ export const gitColors = {
     "gitDecoration.stageDeletedResourceForeground": semantic.deleted, // Color for staged deletions git decorations.  Used for file labels and the SCM viewlet.
     "gitDecoration.stageModifiedResourceForeground": semantic.modified, // Color for staged modifications git decorations.  Used for file labels and the SCM viewlet.
     "gitDecoration.submoduleResourceForeground": semantic.inactive, // Color for submodule resources.
-    "scmGraph.foreground1": semantic.order[1],
-    "scmGraph.foreground2": semantic.order[2],
-    "scmGraph.foreground3": semantic.order[3],
-    "scmGraph.foreground4": semantic.order[4],
-    "scmGraph.foreground5": semantic.order[5],
+    "scmGraph.foreground1": semantic.order[1]!,
+    "scmGraph.foreground2": semantic.order[2]!,
+    "scmGraph.foreground3": semantic.order[3]!,
+    "scmGraph.foreground4": semantic.order[4]!,
+    "scmGraph.foreground5": semantic.order[5]!,
     "scmGraph.historyItemBaseRefColor": semantic.accent,
     "scmGraph.historyItemHoverAdditionsForeground": semantic.added,
     "scmGraph.historyItemHoverDefaultLabelBackground": semantic.hover,
