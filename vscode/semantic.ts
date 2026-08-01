@@ -1,4 +1,4 @@
-import { palette } from "./palette.js";
+import { palette } from "../palette.js";
 import { alpha } from "./color.js"
 
 export const semantic = {

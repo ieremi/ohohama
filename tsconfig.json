@@ -15,5 +15,6 @@
   "include": [
     "vscode/**/*.ts",
     "scripts/*.ts",
+    "palette.ts",
   ]
 }
