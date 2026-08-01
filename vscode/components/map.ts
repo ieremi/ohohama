@@ -12,9 +12,9 @@ export const mapColors = {
 	"editorGutter.commentUnresolvedGlyphForeground": semantic.foreground,
 	"editorGutter.deletedBackground": semantic.deleted,
 	"editorGutter.deletedSecondaryBackground": semantic.deleted,
-	"editorGutter.foldingControlForeground": semantic.disabled,
-	"editorGutter.itemBackground": semantic.info,
-	"editorGutter.itemGlyphForeground": semantic.info,
+	"editorGutter.foldingControlForeground": semantic.foreground,
+	"editorGutter.itemBackground": semantic.button, // Revert block, Stage block button
+	"editorGutter.itemGlyphForeground": semantic.foreground,
 	"editorGutter.modifiedBackground": semantic.modified,
 	"editorGutter.modifiedSecondaryBackground": semantic.modified,
 	"editorOverviewRuler.background": semantic.background,
