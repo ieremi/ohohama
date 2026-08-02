@@ -82,7 +82,7 @@ export const semantic = {
         heading: palette.blue[5]!,
         interface: palette.blue[5]!,
         invalid: palette.blue[5]!,
-        keyword: palette.blue[5]!,
+        keyword: palette.gray[13]!,
         number: palette.blue[2]!,
         operator: palette.blue[5]!,
         parameter: palette.primary.foreground,
