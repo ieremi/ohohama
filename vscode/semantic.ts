@@ -47,28 +47,28 @@ export const semantic = {
     warning: hexFromArgb(palette.tertiary.tone(100)),
     widget: palette.black,
     terminal: {
-        background: palette.background,
+        background: palette.black,
     },
     ansi: {
         normal: {
             black: palette.black,
             white: palette.white,
-            blue: hexFromArgb(palette.primary.tone(50)),
+            blue: hexFromArgb(palette.primary.tone(40)),
             cyan: hexFromArgb(palette.primary.tone(60)),
             green: hexFromArgb(palette.primary.tone(70)),
             magenta: hexFromArgb(palette.primary.tone(75)),
-            red: hexFromArgb(palette.primary.tone(80)),
-            yellow: hexFromArgb(palette.primary.tone(85)),
+            red: hexFromArgb(palette.primary.tone(78)),
+            yellow: hexFromArgb(palette.primary.tone(80)),
         },
         bright: {
             black: hexFromArgb(palette.neutral.tone(80)),
             white: hexFromArgb(palette.neutral.tone(40)),
-            blue: hexFromArgb(palette.secondary.tone(50)),
+            blue: hexFromArgb(palette.secondary.tone(40)),
             cyan: hexFromArgb(palette.secondary.tone(60)),
             green: hexFromArgb(palette.secondary.tone(70)),
             magenta: hexFromArgb(palette.secondary.tone(75)),
-            red: hexFromArgb(palette.secondary.tone(80)),
-            yellow: hexFromArgb(palette.secondary.tone(85)),
+            red: hexFromArgb(palette.secondary.tone(78)),
+            yellow: hexFromArgb(palette.secondary.tone(80)),
         }
     },
     syntax: {
