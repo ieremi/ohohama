@@ -51,22 +51,22 @@ export const semantic = {
         normal: {
             black: palette.black,
             white: palette.white,
-            blue: palette.city.k,
-            cyan: palette.blue[0]!,
-            green: palette.blue[1]!,
-            magenta: palette.blue[2]!,
-            red: palette.blue[3]!,
-            yellow: palette.blue[4]!,
-        },
-        bright: {
-            black: palette.gray[7]!,
-            white: palette.gray[2]!,
-            blue: palette.city.t,
+            blue: palette.blue[4]!,
             cyan: palette.blue[5]!,
             green: palette.blue[6]!,
             magenta: palette.blue[7]!,
             red: palette.blue[8]!,
             yellow: palette.blue[9]!,
+        },
+        bright: {
+            black: palette.gray[7]!,
+            white: palette.gray[2]!,
+            blue: palette.light[4]!,
+            cyan: palette.light[5]!,
+            green: palette.light[6]!,
+            magenta: palette.light[7]!,
+            red: palette.light[8]!,
+            yellow: palette.light[9]!,
         }
     },
     syntax: {
