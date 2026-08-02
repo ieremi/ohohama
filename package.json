@@ -3,7 +3,7 @@
   "displayName": "ohohama",
   "description": "Ohohama blue color theme",
   "icon": "images/icon.png",
-  "version": "0.2.14",
+  "version": "0.3.0",
   "publisher": "ieremius",
   "type": "module",
   "scripts": {
