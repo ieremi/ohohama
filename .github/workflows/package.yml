@@ -1,2 +1,0 @@
-name: Package VSIX
-run: npm run package
