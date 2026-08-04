@@ -1,2 +1,2 @@
-- name: Package VSIX
-  run: npm run package
+name: Package VSIX
+run: npm run package
