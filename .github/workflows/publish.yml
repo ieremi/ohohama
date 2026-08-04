@@ -31,5 +31,11 @@ jobs:
           tenant-id: ${{ vars.AZURE_TENANT_ID }}
           allow-no-subscriptions: true
 
+      - name: Build themes
+        run: npm run build
+
+      - name: Confirm theme exists
+        run: test -f vscode/themes/Ohohama-color-theme.json
+
       - name: Publish extension
         run: npx @vscode/vsce publish --azure-credential

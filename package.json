@@ -1,9 +1,9 @@
 {
   "name": "ohohama",
-  "displayName": "ohohama",
+  "displayName": "Ohohama Color Theme",
   "description": "Ohohama blue color theme",
   "icon": "images/icon.png",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "publisher": "ieremius",
   "type": "module",
   "scripts": {
@@ -15,6 +15,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "missing": "tsx scripts/missing.ts",
+    "package": "npm run build && vsce package",
     "typecheck": "tsc --noEmit",
     "watch": "concurrently \"npm:watch:vscode\" \"npm:watch:alacritty\"",
     "watch:vscode": "tsx --watch scripts/build.ts",
@@ -52,6 +53,7 @@
     "smol-toml": "^1.7.1",
     "tsx": "^4.23.1",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.64.0"
+    "typescript-eslint": "^8.64.0",
+    "@vscode/vsce": "^3.0.0"
   }
 }
