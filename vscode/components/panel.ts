@@ -13,7 +13,7 @@ export const panelColors = {
    "panelSectionHeader.background": semantic.background,
    "panelSectionHeader.border": semantic.zero, // Panel section header border color used when multiple views are stacked vertically in the panel. Panels are shown below the editor area and contain views like output and integrated terminal.
    "panelSectionHeader.foreground": semantic.accent,
-   "panelStickyScroll.background": semantic.zero,
+   "panelStickyScroll.background": semantic.sticky,
    "panelStickyScroll.border": semantic.accent,
    "panelStickyScroll.shadow": semantic.zero,
    "panelTitle.activeBorder": semantic.accent, // Border color for the active panel title.

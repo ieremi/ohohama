@@ -3,11 +3,7 @@ import {
 } from "@material/material-color-utilities";
 
 export const palette = {
-    fund: {
-        zero: "#00000000",
-    },
-    background: "#3F3F3F",
-    foreground: "#E6EDF9",
+    zero: "#00000000",
     black: "#080D10",
     white: "#E6EDF9",
     city: {
