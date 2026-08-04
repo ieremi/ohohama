@@ -44,8 +44,8 @@ async function main(): Promise<void> {
   const colors = new Map<string, string>();
 
   for (const match of markdown.matchAll(themeColorPattern)) {
-    const key = match[1];
-    const description = match[2].trim();
+    const key = match[1]!;
+    const description = match[2]!.trim();
 
     colors.set(key, description);
   }
