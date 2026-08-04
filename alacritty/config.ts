@@ -1,4 +1,3 @@
-import { palette } from "../palette.js";
 import { semantic } from "../vscode/semantic.js";
 
 export const config = {
