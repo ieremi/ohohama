@@ -10,8 +10,8 @@ export const aiColors = {
     "chat.avatarForeground": semantic.foreground, // The foreground color of a chat avatar.
     "chat.checkpointSeparator": semantic.border, // Chat checkpoint separator color.
     "chat.editedFileForeground": semantic.modified, // The foreground color of a chat edited file in the edited file list.
-    "chat.linesAddedForeground": semantic.added, // Foreground color of lines added in chat code block pill.
-    "chat.linesRemovedForeground": semantic.deleted, // Foreground color of lines removed in chat code block pill.
+    "chat.linesAddedForeground": semantic.addedTransparent, // Foreground color of lines added in chat code block pill.
+    "chat.linesRemovedForeground": semantic.deletedTransparent, // Foreground color of lines removed in chat code block pill.
     "chat.requestBackground": semantic.background, // The background color of a chat request.
     "chat.requestBorder": semantic.zero, // The border color of a chat request.
     "chat.requestBubbleBackground": semantic.backgroundTransparent, // Background color of the chat request bubble.

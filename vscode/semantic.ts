@@ -34,7 +34,9 @@ export const semantic = {
     match: alpha(hexFromArgb(palette.secondary.tone(60)), 0.2),
     modified: alpha(hexFromArgb(palette.secondary.tone(50)), 0.8),
     new: palette.city.t,
+    newTransparent: alpha(palette.city.t, 0.6),
     old: palette.city.k,
+    oldTransparent: alpha(palette.city.k, 0.6),
     placeholder: hexFromArgb(palette.neutral.tone(90)),
     remote: hexFromArgb(palette.neutral.tone(20)),
     separator: palette.white,
@@ -97,6 +99,6 @@ export const semantic = {
         variable: palette.white,
     },
     order: Array.from(
-        { length: 21 },
-        (_, i) => hexFromArgb(palette.primary.tone(i * 5))),
+        { length: 30 },
+        (_, i) => hexFromArgb(palette.neutralVariant.tone(i * 3))),
 } as const;
