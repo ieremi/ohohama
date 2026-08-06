@@ -17,7 +17,7 @@ const output = missingColors
     .join("\n");
 
 writeFileSync(
-    "missing-colors.ts",
+    "vscode/generated/missing-colors.ts",
     `export const missingColors = {\n${output}\n};\n`,
     "utf8",
 );
