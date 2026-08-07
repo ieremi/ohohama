@@ -1,4 +1,3 @@
-import { stringify } from "smol-toml";
 import { mkdir, writeFile } from "node:fs/promises";
 import { dirname } from "node:path";
 import { config } from "./config.js";
