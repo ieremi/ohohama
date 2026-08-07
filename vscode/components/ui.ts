@@ -2,7 +2,7 @@ import type { ThemeColors } from "../generated/theme-colors.js";
 import { semantic } from "../semantic.js";
 
 export const uiColors = {
-    "badge.background": semantic.info, // Badge background color.
+    "badge.background": semantic.badge, // Badge background color.
     "badge.foreground": semantic.foreground, // Badge foreground color.
     "banner.background": semantic.background, // Banner background color.
     "banner.foreground": semantic.foreground, // Banner foreground color.

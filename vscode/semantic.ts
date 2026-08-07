@@ -11,6 +11,7 @@ export const semantic = {
     addedTransparent: alpha(hexFromArgb(palette.primary.tone(50)), 0.2),
     background: palette.black,
     backgroundTransparent: alpha(palette.black, 0.8),
+    badge: hexFromArgb(palette.tertiary.tone(80)),
     breakpoint: hexFromArgb(palette.primary.tone(70)),
     border: hexFromArgb(palette.neutral.tone(30)),
     button: hexFromArgb(palette.primary.tone(60)),
@@ -99,6 +100,6 @@ export const semantic = {
         variable: palette.white,
     },
     order: Array.from(
-        { length: 30 },
-        (_, i) => hexFromArgb(palette.neutralVariant.tone(i * 3))),
+        { length: 20 },
+        (_, i) => hexFromArgb(palette.neutralVariant.tone(30 + i * 3))),
 } as const;

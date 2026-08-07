@@ -5,7 +5,7 @@ export const activityBarColors = {
     "activityBar.background": semantic.background,
     "activityBar.foreground": semantic.active,
     "activityBar.inactiveForeground": semantic.inactive,
-    "activityBarBadge.background": semantic.info,
+    "activityBarBadge.background": semantic.badge,
 
     "activityBarBadge.foreground": semantic.foreground,
     "activityBar.border": semantic.zero,

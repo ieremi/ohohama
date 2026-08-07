@@ -20,6 +20,6 @@ export const panelColors = {
    "panelTitle.activeForeground": semantic.active,
    "panelTitle.border": semantic.zero, // Panel title border color on the bottom, separating the title from the views. Panels are shown below the editor area and contain views like output and integrated terminal.
    "panelTitle.inactiveForeground": semantic.inactive,
-   "panelTitleBadge.background": semantic.info, // Panel title badge background color. Panels are shown below the editor area and contain views like output and integrated terminal.
+   "panelTitleBadge.background": semantic.badge, // Panel title badge background color. Panels are shown below the editor area and contain views like output and integrated terminal.
    "panelTitleBadge.foreground": semantic.foreground, // Panel title badge foreground color. Panels are shown below the editor area and contain views like output and integrated terminal.
 } satisfies ThemeColors;

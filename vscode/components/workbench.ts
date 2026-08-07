@@ -41,7 +41,7 @@ export const workbenchColors = {
     "menubar.selectionBorder": semantic.zero,
     "menubar.selectionForeground": semantic.foreground,
     "ports.iconRunningProcessForeground": semantic.foreground, // The color of the icon for a port that has an associated running process.
-    "profileBadge.background": semantic.info, // Profile badge background color. The profile badge shows on top of the settings gear icon in the activity bar.
+    "profileBadge.background": semantic.badge, // Profile badge background color. The profile badge shows on top of the settings gear icon in the activity bar.
     "profileBadge.foreground": semantic.foreground, // Profile badge foreground color. The profile badge shows on top of the settings gear icon in the activity bar.
     "profiles.sashBorder": semantic.zero, // The color of the Profiles editor splitview sash border.
     "progressBar.background": semantic.inactive, // Background color of the progress bar shown for long running operations.
