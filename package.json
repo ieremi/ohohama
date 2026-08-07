@@ -7,6 +7,7 @@
   "publisher": "ieremius",
   "type": "module",
   "scripts": {
+    "build": "npm run build:vscode && npm run build:alacritty",
     "build:vscode": "tsx vscode/build.ts",
     "build:alacritty": "tsx alacritty/build.ts",
     "check-palette": "tsx scripts/check-palette.ts",
