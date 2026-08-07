@@ -6,7 +6,7 @@ import { semantic } from "../semantic.js";
 export const listColors = {
     "editorWidget.foreground": semantic.inactive,
     "list.activeSelectionBackground": semantic.focus,
-    "list.activeSelectionForeground": semantic.active,
+    "list.activeSelectionForeground": semantic.foreground,
     "list.highlightForeground": semantic.accent,
     "list.hoverBackground": semantic.hover,
     "list.hoverForeground": semantic.foreground,
