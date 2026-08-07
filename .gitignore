@@ -8,3 +8,4 @@ vscode/themes/*
 vscode/generated/palette.json
 missing-colors.ts
 alacritty/themes/ohohama.toml
+chrome/themes/*
