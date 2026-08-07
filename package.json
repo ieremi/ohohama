@@ -7,7 +7,7 @@
   "publisher": "ieremius",
   "type": "module",
   "scripts": {
-    "build": "npm run generate:theme-colors && tsx scripts/build.ts",
+    "build:vscode": "tsx vscode/build.ts",
     "build:alacritty": "tsx alacritty/build.ts",
     "check-palette": "tsx scripts/check-palette.ts",
     "coverage": "tsx scripts/coverage.ts",
