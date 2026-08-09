@@ -64,7 +64,7 @@ export const semantic = {
             yellow: hexFromArgb(palette.tertiary.tone(80)),
         },
         bright: {
-            black: hexFromArgb(palette.neutral.tone(80)),
+            black: hexFromArgb(palette.neutral.tone(20)),
             white: hexFromArgb(palette.neutral.tone(40)),
             blue: hexFromArgb(palette.secondary.tone(40)),
             cyan: hexFromArgb(palette.secondary.tone(60)),
