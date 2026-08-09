@@ -14,8 +14,9 @@
   },
   "include": [
     "alacritty/**/*.ts",
+    "chrome/**/*.ts",
     "vscode/**/*.ts",
-    "scripts/*.ts",
-    "palette.ts",
+    "scripts/**/*.ts",
+    "*.ts",
   ]
 }
