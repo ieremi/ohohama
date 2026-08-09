@@ -56,12 +56,12 @@ export const semantic = {
         normal: {
             black: palette.black,
             white: palette.white,
-            blue: hexFromArgb(palette.primary.tone(40)),
-            cyan: hexFromArgb(palette.primary.tone(60)),
-            green: hexFromArgb(palette.primary.tone(70)),
-            magenta: hexFromArgb(palette.primary.tone(75)),
-            red: hexFromArgb(palette.primary.tone(78)),
-            yellow: hexFromArgb(palette.primary.tone(80)),
+            blue: hexFromArgb(palette.tertiary.tone(40)),
+            cyan: hexFromArgb(palette.tertiary.tone(60)),
+            green: hexFromArgb(palette.tertiary.tone(70)),
+            magenta: hexFromArgb(palette.tertiary.tone(75)),
+            red: hexFromArgb(palette.tertiary.tone(78)),
+            yellow: hexFromArgb(palette.tertiary.tone(80)),
         },
         bright: {
             black: hexFromArgb(palette.neutral.tone(80)),
