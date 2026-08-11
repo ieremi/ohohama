@@ -17,7 +17,7 @@ export const editorColors = {
     "editor.lineHighlightBackground": semantic.focus,
     "editor.lineHighlightBorder": semantic.zero,
     "editor.selectionBackground": semantic.accent,
-    "editor.selectionForeground": semantic.accent,
+    "editor.selectionForeground": semantic.selection,
     "editorLineNumber.activeForeground": semantic.accent,
     "editorLineNumber.dimmedForeground": semantic.inactive, // Color of the final editor line when editor.renderFinalNewline is set to dimmed.
     "editorLineNumber.foreground": semantic.foreground,

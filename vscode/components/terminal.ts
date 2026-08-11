@@ -32,7 +32,7 @@ export const terminalColors = {
     "terminal.inactiveSelectionBackground": semantic.background, // The selection background color of the terminal when it does not have focus.
     "terminal.initialHintForeground": semantic.info, // Foreground color of the terminal initial hint.
     "terminal.selectionBackground": semantic.focus, // The selection background color of the terminal.
-    "terminal.selectionForeground": semantic.foreground, // The selection foreground color of the terminal. When this is null the selection foreground will be retained and have the minimum contrast ratio feature applied.
+    "terminal.selectionForeground": semantic.selection, // The selection foreground color of the terminal. When this is null the selection foreground will be retained and have the minimum contrast ratio feature applied.
     "terminal.tab.activeBorder": semantic.zero, // Border on the side of the terminal tab in the panel. This defaults to `tab.activeBorder`.
     "terminalCommandDecoration.defaultBackground": semantic.background, // The default terminal command decoration background color.
     "terminalCommandDecoration.errorBackground": semantic.background, // The terminal command decoration background color for error commands.

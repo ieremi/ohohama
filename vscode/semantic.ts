@@ -40,6 +40,7 @@ export const semantic = {
     oldTransparent: alpha(palette.city.k, 0.6),
     placeholder: hexFromArgb(palette.neutral.tone(90)),
     remote: hexFromArgb(palette.neutral.tone(20)),
+    selection: alpha(hexFromArgb(palette.tertiary.tone(80)), 0.4),
     separator: palette.white,
     shadow: alpha(hexFromArgb(palette.neutral.tone(30)), 0.4),
     slider: alpha(hexFromArgb(palette.primary.tone(90)), 0.5),
@@ -77,7 +78,7 @@ export const semantic = {
     syntax: {
         attribute: palette.white,
         class: hexFromArgb(palette.primary.tone(90)),
-        comment: hexFromArgb(palette.primary.tone(80)),
+        comment: hexFromArgb(palette.secondary.tone(70)),
         constant: hexFromArgb(palette.primary.tone(70)),
         decorator: hexFromArgb(palette.primary.tone(60)),
         enumMember: hexFromArgb(palette.secondary.tone(90)),
