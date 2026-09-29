@@ -26,7 +26,7 @@ export const debugColors = {
     "debugIcon.disconnectForeground": semantic.accent, // Debug toolbar icon for disconnect.
     "debugIcon.pauseForeground": semantic.accent, // Debug toolbar icon for pause.
     "debugIcon.restartForeground": semantic.accent, // Debug toolbar icon for restart.
-    "debugIcon.startForeground": semantic.accent, // Debug toolbar icon for start debugging.
+    "debugIcon.startForeground": semantic.foreground, // Debug toolbar icon for start debugging.
     "debugIcon.stepBackForeground": semantic.accent, // Debug toolbar icon for step back.
     "debugIcon.stepIntoForeground": semantic.accent, // Debug toolbar icon for step into.
     "debugIcon.stepOutForeground": semantic.accent, // Debug toolbar icon for step over.
