@@ -86,14 +86,22 @@ body.theme-light {
   margin-bottom: 1.3em;
 }
 /* In the editor, margins on lines break positioning, so pad the next line instead */
-.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1 + .cm-line {
-  padding-top: 1.3em;
+/* h2 and h3 lines are skipped: the padding would land inside their background */
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1 + .cm-line:not(.HyperMD-header-2, .HyperMD-header-3) {
+  padding-top: 1.3em !important;
 }
-.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2 + .cm-line {
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2 + .cm-line:not(.HyperMD-header-2, .HyperMD-header-3) {
   padding-top: 1em !important;
 }
-.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1 + .cm-line {
-  padding-top: 1.3em !important;
+/* h2 right after h1: space from a transparent top border, with the background kept inside it */
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1 + .cm-line.HyperMD-header-2 {
+  border-top: 0.6em solid transparent;
+  background-clip: padding-box;
+}
+/* h3 right after h1 or h2: push the text down and start the pill (drawn by ::before) lower */
+.markdown-source-view.mod-cm6 .cm-line:is(.HyperMD-header-1, .HyperMD-header-2) + .cm-line.HyperMD-header-3 {
+  --ohohama-h3-gap: 0.6em;
+  padding-top: calc(0.1em + 0.6em);
 }
 /* Keep the space even when a list or table follows a heading without a blank line */
 .markdown-rendered h1 + :is(p, ul, ol, table, pre, blockquote, div),
@@ -122,7 +130,7 @@ body.theme-light {
   letter-spacing: 0.02em;
 }
 
-/* h3: a pill as wide as the text in reading view; a full-width rounded line in the editor */
+/* h3: a pill as wide as the text, in both reading view and the editor */
 .markdown-rendered h3 {
   display: inline-block;
   padding: 0.15em 0.9em;
@@ -130,11 +138,24 @@ body.theme-light {
   border-radius: 999px;
   background-color: var(--ohohama-h3-bg);
 }
+/* In the editor the pill is drawn by ::before, so extra space above the line stays outside it */
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-3 {
+  position: relative;
+  isolation: isolate;
+  box-sizing: border-box;
+  width: fit-content;
+  max-width: 100%;
   padding: 0.1em 0.9em;
+}
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-3::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: var(--ohohama-h3-gap, 0) 0 0 0;
+  border: 1px solid var(--ohohama-h2-border);
   border-radius: 999px;
-  box-shadow: inset 0 0 0 1px var(--ohohama-h2-border);
   background-color: var(--ohohama-h3-bg);
+  pointer-events: none;
 }
 
 /* h4: small dot before the text */
