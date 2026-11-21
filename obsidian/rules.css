@@ -297,6 +297,12 @@ body .grimoire-tool-step.is-blocked .grimoire-tool-icon-tile {
   color: var(--background-primary);
 }
 
+/* Grimoire: the model button uses line-height 1 and clips its label, which cuts the
+   descenders of Noto Sans CJK JP; give the label room */
+body .grimoire-model-label {
+  line-height: 1.4;
+}
+
 /* Spell check underline: Ohohama blue instead of red */
 ::spelling-error {
   text-decoration: underline wavy var(--interactive-accent);
