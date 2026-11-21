@@ -20,14 +20,14 @@ export const editorColors = (semantic: Semantic) => ({
     "editor.selectionForeground": semantic.selection,
     "editorLineNumber.activeForeground": semantic.accent,
     "editorLineNumber.dimmedForeground": semantic.inactive, // Color of the final editor line when editor.renderFinalNewline is set to dimmed.
-    "editorLineNumber.foreground": semantic.foreground,
+    "editorLineNumber.foreground": semantic.inactive,
     "editorLink.activeForeground": semantic.link, // Color of active links.
     "editorPane.background": semantic.background, // Background color of the editor pane visible on the left and right side of the centered editor layout.
-    "editorRuler.foreground": semantic.foreground, // Color of the editor rulers.
+    "editorRuler.foreground": semantic.border, // Color of the editor rulers.
     "editorStickyScroll.background": semantic.sticky,
     "editorUnnecessaryCode.border": semantic.zero, // Border color of unnecessary (unused) source code in the editor.
     "editorUnnecessaryCode.opacity": semantic.inactive, // Opacity of unnecessary (unused) source code in the editor. For example, `"#000000c0"` will render the code with 75% opacity. For high contrast themes, use the `"editorUnnecessaryCode.border"` theme color to underline unnecessary code instead of fading it out.
-    "editorWhitespace.foreground": semantic.foreground, // Color of whitespace characters in the editor.
+    "editorWhitespace.foreground": semantic.border, // Color of whitespace characters in the editor.
     "sideBySideEditor.horizontalBorder": semantic.zero, // Color to separate two editors from each other when shown side by side in an editor group from top to bottom.
     "sideBySideEditor.verticalBorder": semantic.zero, // Color to separate two editors from each other when shown side by side in an editor group from left to right.
     "walkThrough.embeddedEditorBackground": semantic.background, // Background color for the embedded editors on the Interactive Playground.
