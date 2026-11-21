@@ -16,6 +16,13 @@ export const uiColors = (semantic: Semantic) => ({
     "button.secondaryForeground": semantic.buttonForeground,
     "button.secondaryHoverBackground": semantic.hover,
     "button.separator": semantic.foreground,
+    "gauge.background": semantic.input, // Gauge background color.
+    "gauge.border": semantic.zero, // Gauge border color.
+    "gauge.errorBackground": semantic.input, // Gauge error background color.
+    "gauge.errorForeground": semantic.error, // Gauge error foreground color.
+    "gauge.foreground": semantic.accent, // Gauge foreground color.
+    "gauge.warningBackground": semantic.input, // Gauge warning background color.
+    "gauge.warningForeground": semantic.warning, // Gauge warning foreground color.
     "checkbox.background": semantic.background, // Background color of checkbox widget.
     "checkbox.border": semantic.border, // Border color of checkbox widget.
     "checkbox.disabled.background": semantic.disabled, // Background of a disabled checkbox.
