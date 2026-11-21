@@ -8,7 +8,7 @@ export const widgetColors = (semantic: Semantic) => ({
     "editorHoverWidget.highlightForeground": semantic.foreground, // Foreground color of the active item in the parameter hint.
     "editorHoverWidget.statusBarBackground": semantic.background, // Background color of the editor hover status bar.
     "widget.border": semantic.zero, // Border color of widgets such as Find/Replace inside the editor.
-    "widget.shadow": semantic.zero, // Shadow color of widgets such as Find/Replace inside the editor.
+    "widget.shadow": semantic.shadow, // Shadow color of widgets such as Find/Replace inside the editor.
     "editorCommentsWidget.rangeActiveBackground": semantic.background, // Color of background for currently selected or hovered comment range.
     "editorCommentsWidget.rangeBackground": semantic.background, // Color of background for comment ranges.
     "editorCommentsWidget.replyInputBackground": semantic.background, // Background color for comment reply input box.
