@@ -54,6 +54,12 @@ export const dark: Variables = {
     "--background-modifier-border": hexFromArgb(palette.neutral.tone(24)),
     "--background-modifier-hover": alpha(hexFromArgb(palette.neutral.tone(60)), 0.2),
     "--background-modifier-active-hover": alpha(hexFromArgb(palette.neutral.tone(30)), 0.4),
+    // Form fields: a slightly raised blue-gray, instead of Obsidian's neutral gray that looks brown here
+    "--background-modifier-form-field": hexFromArgb(palette.neutral.tone(18)),
+    "--background-modifier-form-field-highlighted": hexFromArgb(palette.neutral.tone(20)),
+    "--background-modifier-border-hover": hexFromArgb(palette.neutral.tone(30)),
+    // Your own messages in chat plugins
+    "--ohohama-user-message-border": alpha(palette.city.t, 0.6),
 
     // Text: Ohohama white and neutral grays
     "--text-normal": palette.white,
@@ -131,6 +137,7 @@ export const light: Variables = {
     // Form fields: the default white stands out against the grays, so match the note background
     "--background-modifier-form-field": hexFromArgb(palette.neutral.tone(94)),
     "--background-modifier-form-field-highlighted": hexFromArgb(palette.neutral.tone(96)),
+    "--ohohama-user-message-border": alpha(palette.city.t, 0.5),
 
     // Text: dark grays. Links use a darker city.t for readability
     "--text-normal": hexFromArgb(palette.neutral.tone(16)),
