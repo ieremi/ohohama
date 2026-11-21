@@ -59,8 +59,8 @@ export const dark: Variables = {
     "--text-normal": palette.white,
     "--text-muted": hexFromArgb(palette.neutral.tone(70)),
     "--text-faint": hexFromArgb(palette.neutral.tone(60)),
-    "--text-accent": hexFromArgb(palette.tertiary.tone(80)),
-    "--text-accent-hover": hexFromArgb(palette.primary.tone(90)),
+    "--text-accent": hexFromArgb(palette.cityT.tone(65)),
+    "--text-accent-hover": hexFromArgb(palette.cityT.tone(75)),
     "--text-selection": alpha(hexFromArgb(palette.primary.tone(70)), 0.35),
     "--text-highlight-bg": alpha(palette.city.t, 0.35),
     "--text-highlight-bg-active": alpha(hexFromArgb(palette.primary.tone(70)), 0.45),
@@ -122,12 +122,15 @@ export const light: Variables = {
     "--background-modifier-border": hexFromArgb(palette.neutral.tone(82)),
     "--background-modifier-hover": alpha(palette.city.t, 0.08),
     "--background-modifier-active-hover": alpha(palette.city.t, 0.14),
+    // 入力欄：既定の白だと、グレーの中で白くぬけて見えるので、本文の背景と同じにする
+    "--background-modifier-form-field": hexFromArgb(palette.neutral.tone(94)),
+    "--background-modifier-form-field-highlighted": hexFromArgb(palette.neutral.tone(96)),
 
     // 文字：濃いグレー。リンクは city.t を少し暗くして読みやすく
     "--text-normal": hexFromArgb(palette.neutral.tone(16)),
     "--text-muted": hexFromArgb(palette.neutralVariant.tone(42)),
     "--text-faint": hexFromArgb(palette.neutralVariant.tone(61)),
-    "--text-accent": hexFromArgb(palette.tertiary.tone(42)),
+    "--text-accent": hexFromArgb(palette.cityT.tone(45)),
     "--text-accent-hover": palette.city.t,
     "--text-selection": alpha(palette.city.t, 0.22),
     "--text-highlight-bg": alpha(palette.city.t, 0.25),
