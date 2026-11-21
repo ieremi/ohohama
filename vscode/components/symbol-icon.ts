@@ -1,7 +1,7 @@
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const symbolIconColors = {
+export const symbolIconColors = (semantic: Semantic) => ({
     "symbolIcon.arrayForeground": semantic.symbolIcon, // The foreground color for array symbols.
     "symbolIcon.booleanForeground": semantic.symbolIcon, // The foreground color for boolean symbols.
     "symbolIcon.classForeground": semantic.symbolIcon, // The foreground color for class symbols.
@@ -35,4 +35,4 @@ export const symbolIconColors = {
     "symbolIcon.typeParameterForeground": semantic.symbolIcon, // The foreground color for type parameter symbols.
     "symbolIcon.unitForeground": semantic.symbolIcon, // The foreground color for unit symbols.
     "symbolIcon.variableForeground": semantic.symbolIcon, // The foreground color for variable symbols.
-} satisfies ThemeColors;
+} satisfies ThemeColors);

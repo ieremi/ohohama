@@ -1,7 +1,7 @@
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const textColors = {
+export const textColors = (semantic: Semantic) => ({
     "textBlockQuote.background": semantic.background, // Background color for block quotes in text.
     "textBlockQuote.border": semantic.zero, // Border color for block quotes in text.
     "textCodeBlock.background": semantic.background, // Background color for code blocks in text.
@@ -11,7 +11,7 @@ export const textColors = {
     "textPreformat.border": semantic.zero, // Border color for preformatted text segments.
     "textPreformat.foreground": semantic.foreground, // Foreground color for preformatted text segments.
     "textSeparator.foreground": semantic.border, // Color for text separators.
-} satisfies ThemeColors;
+} satisfies ThemeColors);
 
 
 

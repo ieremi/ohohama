@@ -2,17 +2,22 @@ import { stringify } from "smol-toml";
 import { mkdir, writeFile } from "node:fs/promises";
 import { dirname } from "node:path";
 import { config } from "./config.js";
+import { dark, light } from "../vscode/semantic.js";
 
-const OUTPUT_PATH =
-    "./alacritty/themes/ohohama.toml";
+const OUTPUTS = [
+    { path: "./alacritty/themes/ohohama.toml", semantic: dark },
+    { path: "./alacritty/themes/ohohama-light.toml", semantic: light },
+];
 
-await mkdir(
-    dirname(OUTPUT_PATH),
-    { recursive: true },
-);
+for (const output of OUTPUTS) {
+    await mkdir(
+        dirname(output.path),
+        { recursive: true },
+    );
 
-await writeFile(
-    OUTPUT_PATH,
-    stringify(config),
-    "utf8",
-);
+    await writeFile(
+        output.path,
+        stringify(config(output.semantic)),
+        "utf8",
+    );
+}

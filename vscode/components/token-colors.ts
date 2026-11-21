@@ -1,6 +1,6 @@
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const tokenColors = [
+export const tokenColors = (semantic: Semantic) => [
   {
     name: "Comments",
     scope: [

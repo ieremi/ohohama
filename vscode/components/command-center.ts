@@ -1,7 +1,7 @@
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const commandCenterColors = {
+export const commandCenterColors = (semantic: Semantic) => ({
     "commandCenter.activeBackground": semantic.background, // Active background color of the Command Center.
     "commandCenter.activeBorder": semantic.zero, // Active border color of the Command Center.
     "commandCenter.activeForeground": semantic.foreground, // Active foreground color of the Command Center.
@@ -11,4 +11,4 @@ export const commandCenterColors = {
     "commandCenter.foreground": semantic.foreground, // Foreground color of the Command Center.
     "commandCenter.inactiveBorder": semantic.zero, // Border color of the Command Center when the window is inactive.
     "commandCenter.inactiveForeground": semantic.inactive, // Foreground color of the Command Center when the window is inactive.
-} satisfies ThemeColors;
+} satisfies ThemeColors);

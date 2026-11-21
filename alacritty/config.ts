@@ -1,6 +1,6 @@
-import { semantic } from "../vscode/semantic.js";
+import type { Semantic } from "../vscode/semantic.js";
 
-export const config = {
+export const config = (semantic: Semantic) => ({
     colors: {
         primary: {
             background: semantic.background,
@@ -20,4 +20,4 @@ export const config = {
         normal: semantic.ansi.normal,
         bright: semantic.ansi.bright,
     }
-};
+});

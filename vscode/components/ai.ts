@@ -1,7 +1,7 @@
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const aiColors = {
+export const aiColors = (semantic: Semantic) => ({
     "agentSessionReadIndicator.foreground": semantic.foreground, // Foreground color for the read indicator in an agent session.
     "agentSessionSelectedBadge.border": semantic.zero, // Border color for the badges in selected agent session items.
     "agentSessionSelectedUnfocusedBadge.border": semantic.zero, // Border color for the badges in selected agent session items when the view is unfocused.
@@ -20,5 +20,5 @@ export const aiColors = {
     "chat.slashCommandBackground": semantic.background, // The background color of a chat slash command.
     "chat.slashCommandForeground": semantic.foreground, // The foreground color of a chat slash command.
     "chat.thinkingShimmer": semantic.backgroundTransparent, // Shimmer highlight for thinking/working labels.
-} satisfies ThemeColors;
+} satisfies ThemeColors);
 

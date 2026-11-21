@@ -1,9 +1,9 @@
 // src/theme/git.ts
 
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 import type { ThemeColors } from "../generated/theme-colors.js";
 
-export const gitColors = {
+export const gitColors = (semantic: Semantic) => ({
     "gitDecoration.addedResourceForeground": semantic.added,
     "gitDecoration.deletedResourceForeground": semantic.deleted,
     "gitDecoration.modifiedResourceForeground": semantic.modified,
@@ -28,4 +28,4 @@ export const gitColors = {
     "scmGraph.historyItemHoverLabelForeground": semantic.foreground,
     "scmGraph.historyItemRefColor": semantic.local,
     "scmGraph.historyItemRemoteRefColor": semantic.remote,
-} satisfies ThemeColors;
+} satisfies ThemeColors);

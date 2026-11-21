@@ -1,7 +1,7 @@
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const widgetColors = {
+export const widgetColors = (semantic: Semantic) => ({
     "editorHoverWidget.background": semantic.widget,
     "editorHoverWidget.border": semantic.zero, // Border color of the editor hover.
     "editorHoverWidget.foreground": semantic.foreground, // Foreground color of the editor hover.
@@ -18,7 +18,7 @@ export const widgetColors = {
     "editorWidget.border": semantic.zero, // Border color of the editor widget unless the widget does not contain a border or defines its own border color.
     "editorWidget.resizeBorder": semantic.zero, // Border color of the resize bar of editor widgets. The color is only used if the widget chooses to have a resize border and if the color is not overridden by a widget.
     "simpleFindWidget.sashBorder": semantic.zero, // Border color of the sash border.
-} satisfies ThemeColors;
+} satisfies ThemeColors);
 
 
 

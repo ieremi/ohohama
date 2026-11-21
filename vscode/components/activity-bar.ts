@@ -1,7 +1,7 @@
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const activityBarColors = {
+export const activityBarColors = (semantic: Semantic) => ({
     "activityBar.background": semantic.background,
     "activityBar.foreground": semantic.active,
     "activityBar.inactiveForeground": semantic.inactive,
@@ -21,4 +21,4 @@ export const activityBarColors = {
     "activityBarTop.dropBorder": semantic.zero,
     "activityBarTop.foreground": semantic.foreground,
     "activityBarTop.inactiveForeground": semantic.inactive,
-} satisfies ThemeColors;
+} satisfies ThemeColors);

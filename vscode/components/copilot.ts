@@ -1,7 +1,7 @@
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const copilotColors = {
+export const copilotColors = (semantic: Semantic) => ({
     "inlineChat.background": semantic.background,
     "inlineChat.border": semantic.border,
     "inlineChat.foreground": semantic.foreground,
@@ -32,6 +32,6 @@ export const copilotColors = {
     "inlineEdit.originalChangedTextBackground": semantic.modified,
     "inlineEdit.tabWillAcceptModifiedBorder": semantic.modified,
     "inlineEdit.tabWillAcceptOriginalBorder": semantic.modified,
-} satisfies ThemeColors;
+} satisfies ThemeColors);
 
 

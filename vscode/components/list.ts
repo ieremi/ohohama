@@ -1,9 +1,9 @@
 // src/theme/debug.ts
 
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const listColors = {
+export const listColors = (semantic: Semantic) => ({
     "editorWidget.foreground": semantic.inactive,
     "list.activeSelectionBackground": semantic.focus,
     "list.activeSelectionForeground": semantic.foreground,
@@ -48,4 +48,4 @@ export const listColors = {
     "editorSuggestWidget.selectedForeground": semantic.foreground, // Foreground color of the selected entry in the suggest widget.
     "editorSuggestWidget.selectedIconForeground": semantic.foreground, // Icon foreground color of the selected entry in the suggest widget.
     "editorSuggestWidgetStatus.foreground": semantic.foreground, // Foreground color of the suggest widget status.
-} satisfies ThemeColors;
+} satisfies ThemeColors);

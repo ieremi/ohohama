@@ -1,7 +1,7 @@
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const tabColors = {
+export const tabColors = (semantic: Semantic) => ({
 
     "tab.activeBackground": semantic.background,
     "tab.activeBorder": semantic.accent,
@@ -31,4 +31,4 @@ export const tabColors = {
     "tab.unfocusedInactiveBackground": semantic.background,
     "tab.unfocusedInactiveForeground": semantic.inactive, // Inactive tab foreground color in an inactive editor group.
     "tab.unfocusedInactiveModifiedBorder": semantic.zero, // Border on the top of modified (dirty) inactive tabs in an unfocused group.
-} satisfies ThemeColors;
+} satisfies ThemeColors);

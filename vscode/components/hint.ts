@@ -1,7 +1,7 @@
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const hintColors = {
+export const hintColors = (semantic: Semantic) => ({
     "editorHint.border": semantic.zero, // Border color of hint boxes in the editor.
     "editorHint.foreground": semantic.foreground, // Foreground color of hints in the editor.
     "editorInlayHint.background": semantic.background, // Background color of inline hints.
@@ -10,4 +10,4 @@ export const hintColors = {
     "editorInlayHint.parameterForeground": semantic.foreground, // Foreground color of inline hints for parameters
     "editorInlayHint.typeBackground": semantic.background, // Background color of inline hints for types
     "editorInlayHint.typeForeground": semantic.foreground, // Foreground color of inline hints for types
-} satisfies ThemeColors;
+} satisfies ThemeColors);

@@ -1,7 +1,7 @@
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const peekViewColors = {
+export const peekViewColors = (semantic: Semantic) => ({
     "peekView.border": semantic.zero, // Color of the peek view borders and arrow.
     "peekViewEditor.background": semantic.background, // Background color of the peek view editor.
     "peekViewEditor.matchHighlightBackground": semantic.match, // Match highlight color in the peek view editor.
@@ -18,4 +18,4 @@ export const peekViewColors = {
     "peekViewTitle.background": semantic.background, // Background color of the peek view title area.
     "peekViewTitleDescription.foreground": semantic.foreground, // Color of the peek view title info.
     "peekViewTitleLabel.foreground": semantic.foreground, // Color of the peek view title.
-} satisfies ThemeColors;
+} satisfies ThemeColors);

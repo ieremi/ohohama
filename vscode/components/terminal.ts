@@ -1,9 +1,9 @@
 // src/theme/terminal.ts
 
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const terminalColors = {
+export const terminalColors = (semantic: Semantic) => ({
     "terminal.background": semantic.terminal.background,
     "terminal.foreground": semantic.foreground,
     "terminal.ansiBlack": semantic.ansi.normal.black,
@@ -65,4 +65,4 @@ export const terminalColors = {
     "terminalSymbolIcon.symbolicLinkFolderForeground": semantic.foreground, // The foreground color for a symbolic link folder icon. These icons will appear in the terminal suggest widget.
     "terminalSymbolIcon.symbolText": semantic.foreground, // The foreground color for a plaintext suggestion. These icons will appear in the terminal suggest widget.
     "terminalSymbolIcon.tagForeground": semantic.foreground, // The foreground color for a tag icon. These icons will appear in the terminal suggest widget.
-} satisfies ThemeColors;
+} satisfies ThemeColors);

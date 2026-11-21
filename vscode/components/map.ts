@@ -1,9 +1,9 @@
 // src/theme/debug.ts
 
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const mapColors = {
+export const mapColors = (semantic: Semantic) => ({
 	"diffEditorOverview.insertedForeground": semantic.added,
 	"diffEditorOverview.removedForeground": semantic.deleted,
 	"editorGutter.addedBackground": semantic.added,
@@ -62,4 +62,4 @@ export const mapColors = {
 	"scrollbar.background": semantic.background,
 	"scrollbarSlider.background": semantic.slider,
 	"scrollbarSlider.hoverBackground": semantic.hover,
-} satisfies ThemeColors;
+} satisfies ThemeColors);

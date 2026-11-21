@@ -1,9 +1,9 @@
 // src/theme/debug.ts
 
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const markerColors = {
+export const markerColors = (semantic: Semantic) => ({
     "editorMarkerNavigation.background": semantic.background, // Editor marker navigation widget background.
     "editorMarkerNavigationError.background": semantic.error, // Editor marker navigation widget error color.
     "editorMarkerNavigationError.headerBackground": semantic.background, // Editor marker navigation widget error heading background.
@@ -11,4 +11,4 @@ export const markerColors = {
     "editorMarkerNavigationInfo.headerBackground": semantic.background, // Editor marker navigation widget info heading background.
     "editorMarkerNavigationWarning.background": semantic.warning, // Editor marker navigation widget warning color.
     "editorMarkerNavigationWarning.headerBackground": semantic.background, // Editor marker navigation widget warning heading background.
-} satisfies ThemeColors;
+} satisfies ThemeColors);

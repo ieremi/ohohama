@@ -1,7 +1,7 @@
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const mergeColors = {
+export const mergeColors = (semantic: Semantic) => ({
     "merge.border": semantic.zero, // Border color on headers and the splitter in inline merge conflicts.
     "merge.commonContentBackground": semantic.backgroundTransparent, // Common ancestor content background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.
     "merge.commonHeaderBackground": semantic.backgroundTransparent, // Common ancestor header background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.
@@ -22,4 +22,4 @@ export const mergeColors = {
     "mergeEditor.conflict.unhandledFocused.border": semantic.zero, // The border color of unhandled focused conflicts.
     "mergeEditor.conflict.unhandledUnfocused.border": semantic.zero, // The border color of unhandled unfocused conflicts.
     "mergeEditor.conflictingLines.background": semantic.highlight, // The background of the "Conflicting Lines" text.
-} satisfies ThemeColors;
+} satisfies ThemeColors);

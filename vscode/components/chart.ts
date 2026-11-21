@@ -1,7 +1,7 @@
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const chartColors = {
+export const chartColors = (semantic: Semantic) => ({
     "chart.axis": semantic.foreground, // Axis color for the chart.
     "chart.guide": semantic.foreground, // Guide line for the chart.
     "chart.line": semantic.foreground, // Line color for the chart.
@@ -13,4 +13,4 @@ export const chartColors = {
     "charts.purple": semantic.ansi.bright.magenta, // Color for purple elements in charts.
     "charts.red": semantic.ansi.normal.red, // Color for red elements in charts.
     "charts.yellow": semantic.ansi.normal.yellow, // Color for yellow elements in charts.
-} satisfies ThemeColors;
+} satisfies ThemeColors);

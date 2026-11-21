@@ -1,7 +1,7 @@
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const bracketColors = {
+export const bracketColors = (semantic: Semantic) => ({
     "editorBracketHighlight.foreground1": semantic.order[1]!, // Foreground color of brackets (1). Requires enabling bracket pair colorization.
     "editorBracketHighlight.foreground2": semantic.order[2]!, // Foreground color of brackets (2). Requires enabling bracket pair colorization.
     "editorBracketHighlight.foreground3": semantic.order[3]!, // Foreground color of brackets (3). Requires enabling bracket pair colorization.
@@ -24,5 +24,5 @@ export const bracketColors = {
     "editorBracketPairGuide.background4": semantic.order[4]!, // Background color of inactive bracket pair guides (4). Requires enabling bracket pair guides.
     "editorBracketPairGuide.background5": semantic.order[5]!, // Background color of inactive bracket pair guides (5). Requires enabling bracket pair guides.
     "editorBracketPairGuide.background6": semantic.order[6]!, // Background color of inactive bracket pair guides (6). Requires enabling bracket pair guides.
-} satisfies ThemeColors;
+} satisfies ThemeColors);
 

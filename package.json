@@ -40,6 +40,11 @@
         "label": "Ohohama",
         "uiTheme": "vs-dark",
         "path": "./vscode/themes/Ohohama-color-theme.json"
+      },
+      {
+        "label": "Ohohama Light",
+        "uiTheme": "vs",
+        "path": "./vscode/themes/Ohohama-light-color-theme.json"
       }
     ]
   },

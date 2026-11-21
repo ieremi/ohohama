@@ -3,7 +3,7 @@ import { alpha } from "./color.js"
 import { hexFromArgb } from "@material/material-color-utilities";
 
 
-export const semantic = {
+export const dark = {
     zero: palette.zero,
     accent: hexFromArgb(palette.primary.tone(70)),
     active: hexFromArgb(palette.neutral.tone(100)),
@@ -103,4 +103,113 @@ export const semantic = {
     order: Array.from(
         { length: 20 },
         (_, i) => hexFromArgb(palette.neutralVariant.tone(30 + i * 3))),
-} as const;
+};
+
+type Widen<T> = {
+    [K in keyof T]: T[K] extends string ? string
+        : T[K] extends readonly string[] ? string[]
+        : Widen<T[K]>;
+};
+export type Semantic = Widen<typeof dark>;
+
+export const light: Semantic = {
+    zero: palette.zero,
+    accent: hexFromArgb(palette.primary.tone(70)),
+    active: palette.black,
+    added: palette.city.t,
+    addedTransparent: alpha(hexFromArgb(palette.primary.tone(50)), 0.2),
+    background: palette.white,
+    backgroundTransparent: alpha(palette.white, 0.8),
+    badge: hexFromArgb(palette.tertiary.tone(80)),
+    breakpoint: hexFromArgb(palette.primary.tone(50)),
+    border: hexFromArgb(palette.neutral.tone(80)),
+    button: hexFromArgb(palette.primary.tone(80)),
+    candidate: hexFromArgb(palette.neutral.tone(30)),
+    deleted: hexFromArgb(palette.neutral.tone(40)),
+    deletedTransparent: alpha(hexFromArgb(palette.neutral.tone(60)), 0.2),
+    disabled: hexFromArgb(palette.neutral.tone(70)),
+    drop: hexFromArgb(palette.neutral.tone(80)),
+    dropdown: hexFromArgb(palette.primary.tone(75)),
+    error: hexFromArgb(palette.tertiary.tone(60)),
+    focus: alpha(hexFromArgb(palette.neutral.tone(70)), 0.4),
+    foreground: palette.black,
+    foregroundTransparent: alpha(palette.black, 0.8),
+    highlight: alpha(hexFromArgb(palette.neutral.tone(65)), 0.4),
+    hover: alpha(hexFromArgb(palette.neutral.tone(40)), 0.2),
+    inactive: hexFromArgb(palette.neutral.tone(40)),
+    info: hexFromArgb(palette.tertiary.tone(40)),
+    input: alpha(hexFromArgb(palette.neutral.tone(40)), 0.2),
+    link: hexFromArgb(palette.primary.tone(40)),
+    local: palette.city.t,
+    match: alpha(hexFromArgb(palette.secondary.tone(40)), 0.2),
+    modified: alpha(hexFromArgb(palette.secondary.tone(50)), 0.8),
+    new: palette.city.t,
+    newTransparent: alpha(palette.city.t, 0.6),
+    old: hexFromArgb(palette.secondary.tone(80)),
+    oldTransparent: alpha(hexFromArgb(palette.secondary.tone(80)), 0.6),
+    placeholder: hexFromArgb(palette.neutral.tone(10)),
+    remote: hexFromArgb(palette.neutral.tone(80)),
+    selection: alpha(hexFromArgb(palette.tertiary.tone(40)), 0.4),
+    separator: palette.black,
+    shadow: alpha(hexFromArgb(palette.neutral.tone(70)), 0.4),
+    slider: alpha(hexFromArgb(palette.primary.tone(40)), 0.3),
+    sticky: palette.white,
+    success: hexFromArgb(palette.secondary.tone(40)),
+    symbolIcon: palette.black,
+    untracked: hexFromArgb(palette.neutral.tone(40)),
+    warning: hexFromArgb(palette.tertiary.tone(60)),
+    widget: palette.white,
+    terminal: {
+        background: palette.white,
+    },
+    ansi: {
+        normal: {
+            black: palette.black,
+            white: hexFromArgb(palette.neutral.tone(70)),
+            blue: hexFromArgb(palette.tertiary.tone(60)),
+            cyan: hexFromArgb(palette.tertiary.tone(40)),
+            green: hexFromArgb(palette.tertiary.tone(30)),
+            magenta: hexFromArgb(palette.tertiary.tone(25)),
+            red: hexFromArgb(palette.tertiary.tone(22)),
+            yellow: hexFromArgb(palette.tertiary.tone(20)),
+        },
+        bright: {
+            black: hexFromArgb(palette.neutral.tone(40)),
+            white: hexFromArgb(palette.neutral.tone(80)),
+            blue: hexFromArgb(palette.secondary.tone(60)),
+            cyan: hexFromArgb(palette.secondary.tone(40)),
+            green: hexFromArgb(palette.secondary.tone(30)),
+            magenta: hexFromArgb(palette.secondary.tone(25)),
+            red: hexFromArgb(palette.secondary.tone(22)),
+            yellow: hexFromArgb(palette.secondary.tone(20)),
+        }
+    },
+    syntax: {
+        attribute: palette.black,
+        class: hexFromArgb(palette.primary.tone(10)),
+        comment: hexFromArgb(palette.secondary.tone(30)),
+        constant: hexFromArgb(palette.primary.tone(30)),
+        decorator: hexFromArgb(palette.primary.tone(40)),
+        enumMember: hexFromArgb(palette.secondary.tone(10)),
+        escape: hexFromArgb(palette.secondary.tone(20)),
+        fenced: hexFromArgb(palette.neutral.tone(20)),
+        function: hexFromArgb(palette.secondary.tone(30)),
+        heading: hexFromArgb(palette.secondary.tone(40)),
+        interface: hexFromArgb(palette.tertiary.tone(10)),
+        invalid: hexFromArgb(palette.tertiary.tone(20)),
+        keyword: hexFromArgb(palette.tertiary.tone(30)),
+        number: hexFromArgb(palette.tertiary.tone(40)),
+        operator: palette.black,
+        parameter: palette.black,
+        property: palette.black,
+        punctuation: palette.black,
+        regexp: hexFromArgb(palette.neutral.tone(30)),
+        string: hexFromArgb(palette.neutral.tone(40)),
+        tag: hexFromArgb(palette.primary.tone(20)),
+        type: hexFromArgb(palette.primary.tone(30)),
+        variable: palette.black,
+    },
+    order: Array.from(
+        { length: 20 },
+        (_, i) => hexFromArgb(palette.neutralVariant.tone(70 - i * 3))),
+};

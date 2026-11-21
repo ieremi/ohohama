@@ -1,9 +1,9 @@
 // src/theme/debug.ts
 
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const notificationColors = {
+export const notificationColors = (semantic: Semantic) => ({
     "notificationCenter.border": semantic.zero, // Notification Center border color.
     "notificationCenterHeader.background": semantic.background, // Notification Center header background color.
     "notificationCenterHeader.foreground": semantic.foreground, // Notification Center header foreground color.
@@ -15,5 +15,5 @@ export const notificationColors = {
     "notificationsInfoIcon.foreground": semantic.info, // The color used for the notification info icon.
     "notificationsWarningIcon.foreground": semantic.warning, // The color used for the notification warning icon.
     "notificationToast.border": semantic.zero, // Notification toast border color.
-} satisfies ThemeColors;
+} satisfies ThemeColors);
 

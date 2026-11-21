@@ -1,7 +1,7 @@
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const inputColors = {
+export const inputColors = (semantic: Semantic) => ({
     "inputOption.activeBackground": semantic.background, // Background color of activated options in input fields.
     "inputOption.activeBorder": semantic.zero, // Border color of activated options in input fields.
     "inputOption.activeForeground": semantic.active, // Foreground color of activated options in input fields.
@@ -21,4 +21,4 @@ export const inputColors = {
     "quickInputList.focusForeground": semantic.foreground, // Quick picker foreground color for the focused item.
     "quickInputList.focusIconForeground": semantic.foreground, // Quick picker icon foreground color for the focused item.
     "quickInputTitle.background": semantic.background, // Quick picker title background color. The quick picker widget is the container for pickers like the Command Palette.
-} satisfies ThemeColors;
+} satisfies ThemeColors);

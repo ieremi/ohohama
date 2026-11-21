@@ -1,7 +1,10 @@
 import { writeFileSync } from "node:fs";
 
 import { themeColors } from "../vscode/generated/theme-colors.js";
-import { colors } from "../vscode/components/index.js";
+import { colors as colorsOf } from "../vscode/components/index.js";
+import { dark } from "../vscode/semantic.js";
+
+const colors = colorsOf(dark);
 
 const assignedKeys = new Set(Object.keys(colors));
 

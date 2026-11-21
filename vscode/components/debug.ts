@@ -1,9 +1,9 @@
 // src/theme/debug.ts
 
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const debugColors = {
+export const debugColors = (semantic: Semantic) => ({
     "activityErrorBadge.background": semantic.error,
     "activityErrorBadge.foreground": semantic.foreground,
     "activityWarningBadge.background": semantic.warning,
@@ -64,4 +64,4 @@ export const debugColors = {
     "problemsErrorIcon.foreground": semantic.foreground, // The color used for the problems error icon.
     "problemsInfoIcon.foreground": semantic.foreground, // The color used for the problems info icon.
     "problemsWarningIcon.foreground": semantic.foreground, // The color used for the problems warning icon.
-} satisfies ThemeColors;
+} satisfies ThemeColors);

@@ -1,9 +1,9 @@
 // src/theme/debug.ts
 
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const sideBarColors = {
+export const sideBarColors = (semantic: Semantic) => ({
     "sideBar.background": semantic.background,
     "sideBar.border": semantic.zero, // Side Bar border color on the side separating the editor.
     "sideBar.dropBackground": semantic.drop,
@@ -22,4 +22,4 @@ export const sideBarColors = {
     "tree.indentGuidesStroke": semantic.inactive, // Tree Widget's stroke color for indent guides.
     "tree.tableColumnsBorder": semantic.zero, // Tree stroke color for the indentation guides.
     "tree.tableOddRowsBackground": semantic.background, // Background color for odd table rows.
-} satisfies ThemeColors;
+} satisfies ThemeColors);

@@ -1,7 +1,7 @@
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const settingsColors = {
+export const settingsColors = (semantic: Semantic) => ({
     "settings.checkboxBackground": semantic.background, // Checkbox background.
     "settings.checkboxBorder": semantic.zero, // Checkbox border.
     "settings.checkboxForeground": semantic.zero, // Checkbox foreground.
@@ -24,5 +24,5 @@ export const settingsColors = {
     "settings.textInputBorder": semantic.border, // Text input box border.
     "settings.textInputForeground": semantic.foreground, // Text input box foreground.
 
-} satisfies ThemeColors;
+} satisfies ThemeColors);
 

@@ -1,7 +1,7 @@
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const debugColors = {
+export const debugColors = (semantic: Semantic) => ({
 	"editorBracketHighlight.foreground1": semantic.order[0]!,
 	"editorBracketHighlight.foreground2": semantic.order[1]!,
 	"editorBracketHighlight.foreground3": semantic.order[2]!,
@@ -24,4 +24,4 @@ export const debugColors = {
 	"editorBracketPairGuide.background4": semantic.order[9]!,
 	"editorBracketPairGuide.background5": semantic.order[10]!,
 	"editorBracketPairGuide.background6": semantic.order[11]!,
-} satisfies ThemeColors;
+} satisfies ThemeColors);

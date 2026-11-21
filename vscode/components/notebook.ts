@@ -1,7 +1,7 @@
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const notebookColors = {
+export const notebookColors = (semantic: Semantic) => ({
     "notebook.cellBorderColor": semantic.zero, // The border color for notebook cells.
     "notebook.cellEditorBackground": semantic.background, // The color of the notebook cell editor background
     "notebook.cellHoverBackground": semantic.hover, // The background color of a cell when the cell is hovered.
@@ -26,4 +26,4 @@ export const notebookColors = {
     "notebookStatusErrorIcon.foreground": semantic.foreground, // The error icon color of notebook cells in the cell status bar.
     "notebookStatusRunningIcon.foreground": semantic.foreground, // The running icon color of notebook cells in the cell status bar.
     "notebookStatusSuccessIcon.foreground": semantic.foreground, // The success icon color of notebook cells in the cell status bar.
-} satisfies ThemeColors;
+} satisfies ThemeColors);

@@ -1,7 +1,7 @@
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const testingColors = {
+export const testingColors = (semantic: Semantic) => ({
     "testing.coverCountBadgeBackground": semantic.info, // Background for the badge indicating execution count
     "testing.coverCountBadgeForeground": semantic.foreground, // Foreground for the badge indicating execution count
     "testing.coveredBackground": semantic.background, // Background color of text that was covered.
@@ -34,4 +34,4 @@ export const testingColors = {
     "testing.uncoveredBorder": semantic.zero, // Border color of text that was not covered.
     "testing.uncoveredBranchBackground": semantic.info, // Background of the widget shown for an uncovered branch.
     "testing.uncoveredGutterBackground": semantic.background, // Gutter color of regions where code not covered.
-} satisfies ThemeColors;
+} satisfies ThemeColors);

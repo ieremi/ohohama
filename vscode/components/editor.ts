@@ -1,9 +1,9 @@
 // src/theme/editor.ts
 
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 import type { ThemeColors } from "../generated/theme-colors.js";
 
-export const editorColors = {
+export const editorColors = (semantic: Semantic) => ({
     "editor.background": semantic.background,
     "editor.findMatchBackground": semantic.match,
     "editor.findMatchBorder": semantic.zero,
@@ -55,4 +55,4 @@ export const editorColors = {
     "markdownAlert.note.foreground": semantic.info, // Foreground color for note alerts in markdown.
     "markdownAlert.tip.foreground": semantic.info, // Foreground color for tip alerts in markdown.
     "markdownAlert.warning.foreground": semantic.warning, // Foreground color for warning alerts in markdown.
-} satisfies ThemeColors;
+} satisfies ThemeColors);

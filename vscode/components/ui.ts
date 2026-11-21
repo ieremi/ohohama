@@ -1,7 +1,7 @@
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const uiColors = {
+export const uiColors = (semantic: Semantic) => ({
     "badge.background": semantic.badge, // Badge background color.
     "badge.foreground": semantic.foreground, // Badge foreground color.
     "banner.background": semantic.background, // Banner background color.
@@ -32,4 +32,4 @@ export const uiColors = {
     "radio.inactiveBorder": semantic.border, // Border color of the inactive radio option.
     "radio.inactiveForeground": semantic.inactive, // Foreground color of inactive radio option.
     "radio.inactiveHoverBackground": semantic.hover, // Background color of inactive active radio option when hovering.
-} satisfies ThemeColors;
+} satisfies ThemeColors);

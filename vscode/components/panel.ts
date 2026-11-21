@@ -1,7 +1,7 @@
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const panelColors = {
+export const panelColors = (semantic: Semantic) => ({
    "outputView.background": semantic.background, // Output view background color.
    "outputViewStickyScroll.background": semantic.sticky, // Output view sticky scroll background color.
    "panel.background": semantic.background, // Panel background color.
@@ -22,4 +22,4 @@ export const panelColors = {
    "panelTitle.inactiveForeground": semantic.inactive,
    "panelTitleBadge.background": semantic.badge, // Panel title badge background color. Panels are shown below the editor area and contain views like output and integrated terminal.
    "panelTitleBadge.foreground": semantic.foreground, // Panel title badge foreground color. Panels are shown below the editor area and contain views like output and integrated terminal.
-} satisfies ThemeColors;
+} satisfies ThemeColors);

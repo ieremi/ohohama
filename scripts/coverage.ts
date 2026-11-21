@@ -1,5 +1,8 @@
 import { themeColors } from "../vscode/generated/theme-colors.js";
-import { colors } from "../vscode/components/index.js";
+import { colors as colorsOf } from "../vscode/components/index.js";
+import { dark } from "../vscode/semantic.js";
+
+const colors = colorsOf(dark);
 
 const themeColorKeys = themeColors.map(i => i.key);
 const assigned = new Set(Object.keys(colors));

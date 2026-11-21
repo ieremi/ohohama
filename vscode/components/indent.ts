@@ -1,9 +1,9 @@
 // src/theme/debug.ts
 
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const indentColors = {
+export const indentColors = (semantic: Semantic) => ({
 	"editorIndentGuide.activeBackground1": semantic.order[1]!, // Color of the active editor indentation guides (1).
 	"editorIndentGuide.activeBackground2": semantic.order[2]!, // Color of the active editor indentation guides (2).
 	"editorIndentGuide.activeBackground3": semantic.order[3]!, // Color of the active editor indentation guides (3).
@@ -16,4 +16,4 @@ export const indentColors = {
 	"editorIndentGuide.background4": semantic.order[4]!, // Color of the editor indentation guides (4).
 	"editorIndentGuide.background5": semantic.order[5]!, // Color of the editor indentation guides (5).
 	"editorIndentGuide.background6": semantic.order[6]!, // Color of the editor indentation guides (6).
-} satisfies ThemeColors;
+} satisfies ThemeColors);

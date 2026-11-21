@@ -1,9 +1,9 @@
 // src/theme/workbench.ts
 
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 import type { ThemeColors } from "../generated/theme-colors.js";
 
-export const workbenchColors = {
+export const workbenchColors = (semantic: Semantic) => ({
     "actionBar.toggledBackground": semantic.background, // Background color for toggled action items in action bar.
     "contrastActiveBorder": semantic.zero,
     "descriptionForeground": semantic.foreground, // Foreground color for description text providing additional information, for example for a label.
@@ -61,4 +61,4 @@ export const workbenchColors = {
     "window.inactiveBorder": semantic.zero, // Border color for the inactive (unfocused) windows.
     "keybindingTable.headerBackground": semantic.background, // Background color for the keyboard shortcuts table header.
     "keybindingTable.rowsBackground": semantic.background, // Background color for the keyboard shortcuts table alternating rows.
-} satisfies ThemeColors;
+} satisfies ThemeColors);

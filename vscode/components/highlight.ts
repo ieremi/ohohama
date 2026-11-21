@@ -1,7 +1,7 @@
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const highlightColors = {
+export const highlightColors = (semantic: Semantic) => ({
     "editor.focusedStackFrameHighlightBackground": semantic.highlight, // Background color of the focused stack frame highlight in the editor.
     "editor.hoverHighlightBackground": semantic.hover, // Highlight below the word for which a hover is shown. The color must not be opaque so as not to hide underlying decorations.
     "editor.inactiveLineHighlightBackground": semantic.highlight, // Background color for the highlight of line at the cursor position when the editor is not focused.
@@ -24,4 +24,4 @@ export const highlightColors = {
     "editor.wordHighlightTextBorder": semantic.zero, // Border color of a textual occurrence for a symbol.
     "editorUnicodeHighlight.background": semantic.highlight, // Background color used to highlight unicode characters.
     "editorUnicodeHighlight.border": semantic.zero, // Border color used to highlight unicode characters.
-} satisfies ThemeColors;
+} satisfies ThemeColors);

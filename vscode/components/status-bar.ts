@@ -1,7 +1,7 @@
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const statusBarColors = {
+export const statusBarColors = (semantic: Semantic) => ({
     "statusBar.background": semantic.accent,
     "statusBar.border": semantic.zero,
     "statusBar.debuggingBackground": semantic.old,
@@ -37,4 +37,4 @@ export const statusBarColors = {
     "statusBarItem.warningForeground": semantic.foreground, // Status bar warning items foreground color. Warning items stand out from other status bar entries to indicate warning conditions. The status bar is shown in the bottom of the window.
     "statusBarItem.warningHoverBackground": semantic.hover, // Status bar warning items background color when hovering. Warning items stand out from other status bar entries to indicate warning conditions. The status bar is shown in the bottom of the window.
     "statusBarItem.warningHoverForeground": semantic.foreground, // Status bar warning items foreground color when hovering. Warning items stand out from other status bar entries to indicate warning conditions. The status bar is shown in the bottom of the window.
-} satisfies ThemeColors;
+} satisfies ThemeColors);

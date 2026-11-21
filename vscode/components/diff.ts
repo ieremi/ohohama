@@ -1,7 +1,7 @@
 import type { ThemeColors } from "../generated/theme-colors.js";
-import { semantic } from "../semantic.js";
+import type { Semantic } from "../semantic.js";
 
-export const diffColors = {
+export const diffColors = (semantic: Semantic) => ({
     "diffEditor.border": semantic.zero,
     "diffEditor.diagonalFill": semantic.inactive,
     "diffEditor.insertedLineBackground": semantic.addedTransparent,
@@ -23,4 +23,4 @@ export const diffColors = {
     "multiDiffEditor.background": semantic.background, // The background color of the multi file diff editor
     "multiDiffEditor.border": semantic.zero, // The border color of the multi file diff editor
     "multiDiffEditor.headerBackground": semantic.background, // The background color of the diff editor's header
-} satisfies ThemeColors;
+} satisfies ThemeColors);
