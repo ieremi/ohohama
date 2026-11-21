@@ -7,10 +7,11 @@
   "publisher": "ieremius",
   "type": "module",
   "scripts": {
-    "build": "npm run build:vscode && npm run build:alacritty",
+    "build": "npm run build:vscode && npm run build:alacritty && npm run build:obsidian",
     "build:vscode": "tsx vscode/build.ts",
     "build:alacritty": "tsx alacritty/build.ts",
     "build:chrome": "tsx chrome/build.ts",
+    "build:obsidian": "tsx obsidian/build.ts",
     "check-palette": "tsx scripts/check-palette.ts",
     "coverage": "tsx scripts/coverage.ts",
     "generate:theme-colors": "tsx scripts/generate-theme-colors.ts",
@@ -19,10 +20,11 @@
     "missing": "tsx scripts/missing.ts",
     "package": "npm run build && vsce package",
     "typecheck": "tsc --noEmit",
-    "watch": "concurrently \"npm:watch:vscode\" \"npm:watch:alacritty\" \"npm:watch:chrome\"",
+    "watch": "concurrently \"npm:watch:vscode\" \"npm:watch:alacritty\" \"npm:watch:chrome\" \"npm:watch:obsidian\"",
     "watch:vscode": "tsx --watch scripts/build.ts",
     "watch:alacritty": "tsx --watch alacritty/build.ts",
-    "watch:chrome": "tsx --watch chrome/build.ts"
+    "watch:chrome": "tsx --watch chrome/build.ts",
+    "watch:obsidian": "tsx --watch --include obsidian/rules.css obsidian/build.ts"
   },
   "repository": {
     "type": "git",

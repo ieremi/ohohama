@@ -41,6 +41,8 @@ npm install
 npm run build
 ```
 
+The Obsidian CSS snippet is generated to `obsidian/themes/ohohama.css`. Copy it into your vault's `.obsidian/snippets/` and enable it under **Settings → Appearance → CSS snippets**.
+
 To regenerate the theme color definitions:
 
 ```bash
