@@ -18,6 +18,9 @@ export const palette = {
     primary: TonalPalette.fromHueAndChroma(220, 96),
     secondary: TonalPalette.fromHueAndChroma(235, 48),
     tertiary: TonalPalette.fromHueAndChroma(250, 72),
+    // Edges of the blue range, to keep syntax colors apart
+    aqua: TonalPalette.fromHueAndChroma(200, 64),
+    indigo: TonalPalette.fromHueAndChroma(270, 56),
     neutral: TonalPalette.fromHueAndChroma(220, 8),
     neutralVariant: TonalPalette.fromHueAndChroma(230, 16),
 } as const;
