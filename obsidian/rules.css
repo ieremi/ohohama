@@ -1,8 +1,11 @@
 body {
-  /* Fonts: use the Noto CJK fonts shipped with Ubuntu */
-  --font-text-theme: "Noto Sans CJK JP", sans-serif;
-  --font-interface-theme: "Noto Sans CJK JP", sans-serif;
-  --font-monospace-theme: "Hack Nerd Font Mono", "Noto Sans Mono CJK JP", monospace;
+  /* Fonts: use the Noto CJK fonts shipped with Ubuntu.
+     Emoji use monochrome fonts so they take the text color: OpenMoji Black first, then Noto Emoji.
+     They come after the text fonts because both also contain digits and "#" for keycaps. */
+  --font-text-theme: "Noto Sans CJK JP", "OpenMoji Black", "Noto Emoji", sans-serif;
+  --font-interface-theme: "Noto Sans CJK JP", "OpenMoji Black", "Noto Emoji", sans-serif;
+  --font-monospace-theme: "Hack Nerd Font Mono", "Noto Sans Mono CJK JP", "OpenMoji Black", "Noto Emoji", monospace;
+  font-variant-emoji: text;
 
   /* Line height and readable line width */
   --line-height-normal: 1.8;
