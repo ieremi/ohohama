@@ -61,7 +61,6 @@ export const tokenColors = (semantic: Semantic) => [
     ],
     settings: {
       foreground: semantic.syntax.keyword,
-      fontStyle: "bold",
     },
   },
   {
@@ -72,7 +71,6 @@ export const tokenColors = (semantic: Semantic) => [
     ],
     settings: {
       foreground: semantic.syntax.keyword,
-      fontStyle: "bold",
     },
   },
   {
@@ -82,7 +80,6 @@ export const tokenColors = (semantic: Semantic) => [
     ],
     settings: {
       foreground: semantic.syntax.operator,
-      fontStyle: "",
     },
   },
   {
@@ -119,7 +116,6 @@ export const tokenColors = (semantic: Semantic) => [
     ],
     settings: {
       foreground: semantic.syntax.keyword,
-      fontStyle: "italic",
     },
   },
   {
