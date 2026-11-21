@@ -35,7 +35,7 @@ jobs:
         run: npm run build
 
       - name: Confirm theme exists
-        run: test -f vscode/themes/Ohohama-color-theme.json
+        run: test -f vscode/themes/Ohohama-dark-color-theme.json
 
       - name: Publish extension
         run: npx @vscode/vsce publish --azure-credential

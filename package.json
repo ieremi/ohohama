@@ -39,12 +39,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "Ohohama",
+        "id": "Ohohama",
+        "label": "Ohohama-dark",
         "uiTheme": "vs-dark",
-        "path": "./vscode/themes/Ohohama-color-theme.json"
+        "path": "./vscode/themes/Ohohama-dark-color-theme.json"
       },
       {
-        "label": "Ohohama Light",
+        "id": "Ohohama Light",
+        "label": "Ohohama-light",
         "uiTheme": "vs",
         "path": "./vscode/themes/Ohohama-light-color-theme.json"
       }

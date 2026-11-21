@@ -26,7 +26,7 @@ Ohohama Theme aims to provide a comfortable coding environment with cool blue to
 
 ## Installation
 
-Install **Ohohama Theme** from the Visual Studio Marketplace, then select **Ohohama** (dark) or **Ohohama Light** from **Preferences → Theme → Color Theme**.
+Install **Ohohama Theme** from the Visual Studio Marketplace, then select **Ohohama-dark** or **Ohohama-light** from **Preferences → Theme → Color Theme**.
 
 ## Philosophy
 

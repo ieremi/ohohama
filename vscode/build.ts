@@ -15,13 +15,13 @@ const variants: {
   semantic: Semantic;
 }[] = [
   {
-    name: "Ohohama",
+    name: "Ohohama-dark",
     type: "vs-dark",
-    file: "Ohohama-color-theme.json",
+    file: "Ohohama-dark-color-theme.json",
     semantic: dark,
   },
   {
-    name: "Ohohama Light",
+    name: "Ohohama-light",
     type: "vs",
     file: "Ohohama-light-color-theme.json",
     semantic: light,
