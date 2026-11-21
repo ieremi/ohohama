@@ -15,8 +15,8 @@ function block(selector: string, variables: Record<string, string>): string {
 }
 
 const header =
-    "/* Ohohama（VS Code のテーマ）に合わせた Obsidian の見た目。Settings → Appearance → CSS snippets でオンにする\n" +
-    "   github.com/ieremi/ohohama の obsidian/ から生成。直接は編集しない */\n";
+    "/* Obsidian look matching the Ohohama VS Code theme. Enable it under Settings → Appearance → CSS snippets.\n" +
+    "   Generated from obsidian/ in github.com/ieremi/ohohama. Do not edit directly. */\n";
 
 const css = [
     header,

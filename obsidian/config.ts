@@ -6,7 +6,7 @@ import { alpha } from "../vscode/color.js";
 const toRgb = converter("rgb");
 const toHsl = converter("hsl");
 
-// rgba(var(--x-rgb), a) や --callout-* で使う "r, g, b" の形
+// "r, g, b" form used by rgba(var(--x-rgb), a) and --callout-*
 function rgb(color: string): string {
     const parsed = toRgb(color);
 
@@ -37,7 +37,7 @@ function accentHsl(color: string) {
 
 type Variables = Record<`--${string}`, string>;
 
-// 両方のモードで同じもの
+// Same in both modes
 export const shared: Variables = {
     ...accentHsl(palette.city.t),
     "--git-change-bg": alpha(hexFromArgb(palette.tertiary.tone(70)), 0.18),
@@ -46,7 +46,7 @@ export const shared: Variables = {
 };
 
 export const dark: Variables = {
-    // 背景：Ohohama の black。サイドバーも同じ色で、線はほとんど見せない
+    // Background: Ohohama black. The sidebar uses the same color and borders are barely visible
     "--background-primary": palette.black,
     "--background-primary-alt": hexFromArgb(palette.neutral.tone(5)),
     "--background-secondary": palette.black,
@@ -55,7 +55,7 @@ export const dark: Variables = {
     "--background-modifier-hover": alpha(hexFromArgb(palette.neutral.tone(60)), 0.2),
     "--background-modifier-active-hover": alpha(hexFromArgb(palette.neutral.tone(30)), 0.4),
 
-    // 文字：Ohohama の white と neutral のグレー
+    // Text: Ohohama white and neutral grays
     "--text-normal": palette.white,
     "--text-muted": hexFromArgb(palette.neutral.tone(70)),
     "--text-faint": hexFromArgb(palette.neutral.tone(60)),
@@ -79,7 +79,7 @@ export const dark: Variables = {
     "--table-header-background": hexFromArgb(palette.neutral.tone(7)),
     "--scrollbar-thumb-bg": alpha(hexFromArgb(palette.primary.tone(90)), 0.3),
 
-    // 見出し
+    // Headings
     "--ohohama-heading": palette.white,
     "--ohohama-heading-accent": hexFromArgb(palette.tertiary.tone(70)),
     "--ohohama-heading-sub": hexFromArgb(palette.neutral.tone(70)),
@@ -95,14 +95,14 @@ export const dark: Variables = {
     "--ohohama-h2-stripe": alpha(palette.city.t, 0.16),
     "--ohohama-h2-stripe-bg": alpha(palette.city.t, 0.05),
 
-    // Git プラグイン（obsidian-git）
+    // Git plugin (obsidian-git)
     "--ohohama-git-add": hexFromArgb(palette.primary.tone(70)),
     "--ohohama-git-change": hexFromArgb(palette.tertiary.tone(70)),
     "--ohohama-git-delete": palette.city.t,
     "--ohohama-git-add-rgb": rgb(hexFromArgb(palette.primary.tone(70))),
     "--ohohama-git-delete-rgb": rgb(palette.city.t),
 
-    // 警告・黄色・オレンジ・緑を青系に
+    // Turn warning, yellow, orange and green into blues
     "--text-warning": hexFromArgb(palette.tertiary.tone(70)),
     "--color-yellow": hexFromArgb(palette.tertiary.tone(70)),
     "--color-yellow-rgb": rgb(hexFromArgb(palette.tertiary.tone(70))),
@@ -114,7 +114,7 @@ export const dark: Variables = {
 };
 
 export const light: Variables = {
-    // 背景：neutral の濃さちがい
+    // Background: neutral tones of different lightness
     "--background-primary": hexFromArgb(palette.neutral.tone(94)),
     "--background-primary-alt": hexFromArgb(palette.neutral.tone(92)),
     "--background-secondary": hexFromArgb(palette.neutral.tone(91)),
@@ -122,11 +122,11 @@ export const light: Variables = {
     "--background-modifier-border": hexFromArgb(palette.neutral.tone(82)),
     "--background-modifier-hover": alpha(palette.city.t, 0.08),
     "--background-modifier-active-hover": alpha(palette.city.t, 0.14),
-    // 入力欄：既定の白だと、グレーの中で白くぬけて見えるので、本文の背景と同じにする
+    // Form fields: the default white stands out against the grays, so match the note background
     "--background-modifier-form-field": hexFromArgb(palette.neutral.tone(94)),
     "--background-modifier-form-field-highlighted": hexFromArgb(palette.neutral.tone(96)),
 
-    // 文字：濃いグレー。リンクは city.t を少し暗くして読みやすく
+    // Text: dark grays. Links use a darker city.t for readability
     "--text-normal": hexFromArgb(palette.neutral.tone(16)),
     "--text-muted": hexFromArgb(palette.neutralVariant.tone(42)),
     "--text-faint": hexFromArgb(palette.neutralVariant.tone(61)),
@@ -142,7 +142,7 @@ export const light: Variables = {
     "--blockquote-border-color": palette.city.t,
     "--table-header-background": hexFromArgb(palette.neutral.tone(88)),
 
-    // 見出し
+    // Headings
     "--ohohama-heading": hexFromArgb(palette.neutral.tone(16)),
     "--ohohama-heading-accent": hexFromArgb(palette.tertiary.tone(42)),
     "--ohohama-heading-sub": hexFromArgb(palette.neutralVariant.tone(42)),
@@ -158,14 +158,14 @@ export const light: Variables = {
     "--ohohama-h2-stripe": alpha(palette.city.t, 0.16),
     "--ohohama-h2-stripe-bg": alpha(hexFromArgb(palette.neutral.tone(100)), 0.5),
 
-    // Git プラグイン（obsidian-git）
+    // Git plugin (obsidian-git)
     "--ohohama-git-add": hexFromArgb(palette.primary.tone(43)),
     "--ohohama-git-change": hexFromArgb(palette.tertiary.tone(38)),
     "--ohohama-git-delete": palette.city.k,
     "--ohohama-git-add-rgb": rgb(hexFromArgb(palette.primary.tone(43))),
     "--ohohama-git-delete-rgb": rgb(palette.city.k),
 
-    // 警告・黄色・オレンジ・緑を青系に
+    // Turn warning, yellow, orange and green into blues
     "--text-warning": hexFromArgb(palette.tertiary.tone(38)),
     "--color-yellow": hexFromArgb(palette.tertiary.tone(38)),
     "--color-yellow-rgb": rgb(hexFromArgb(palette.tertiary.tone(38))),
@@ -176,7 +176,7 @@ export const light: Variables = {
     "--color-green-rgb": rgb(hexFromArgb(palette.primary.tone(43))),
 };
 
-// コールアウト：Ohohama の青とグレーだけにする
+// Callouts: only Ohohama blues and grays
 export const callout = {
     dark: {
         "--callout-note": rgb(palette.city.t),

@@ -33,8 +33,8 @@ async function main(): Promise<void> {
   const markdown = await response.text();
 
   /*
-   * 公式ドキュメントの次の形式から
-   * キーと説明文を抽出する:
+   * Extract keys and descriptions from lines
+   * of the official docs in this form:
    *
    * - `editor.background`: Editor background color.
    */

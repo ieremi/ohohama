@@ -13,7 +13,7 @@ export const palette = {
         t: cityT,
         k: "#00205B",
     },
-    // city.t の彩度のまま、明るさだけ変えた青
+    // Blues with the chroma of city.t at different tones
     cityT: TonalPalette.fromInt(argbFromHex(cityT)),
     primary: TonalPalette.fromHueAndChroma(220, 96),
     secondary: TonalPalette.fromHueAndChroma(235, 48),
