@@ -46,12 +46,12 @@ export const shared: Variables = {
 };
 
 export const dark: Variables = {
-    // Background: Ohohama black. The sidebar uses the same color and borders are barely visible
-    "--background-primary": palette.black,
-    "--background-primary-alt": hexFromArgb(palette.neutral.tone(5)),
-    "--background-secondary": palette.black,
-    "--background-secondary-alt": hexFromArgb(palette.neutral.tone(5)),
-    "--background-modifier-border": hexFromArgb(palette.neutral.tone(13)),
+    // Background: dark gray. The sidebar uses the same color and borders are barely visible
+    "--background-primary": hexFromArgb(palette.neutral.tone(14)),
+    "--background-primary-alt": hexFromArgb(palette.neutral.tone(17)),
+    "--background-secondary": hexFromArgb(palette.neutral.tone(14)),
+    "--background-secondary-alt": hexFromArgb(palette.neutral.tone(17)),
+    "--background-modifier-border": hexFromArgb(palette.neutral.tone(24)),
     "--background-modifier-hover": alpha(hexFromArgb(palette.neutral.tone(60)), 0.2),
     "--background-modifier-active-hover": alpha(hexFromArgb(palette.neutral.tone(30)), 0.4),
 
@@ -76,7 +76,7 @@ export const dark: Variables = {
     "--code-function": hexFromArgb(palette.secondary.tone(70)),
     "--code-value": hexFromArgb(palette.tertiary.tone(60)),
     "--blockquote-border-color": palette.city.t,
-    "--table-header-background": hexFromArgb(palette.neutral.tone(7)),
+    "--table-header-background": hexFromArgb(palette.neutral.tone(18)),
     "--scrollbar-thumb-bg": alpha(hexFromArgb(palette.primary.tone(90)), 0.3),
 
     // Headings

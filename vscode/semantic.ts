@@ -9,8 +9,8 @@ export const dark = {
     active: hexFromArgb(palette.neutral.tone(100)),
     added: palette.city.t,
     addedTransparent: alpha(hexFromArgb(palette.primary.tone(50)), 0.2),
-    background: palette.black,
-    backgroundTransparent: alpha(palette.black, 0.8),
+    background: hexFromArgb(palette.neutral.tone(14)),
+    backgroundTransparent: alpha(hexFromArgb(palette.neutral.tone(14)), 0.8),
     badge: hexFromArgb(palette.tertiary.tone(80)),
     breakpoint: hexFromArgb(palette.primary.tone(70)),
     border: hexFromArgb(palette.neutral.tone(30)),
@@ -45,14 +45,14 @@ export const dark = {
     separator: palette.white,
     shadow: alpha(hexFromArgb(palette.neutral.tone(30)), 0.4),
     slider: alpha(hexFromArgb(palette.primary.tone(90)), 0.5),
-    sticky: palette.black,
+    sticky: hexFromArgb(palette.neutral.tone(14)),
     success: hexFromArgb(palette.secondary.tone(60)),
     symbolIcon: palette.white,
     untracked: hexFromArgb(palette.neutral.tone(70)),
     warning: hexFromArgb(palette.tertiary.tone(80)),
-    widget: palette.black,
+    widget: hexFromArgb(palette.neutral.tone(14)),
     terminal: {
-        background: palette.black,
+        background: hexFromArgb(palette.neutral.tone(14)),
     },
     ansi: {
         normal: {
