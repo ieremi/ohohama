@@ -10,11 +10,11 @@ export const uiColors = (semantic: Semantic) => ({
     "button.background": semantic.button,
     "button.border": semantic.zero,
     "button.foreground": semantic.buttonForeground,
-    "button.hoverBackground": semantic.hover,
+    "button.hoverBackground": semantic.buttonHover,
     "button.secondaryBackground": semantic.button,
     "button.secondaryBorder": semantic.zero,
     "button.secondaryForeground": semantic.buttonForeground,
-    "button.secondaryHoverBackground": semantic.hover,
+    "button.secondaryHoverBackground": semantic.buttonHover,
     "button.separator": semantic.foreground,
     "gauge.background": semantic.input, // Gauge background color.
     "gauge.border": semantic.zero, // Gauge border color.
