@@ -262,6 +262,38 @@ body.theme-light {
   background-color: rgba(var(--ohohama-git-add-rgb), 0.3);
 }
 
+/* Grimoire: draw failed tool calls as an inverted badge, since completed ones share the accent blue */
+body .grimoire-tool-status.status-error,
+body .grimoire-subagent-tool-status.status-error {
+  justify-content: center;
+  width: 18px;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--text-error);
+  color: var(--background-primary);
+}
+body .grimoire-tool-status.status-error svg,
+body .grimoire-subagent-tool-status.status-error svg {
+  width: 12px;
+  height: 12px;
+  stroke-width: 3;
+}
+
+/* Grimoire: invert the tool icon of failed or blocked steps too */
+/* Keep the icon at its normal size and grow the fill with a shadow, so the row does not shift */
+body .grimoire-tool-step.is-error > .grimoire-tool-header,
+body .grimoire-tool-step.is-blocked > .grimoire-tool-header {
+  overflow: visible;
+}
+body .grimoire-tool-step.is-error .grimoire-tool-icon-tile,
+body .grimoire-tool-step.is-blocked .grimoire-tool-icon-tile {
+  border-radius: 3px;
+  background-color: var(--text-error);
+  box-shadow: 0 0 0 3px var(--text-error);
+  color: var(--background-primary);
+}
+
 /* Spell check underline: Ohohama blue instead of red */
 ::spelling-error {
   text-decoration: underline wavy var(--interactive-accent);

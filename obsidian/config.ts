@@ -102,7 +102,7 @@ export const dark: Variables = {
     "--ohohama-git-add-rgb": rgb(hexFromArgb(palette.primary.tone(70))),
     "--ohohama-git-delete-rgb": rgb(palette.city.t),
 
-    // Turn warning, yellow, orange and green into blues
+    // Turn error, warning, red, yellow, orange and green into blues
     "--text-warning": hexFromArgb(palette.tertiary.tone(70)),
     "--color-yellow": hexFromArgb(palette.tertiary.tone(70)),
     "--color-yellow-rgb": rgb(hexFromArgb(palette.tertiary.tone(70))),
@@ -111,6 +111,12 @@ export const dark: Variables = {
     "--text-success": hexFromArgb(palette.primary.tone(70)),
     "--color-green": hexFromArgb(palette.primary.tone(70)),
     "--color-green-rgb": rgb(hexFromArgb(palette.primary.tone(70))),
+    "--text-error": hexFromArgb(palette.tertiary.tone(80)),
+    "--color-red": hexFromArgb(palette.tertiary.tone(80)),
+    "--color-red-rgb": rgb(hexFromArgb(palette.tertiary.tone(80))),
+    "--background-modifier-error": hexFromArgb(palette.tertiary.tone(80)),
+    "--background-modifier-error-hover": hexFromArgb(palette.tertiary.tone(85)),
+    "--background-modifier-error-rgb": rgb(hexFromArgb(palette.tertiary.tone(80))),
 };
 
 export const light: Variables = {
@@ -165,7 +171,7 @@ export const light: Variables = {
     "--ohohama-git-add-rgb": rgb(hexFromArgb(palette.primary.tone(43))),
     "--ohohama-git-delete-rgb": rgb(palette.city.k),
 
-    // Turn warning, yellow, orange and green into blues
+    // Turn error, warning, red, yellow, orange and green into blues
     "--text-warning": hexFromArgb(palette.tertiary.tone(38)),
     "--color-yellow": hexFromArgb(palette.tertiary.tone(38)),
     "--color-yellow-rgb": rgb(hexFromArgb(palette.tertiary.tone(38))),
@@ -174,6 +180,12 @@ export const light: Variables = {
     "--text-success": hexFromArgb(palette.primary.tone(43)),
     "--color-green": hexFromArgb(palette.primary.tone(43)),
     "--color-green-rgb": rgb(hexFromArgb(palette.primary.tone(43))),
+    "--text-error": palette.city.k,
+    "--color-red": palette.city.k,
+    "--color-red-rgb": rgb(palette.city.k),
+    "--background-modifier-error": palette.city.k,
+    "--background-modifier-error-hover": hexFromArgb(palette.tertiary.tone(30)),
+    "--background-modifier-error-rgb": rgb(palette.city.k),
 };
 
 // Callouts: only Ohohama blues and grays
