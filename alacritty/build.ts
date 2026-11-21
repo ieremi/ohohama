@@ -5,7 +5,7 @@ import { config } from "./config.js";
 import { dark, light } from "../vscode/semantic.js";
 
 const OUTPUTS = [
-    { path: "./alacritty/themes/ohohama.toml", semantic: dark },
+    { path: "./alacritty/themes/ohohama-dark.toml", semantic: dark },
     { path: "./alacritty/themes/ohohama-light.toml", semantic: light },
 ];
 
