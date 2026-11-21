@@ -1,15 +1,20 @@
 import {
+    argbFromHex,
     TonalPalette,
 } from "@material/material-color-utilities";
+
+const cityT = "#0B8BEE";
 
 export const palette = {
     zero: "#00000000",
     black: "#080D10",
     white: "#E6EDF9",
     city: {
-        t: "#0B8BEE",
+        t: cityT,
         k: "#00205B",
     },
+    // city.t の彩度のまま、明るさだけ変えた青
+    cityT: TonalPalette.fromInt(argbFromHex(cityT)),
     primary: TonalPalette.fromHueAndChroma(220, 96),
     secondary: TonalPalette.fromHueAndChroma(235, 48),
     tertiary: TonalPalette.fromHueAndChroma(250, 72),
