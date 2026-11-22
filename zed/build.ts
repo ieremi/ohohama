@@ -1,5 +1,8 @@
+import { hexFromArgb } from "@material/material-color-utilities";
 import { formatHex, interpolate } from "culori";
 import { mkdir, writeFile } from "node:fs/promises";
+import { palette } from "../palette.js";
+import { alpha } from "../vscode/color.js";
 import { dark, light, type Semantic } from "../vscode/semantic.js";
 
 const style = (colors: Semantic) => ({
@@ -82,13 +85,26 @@ const style = (colors: Semantic) => ({
     },
 });
 
+const lightBlue = hexFromArgb(palette.cityT.tone(45));
+const lightStyle = {
+    ...style({
+        ...light,
+        accent: palette.city.t,
+        link: lightBlue,
+        selection: alpha(palette.city.t, 0.29),
+        slider: alpha(palette.city.t, 0.32),
+        syntax: { ...light.syntax, heading: hexFromArgb(palette.cityT.tone(50)) },
+    }),
+    "panel.background": formatHex(interpolate([light.background, light.raised])(0.55)),
+};
+
 const theme = {
     $schema: "https://zed.dev/schema/themes/v0.2.0.json",
     name: "Ohohama",
     author: "ieremius",
     themes: [
         { name: "Ohohama Dark", appearance: "dark", style: style(dark) },
-        { name: "Ohohama Light", appearance: "light", style: style(light) },
+        { name: "Ohohama Light", appearance: "light", style: lightStyle },
     ],
 };
 
