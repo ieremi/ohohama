@@ -1,5 +1,0 @@
-/* For a local install, append this rule to the Codex webview stylesheet
-   that defines .text-composer-primary. Extension updates may replace it. */
-button.bg-composer-primary svg.text-composer-primary {
-  color: #fff;
-}

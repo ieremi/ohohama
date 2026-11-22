@@ -2,6 +2,9 @@ import { palette } from "../palette.js";
 import { alpha } from "./color.js"
 import { hexFromArgb } from "@material/material-color-utilities";
 
+// Codex keeps white button icons when the background meets a 4.5:1 contrast ratio.
+const button = hexFromArgb(palette.primary.tone(45));
+const buttonHover = hexFromArgb(palette.primary.tone(49));
 
 export const dark = {
     zero: palette.zero,
@@ -14,9 +17,9 @@ export const dark = {
     badge: hexFromArgb(palette.tertiary.tone(80)),
     breakpoint: hexFromArgb(palette.primary.tone(70)),
     border: hexFromArgb(palette.neutral.tone(30)),
-    button: hexFromArgb(palette.primary.tone(50)),
+    button,
     buttonForeground: hexFromArgb(palette.neutral.tone(100)),
-    buttonHover: hexFromArgb(palette.primary.tone(55)),
+    buttonHover,
     candidate: hexFromArgb(palette.neutral.tone(70)),
     deleted: hexFromArgb(palette.neutral.tone(60)),
     deletedTransparent: alpha(hexFromArgb(palette.neutral.tone(60)), 0.2),
@@ -126,9 +129,9 @@ export const light: Semantic = {
     badge: hexFromArgb(palette.tertiary.tone(80)),
     breakpoint: hexFromArgb(palette.primary.tone(50)),
     border: hexFromArgb(palette.neutral.tone(80)),
-    button: hexFromArgb(palette.primary.tone(50)),
+    button,
     buttonForeground: hexFromArgb(palette.neutral.tone(100)),
-    buttonHover: hexFromArgb(palette.primary.tone(55)),
+    buttonHover,
     candidate: hexFromArgb(palette.neutral.tone(30)),
     deleted: hexFromArgb(palette.neutral.tone(40)),
     deletedTransparent: alpha(hexFromArgb(palette.neutral.tone(60)), 0.2),

@@ -38,4 +38,4 @@ jobs:
         run: test -f vscode/themes/Ohohama-dark-color-theme.json
 
       - name: Publish extension
-        run: npx @vscode/vsce publish --azure-credential
+        run: npx @vscode/vsce publish --azure-credential --no-dependencies
