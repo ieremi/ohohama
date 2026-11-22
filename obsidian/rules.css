@@ -53,7 +53,7 @@ body.theme-light {
 /* h1: a pale blue pill-shaped band, with a light blue circle that fills its left end.
    - The band is 1.5em tall (line height 1.3em + 0.1em above and below), and its corners
      are half of that, so the left end is a half circle of the same size as the circle
-   - The text starts 1.85em in, just past the circle, so they do not overlap
+   - The text starts past the circle, with extra room for the fold icon
    - Noto Sans CJK JP sits low in its line, so the padding is moved from top to bottom
      to center the text in the band
    - The circle is as tall as the band, so it is centered whatever the band's real height;
@@ -64,6 +64,7 @@ body.theme-light {
   isolation: isolate;
   margin-left: 0;
   padding: 0.02em 0.8em 0.18em 1.85em;
+  padding-inline-start: calc(1.85em + 0.5rem);
   border: none;
   border-radius: 0.75em;
   background: var(--ohohama-h1-band);
@@ -139,8 +140,10 @@ body.theme-light {
 
 /* h3: a pill as wide as the text, in both reading view and the editor */
 .markdown-rendered h3 {
+  position: relative;
   display: inline-block;
   padding: 0.15em 0.9em;
+  padding-inline-start: calc(0.9em + 0.5rem);
   border: 1px solid var(--ohohama-h2-border);
   border-radius: 999px;
   background-color: var(--ohohama-h3-bg);
@@ -153,6 +156,7 @@ body.theme-light {
   width: fit-content;
   max-width: 100%;
   padding: 0.1em 0.9em;
+  padding-inline-start: calc(0.9em + 0.5rem);
 }
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-3::before {
   content: "";
@@ -163,6 +167,21 @@ body.theme-light {
   border-radius: 999px;
   background-color: var(--ohohama-h3-bg);
   pointer-events: none;
+}
+
+/* Center the fold icon on the first line of the heading, even when the text wraps. */
+.markdown-preview-view h1 > .heading-collapse-indicator {
+  inset-block-start: calc(0.02em + 0.5lh);
+}
+.markdown-preview-view h3 > .heading-collapse-indicator {
+  inset-block-start: calc(0.15em + 0.5lh);
+}
+.markdown-preview-view :is(h1, h3) > .heading-collapse-indicator {
+  translate: 0 -50%;
+}
+.markdown-source-view.mod-cm6 .cm-line:is(.HyperMD-header-1, .HyperMD-header-3) .cm-fold-indicator {
+  height: 1lh;
+  vertical-align: top;
 }
 
 /* h4: small dot before the text */
@@ -395,6 +414,12 @@ body .grimoire-tool-step .grimoire-tool-name {
 }
 :is(.markdown-source-view, .markdown-preview-view) .metadata-container.is-collapsed {
   padding-block: 0.3em;
+}
+:is(.markdown-source-view, .markdown-preview-view) .metadata-properties-heading {
+  margin-inline-start: 0.5rem;
+}
+:is(.markdown-source-view, .markdown-preview-view) .metadata-properties-heading .collapse-indicator {
+  inset-block: 0;
 }
 :is(.markdown-source-view, .markdown-preview-view) .metadata-properties-title {
   color: var(--text-accent);

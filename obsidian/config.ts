@@ -40,6 +40,11 @@ type Variables = Record<`--${string}`, string>;
 // Same in both modes
 export const shared: Variables = {
     ...accentHsl(palette.city.t),
+    "--link-decoration": "none",
+    "--link-decoration-hover": "none",
+    "--link-external-decoration": "none",
+    "--link-external-decoration-hover": "none",
+    "--link-unresolved-decoration-style": "none",
     "--git-change-bg": alpha(hexFromArgb(palette.tertiary.tone(70)), 0.18),
     "--git-selected": palette.city.t,
     "--git-move": hexFromArgb(palette.secondary.tone(70)),
