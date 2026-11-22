@@ -1,3 +1,4 @@
+import { formatHex, interpolate } from "culori";
 import { mkdir, writeFile } from "node:fs/promises";
 import { dark, light, type Semantic } from "../vscode/semantic.js";
 
@@ -42,7 +43,7 @@ const style = (colors: Semantic) => ({
     "editor.foreground": colors.foreground,
     "editor.gutter.background": colors.background,
     "editor.subheader.background": colors.raised,
-    "editor.active_line.background": colors.raised,
+    "editor.active_line.background": formatHex(interpolate([colors.background, colors.foreground])(0.04)),
     "editor.line_number": colors.inactive,
     "editor.active_line_number": colors.foreground,
     "editor.invisible": colors.inactive,
@@ -76,6 +77,7 @@ const style = (colors: Semantic) => ({
         "string.escape": { color: colors.syntax.escape },
         "string.regex": { color: colors.syntax.regexp },
         title: { color: colors.syntax.heading },
+        "title.markup": { color: colors.syntax.heading, font_style: "normal" },
         "variable.special": { color: colors.syntax.variable },
     },
 });
