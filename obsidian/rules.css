@@ -50,15 +50,22 @@ body.theme-light {
   --heading-spacing: 2.2em;
 }
 
-/* h1: pale blue rounded band with a light blue circle behind the first letter */
+/* h1: a pale blue pill-shaped band, with a light blue circle that fills its left end
+   and sits behind the first letter.
+   - The band is 1.5em tall (line height 1.3em + 0.1em above and below), and its corners
+     are half of that, so the left end is a half circle of the same size as the circle
+   - The text starts 0.25em in, so a full-width first character is centered at 0.75em,
+     which is also the center of the circle
+   - The circle is centered on the first line, so it stays on the first letter when
+     the heading wraps */
 .markdown-rendered h1,
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1 {
   position: relative;
   isolation: isolate;
-  margin-left: 0.35em;
-  padding: 0 0.6em 0 0.25em;
+  margin-left: 0;
+  padding: 0.1em 0.8em 0.1em 0.25em;
   border: none;
-  border-radius: 12px;
+  border-radius: 0.75em;
   background: var(--ohohama-h1-band);
   box-shadow: none;
   letter-spacing: 0.02em;
@@ -68,10 +75,10 @@ body.theme-light {
   content: "";
   position: absolute;
   z-index: -1;
-  left: -0.4em;
-  top: 50%;
-  width: 1.6em;
-  height: 1.6em;
+  left: 0;
+  top: calc(0.1em + var(--h1-line-height) * 0.5em);
+  width: 1.5em;
+  height: 1.5em;
   border-radius: 50%;
   background: var(--ohohama-h1-circle);
   transform: translateY(-50%);
@@ -345,6 +352,24 @@ body .grimoire-composer--asking .grimoire-input-container--permission-locked {
    IBM Plex Sans is a modern UI font (Ubuntu package fonts-ibm-plex) */
 body .grimoire-tool-step .grimoire-tool-name {
   font-family: "IBM Plex Sans", var(--font-interface);
+}
+
+/* Page title (inline title): white text on a blue band with a polka-dot pattern.
+   The band is the accent blue made a little darker so the white text stands out.
+   Two dot layers, the second shifted by half a tile, give the staggered pattern */
+.inline-title {
+  --ohohama-dot: rgba(255, 255, 255, 0.16);
+  --inline-title-color: #ffffff;
+  color: #ffffff;
+  padding: 0.7em 1em;
+  margin-block-end: 0.8em;
+  border-radius: 14px;
+  background-color: color-mix(in srgb, var(--interactive-accent) 82%, #000000);
+  background-image:
+    radial-gradient(circle, var(--ohohama-dot) 2.5px, transparent 3px),
+    radial-gradient(circle, var(--ohohama-dot) 2.5px, transparent 3px);
+  background-size: 18px 18px;
+  background-position: 0 0, 9px 9px;
 }
 
 /* Properties (page metadata): a card with a blue bar on the left, like the h2 bar,
