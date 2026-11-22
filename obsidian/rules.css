@@ -204,6 +204,41 @@ body.theme-light {
   font-size: 0.9em;
 }
 
+/* Prism and CodeMirror group some tokens under different color variables. */
+.markdown-rendered pre code :is(.token.string, .token.char) {
+  color: var(--code-string);
+}
+.markdown-rendered pre code .token.selector {
+  color: var(--code-tag);
+}
+.markdown-rendered pre code .token.property-access,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock .cm-property {
+  color: var(--code-property);
+}
+.markdown-rendered pre code .token.attr-name,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock .cm-attribute {
+  color: var(--ohohama-code-attribute);
+}
+.markdown-rendered pre code .token.class-name {
+  color: var(--ohohama-code-class);
+}
+.markdown-rendered pre code :is(.token.constant, .token.symbol) {
+  color: var(--ohohama-code-constant);
+}
+.markdown-rendered pre code .token.parameter {
+  color: var(--ohohama-code-parameter);
+}
+.markdown-rendered pre code .token.regex {
+  color: var(--ohohama-code-regexp);
+}
+.markdown-source-view.mod-cm6 .HyperMD-codeblock .cm-type {
+  color: var(--ohohama-code-type);
+}
+.markdown-rendered pre code .token.variable,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock :is(.cm-variable, .cm-variable-2, .cm-variable-3) {
+  color: var(--ohohama-code-variable);
+}
+
 /* Assign a color to each callout type */
 .callout[data-callout="note"], .callout[data-callout="info"], .callout[data-callout="todo"] {
   --callout-color: var(--callout-note);

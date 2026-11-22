@@ -2,6 +2,7 @@ import { hexFromArgb } from "@material/material-color-utilities";
 import { converter } from "culori";
 import { palette } from "../palette.js";
 import { alpha } from "../vscode/color.js";
+import { dark as vscodeDark, light as vscodeLight, type Semantic } from "../vscode/semantic.js";
 
 const toRgb = converter("rgb");
 const toHsl = converter("hsl");
@@ -36,6 +37,27 @@ function accentHsl(color: string) {
 }
 
 type Variables = Record<`--${string}`, string>;
+
+const codeColors = ({ foreground, syntax }: Semantic): Variables => ({
+    "--code-normal": foreground,
+    "--code-comment": syntax.comment,
+    "--code-function": syntax.function,
+    "--code-important": syntax.keyword,
+    "--code-keyword": syntax.keyword,
+    "--code-operator": syntax.operator,
+    "--code-property": syntax.property,
+    "--code-punctuation": syntax.punctuation,
+    "--code-string": syntax.string,
+    "--code-tag": syntax.tag,
+    "--code-value": syntax.number,
+    "--ohohama-code-attribute": syntax.attribute,
+    "--ohohama-code-class": syntax.class,
+    "--ohohama-code-constant": syntax.constant,
+    "--ohohama-code-parameter": syntax.parameter,
+    "--ohohama-code-regexp": syntax.regexp,
+    "--ohohama-code-type": syntax.type,
+    "--ohohama-code-variable": syntax.variable,
+});
 
 // Same in both modes
 export const shared: Variables = {
@@ -80,12 +102,7 @@ export const dark: Variables = {
     "--interactive-accent-hover": hexFromArgb(palette.primary.tone(70)),
 
     "--code-background": alpha(hexFromArgb(palette.neutral.tone(60)), 0.12),
-    "--code-normal": hexFromArgb(palette.neutral.tone(80)),
-    "--code-comment": hexFromArgb(palette.secondary.tone(70)),
-    "--code-string": hexFromArgb(palette.neutral.tone(60)),
-    "--code-keyword": hexFromArgb(palette.tertiary.tone(70)),
-    "--code-function": hexFromArgb(palette.secondary.tone(85)),
-    "--code-value": hexFromArgb(palette.tertiary.tone(60)),
+    ...codeColors(vscodeDark),
     "--blockquote-border-color": palette.city.t,
     "--table-header-background": hexFromArgb(palette.neutral.tone(18)),
     "--scrollbar-thumb-bg": alpha(hexFromArgb(palette.primary.tone(90)), 0.3),
@@ -155,6 +172,7 @@ export const light: Variables = {
     "--interactive-accent-hover": hexFromArgb(palette.tertiary.tone(50)),
 
     "--code-background": hexFromArgb(palette.neutral.tone(91)),
+    ...codeColors(vscodeLight),
     "--blockquote-border-color": palette.city.t,
     "--table-header-background": hexFromArgb(palette.neutral.tone(88)),
 
