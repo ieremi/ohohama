@@ -43,6 +43,10 @@ npm run build
 
 The Obsidian CSS snippet is generated to `obsidian/themes/ohohama.css`. Copy it into your vault's `.obsidian/snippets/` and enable it under **Settings → Appearance → CSS snippets**.
 
+Run `npm run build:zed` to generate `zed/themes/ohohama.json`. Copy it to Zed's [local themes directory](https://zed.dev/docs/themes#local-themes), then choose **Ohohama Dark** or **Ohohama Light** in the theme selector.
+
+To use the optional Starship prompt in Zed, set `terminal.env.STARSHIP_CONFIG` in your Zed settings to the absolute path of `zed/starship.toml`.
+
 To regenerate the theme color definitions:
 
 ```bash

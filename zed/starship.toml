@@ -1,0 +1,43 @@
+format = """
+[$username ](bg:color_0 fg:color_1)\
+[$directory$git_branch$git_status ](bg:color_1 fg:color_0)\
+[$time ](bg:color_0 fg:color_1)
+>\u0020
+"""
+
+# Disable the blank line at the start of the prompt
+# add_newline = false
+
+# You can also replace your username with a neat symbol like   or disable this
+# and use the os module below
+palette = 'ieremii'
+
+[palettes.ieremii]
+color_0 = 'blue'
+color_1 = 'white'
+color_2 = 'cyan'
+color_3 = 'black'
+
+[username]
+show_always = true
+style_user = "bg:color_0 fg:color_1"
+style_root = "bg:color_1 fg_color_2"
+format = '[ $user](none)'
+disabled = false
+
+[directory]
+format = "[ $path](none)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[git_branch]
+symbol = ""
+format = '[ $symbol $branch](none)'
+
+[git_status]
+format = '[ $all_status$ahead_behind](none)'
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+format = '[ $time](none)'
